@@ -25,8 +25,8 @@ function moveOutputPlugin() {
 export default defineConfig({
   // base 的寫法:
   // base: '/Repository 的名稱/'
-  //coffee_demo/
-  base: '/coffee_demo/',
+  // 發佈到git時要加入  /coffee_demo/
+  base: '/',
   plugins: [
     liveReload(['./layout/**/*.ejs', './pages/**/*.ejs', './pages/**/*.html']),
     ViteEjsPlugin(),
