@@ -11,11 +11,25 @@
 ├───────_utils.scss (自訂義用來覆蓋bootstrap utils的scss)
 ├───────_variables.scss (自訂義用來覆蓋bootstrap 文字 間距的scss)
 ├─────layout (對應header or footer等共用的scss)
+├───────_footer.scss (footer專用的scss)
+├───────_header.scss (header專用的scss)
 ├─────pages (對應個頁面的scss)
+├───────about.html (關於羊蹄專用的scss)
+├───────explore.html (探索羊蹄專用的scss)
+├───────index.html (首頁專用的scss)
+├───────productdetail.html (產品詳情頁專用的scss)
+├───────products.html (線上商店專用的scss)
 ├─────utils (老師的方式暫時無用)
 ├───all.scss (所以import的scss)
-├─layout (header or footer等ejs)
+├─layout  
+├───footer.ejs (footer程式碼)
+├───header.ejs (header程式碼)
+├───title.ejs (title 變換用)
 ├─pages (html頁面)
-
+├───about.html (關於羊蹄)
+├───explore.html (探索羊蹄)
+├───index.html (首頁)
+├───productdetail.html (產品詳情頁)
+├───products.html (線上商店)
  
 ```
