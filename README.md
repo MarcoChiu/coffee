@@ -20,8 +20,8 @@
 ├───────productdetail.html (產品詳情頁專用的scss)
 ├───────products.html (線上商店專用的scss)
 ├─────utils (老師的方式暫時無用)
-├───all.scss (所以import的scss)
-├─layout  
+├───all.scss (所有import的scss)
+├─layout (ejs)
 ├───footer.ejs (footer程式碼)
 ├───header.ejs (header程式碼)
 ├───title.ejs (title 變換用)
