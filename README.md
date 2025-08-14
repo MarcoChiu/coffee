@@ -1,11 +1,11 @@
- #A-8 羊蹄咖啡專題
+ # A-8 羊蹄咖啡專題
 
-結構說明
+## 結構說明
 
 ```
 
 ├─assests
-├───images
+├───images (靜態圖片)
 ├───scss
 ├─────customize
 ├───────_utils.scss (自訂義用來覆蓋bootstrap utils的scss)
