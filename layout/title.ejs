@@ -1,0 +1,25 @@
+<script>
+    let pagetilte = "羊蹄咖啡";     
+    const url = window.location.pathname;
+    const nowpage = url.split("/").pop();
+   
+    switch (nowpage) {
+        case "about.html":
+            pagetilte = "關於羊蹄-" + pagetilte;
+            break;
+        case "explore.html":
+            pagetilte = "探索羊蹄-" + pagetilte;
+            break;
+        default:
+        case "index.html":
+            pagetilte = "首頁-" + pagetilte;
+            break;
+        case "productdetail.html":
+            pagetilte = "產品詳情頁-" + pagetilte;
+            break;
+        case "products.html":
+            pagetilte = "線上商店-" + pagetilte;
+            break;
+    }
+    document.title = pagetilte;
+</script>

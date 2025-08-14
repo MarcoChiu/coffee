@@ -1,0 +1,61 @@
+// 自訂義顏色
+//overwrite bootstrap variables
+$theme-colors: (
+    "primary-97": #f1f4fd,
+    "primary-90": #d2d0f9,
+    "primary-80": #a4b4f3,
+    "primary-70": #778eee,
+    "primary-60": #4a69e8,
+    "primary-40": #1736b5,
+    "primary-25": #0e2271,
+    "secondary-90":#d7f4ec,
+    "secondary-70":#87dec5,
+    "secondary-50":#36c99f,
+    "secondary-35":#268c6f,
+    "natural-95":#f0f3f5,
+    "natural-90":#e0e5eb,
+    "natural-85":#d1d9e1,
+    "natural-75":#b2bfcc,
+    "natural-60":#8599ad,
+    "natural-50":#667f99,
+    "natural-30":#3d4d5c,
+    "natural-10":#141a1f,
+    "global-success-90":#defccf,
+    "global-success-40":#47c20a,
+    "global-success-30":#369108,
+    "global-danger-90":#ffd0cc,
+    "global-danger-70":#ff7467,
+    "global-danger-45":#e51300,
+    "global-90":#ffeacc,
+    "global-70":#f58f00,
+    "global-45":#b26800,
+    "black":#141a1f,
+    "white":#fcfcfd,
+);
+
+// 自訂義間距
+$spacer: 1rem;
+$spacers: (
+    0: 0,
+    1: $spacer * .25,
+    2: $spacer * .5,
+    3: $spacer * .75,
+    4: $spacer ,
+    5: $spacer * 1.5,
+    6: $spacer * 3,
+    7: $spacer * 5,
+);
+
+// 自訂義字體
+$enable-rfs: false; // 是否啟用 RFS (Responsive Font Size)
+$font-size-base: 1rem;
+$h1-font-size: $font-size-base * 3;
+$h5-font-size: $font-size-base * 1.125;
+
+//自訂圓角
+$border-radius: 1rem;
+$border-radius-sm: 0.75rem;
+$border-radius-lg: 1.5rem;
+
+//自訂陰影
+$box-shadow: 0 0 1rem rgba(#000, 0.12) !default;

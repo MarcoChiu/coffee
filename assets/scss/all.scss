@@ -1,8 +1,30 @@
+
+// 自訂義Bootstrap
 @import "../../node_modules/bootstrap/scss/functions";
-@import './utils/variables';
+
+//customer variables
+@import "./customize/variables";
+
+//bootstrap
 @import "../../node_modules/bootstrap";
 
-@import './layout/header.scss';
-@import './layout/footer.scss';
+//customer utiles
+@import "./customize/utils";
 
-@import './pages/index.scss';
+//Utilities
+@import "../../node_modules/bootstrap/scss/utilities/api";
+
+
+//components
+
+//layout
+@import './layout/header';
+@import './layout/footer';
+// @import './layout/title';
+
+//pages
+@import './pages/about';
+@import './pages/explore';
+@import './pages/index';
+@import './pages/productdetail';
+@import './pages/proudcts';

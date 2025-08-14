@@ -1,0 +1,5 @@
+
+//因為font-sze預設沒有開啟RWD這邊開啟 fs-3 fs-lg-1才會有用
+$utilities: map-merge($utilities,
+    ("font-size": map-merge(map-get($utilities, "font-size"),
+        (responsive: true))));
