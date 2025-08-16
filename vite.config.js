@@ -26,7 +26,7 @@ export default defineConfig({
   // base 的寫法:
   // base: '/Repository 的名稱/'
   // 發佈到git時要加入  /coffee_demo/
-  base: '/',
+  base: '/coffee_demo/',
   plugins: [
     liveReload(['./layout/**/*.ejs', './pages/**/*.ejs', './pages/**/*.html']),
     ViteEjsPlugin(),
