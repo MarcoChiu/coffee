@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title></title>
+  <script type="module" crossorigin src="/assets/main-DvNzszI6.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/main-DcB0gL0X.css">
+</head>
+
+<body>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">首頁</a>
+                    </li>
+                   <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="about.html">關於羊蹄</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="products.html">線上商店</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="explore.html">探索風味</a>
+                    </li>
+                     
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li> -->
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</div>    <main class="container">
+      <h1>首頁</h1>
+
+      <button class="text-primary-50 bg-primary-800 border-radius-xl">逛逛商店</button>
+    </main>
+    <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center"> <a href="index.html"
+                class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1" aria-label="Bootstrap"> <svg
+                    class="bi" width="30" height="24" aria-hidden="true">
+                    <use xlink:href="#bootstrap"></use>
+                </svg> </a> <span class="mb-3 mb-md-0 text-body-secondary">© 2025 羊蹄咖啡</span> </div>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-body-secondary" href="#" aria-label="Instagram"><svg class="bi" width="24"
+                        height="24" aria-hidden="true">
+                        <use xlink:href="#instagram"></use>
+                    </svg></a></li>
+            <li class="ms-3"><a class="text-body-secondary" href="#" aria-label="Facebook"><svg class="bi" width="24"
+                        height="24">
+                        <use xlink:href="#facebook"></use>
+                    </svg></a></li>
+        </ul>
+    </footer>
+</div>      
+      <script>
+    let pagetilte = "羊蹄咖啡";     
+    const url = window.location.pathname;
+    const nowpage = url.split("/").pop();
+   
+    switch (nowpage) {
+        case "about.html":
+            pagetilte = "關於羊蹄-" + pagetilte;
+            break;
+        case "explore.html":
+            pagetilte = "探索羊蹄-" + pagetilte;
+            break;
+        default:
+        case "index.html":
+            pagetilte = "首頁-" + pagetilte;
+            break;
+        case "productdetail.html":
+            pagetilte = "產品詳情頁-" + pagetilte;
+            break;
+        case "products.html":
+            pagetilte = "線上商店-" + pagetilte;
+            break;
+    }
+    document.title = pagetilte;
+</script></body>
+
+</html>
