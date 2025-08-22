@@ -1,5 +1,4 @@
-// 自訂義顏色
-//overwrite bootstrap variables
+// 自訂義顏色(依設計稿)
 //Color
 
   $primary-50: #f7f6ef;
@@ -110,58 +109,42 @@ $theme-colors: (
   "alert-info-dark": $alert-info-dark
 );
 
+// 自訂義間距(依設計稿)
+//Spacing
+$spacer: 1px;
+$spacer4:4px;//#spacing-xxs
+$spacer8:8px;//#spacing-xs
+$spacer12:12px;//#spacing-s
+$spacer16:16px;//#spacing-m
+$spacer20:20px;//#spacing-l
+$spacer24:24px;//#spacing-xl
+$spacer32:32px;//#spacing-xxl
+$spacer40:40px;//#spacing-xxxl
+$spacer48:48px;//#spacing-4xl
+$spacer56:56px;//#spacing-5xl
+$spacer64:64px;//#spacing-6xl
+$spacers: (
+  0: 0,
+  4: $spacer4 ,
+  8: $spacer8,
+  12: $spacer12,
+  16: $spacer16,
+  20: $spacer20,
+  24: $spacer24,
+  32: $spacer32,
+  40: $spacer40,
+  48: $spacer48,
+  56: $spacer56,
+  64: $spacer64,
+); 
+
+//自訂圓角
+//Radius
+// $border-radius-s: 1px;//#radius-s
+// $border-radius-m: 8px;//#radius-m
+// $border-radius-l: 12px;//#radius-l
+// $border-radius-xl: 16px;//#radius-xl
+// $border-radius-round: 1000px;//#radius-round
 
 
-
-// 自訂義字體
-//Typography
-// $enable-rfs: false; // 是否啟用 RFS (Responsive Font Size)
-// $font-size-base: 1rem;
-// $header-title-font-size: $font-size-base * 12.5;
-// $header-xxl-font-size: $font-size-base * 10;
-// $header-xl-font-size: $font-size-base * 9;
-// $header-l-font-size: $font-size-base * 8;
-// $header-m-font-size: $font-size-base * 7;
-// $header-s-font-size: $font-size-base * 6;
-// $header-xs-font-size: $font-size-base * 5;
-
-// $label-l-font-size: $font-size-base * 4.5;
-// $label-m-font-size: $font-size-base * 4;
-// $label-s-font-size: $font-size-base * 3.5;
-// $label-xs-font-size: $font-size-base * 3;
-
-// $paragraph-xl-font-size: $font-size-base * 5;
-// $paragraph-l-font-size: $font-size-base * 4.5;
-// $paragraph-m-font-size: $font-size-base * 4;
-// $paragraph-s-font-size: $font-size-base * 3.5;
-// $paragraph-xs-font-size: $font-size-base * 3;
-
-// // 自訂義間距
-// //Spacing
-// $spacer: 1px;
-// $spacers: (
-//   0: 0,
-//   xxs: $spacer * 4,
-//   xs: $spacer * 8,
-//   s: $spacer * 12,
-//   m: $spacer *16,
-//   l: $spacer * 20,
-//   xl: $spacer *24,
-//   xxl: $spacer *32,
-//   xxxl: $spacer *40,
-//   4xl: $spacer *48,
-//   5xl: $spacer *56,
-//   6xl: $spacer *64,
-// );
-
-// //自訂圓角
-// //Radius
-// $border-radius-s: 1px;
-// $border-radius-m: 8px;
-// $border-radius-l: 12px;
-// $border-radius-xl: 16px;
-// $border-radius-round: 1000px;
-
-
-// //自訂陰影
-// $box-shadow: 0 0 1rem rgba(#000, 0.12) !default;
+ 

@@ -1,5 +1,5 @@
 // google 字體
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC');
+@import url('<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">');
 
 // 自訂義Bootstrap
 @import "../../node_modules/bootstrap/scss/functions";
@@ -11,7 +11,7 @@
 @import "../../node_modules/bootstrap";
 
 //customer utiles
-@import "./customize/utils";
+// @import "./customize/utils";
 
 //Utilities
 @import "../../node_modules/bootstrap/scss/utilities/api";
