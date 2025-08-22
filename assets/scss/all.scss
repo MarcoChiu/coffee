@@ -1,4 +1,6 @@
-  
+// google 字體
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC');
+
 // 自訂義Bootstrap
 @import "../../node_modules/bootstrap/scss/functions";
 
@@ -14,6 +16,9 @@
 //Utilities
 @import "../../node_modules/bootstrap/scss/utilities/api";
 
+//base
+@import './base/base';
+@import './base/utils';
 
 //components
 

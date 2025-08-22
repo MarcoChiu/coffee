@@ -1,5 +1,21 @@
  # A-8 羊蹄咖啡專題
 
+## Miro
+```
+https://miro.com/app/board/uXjVJdnIC-4=/?utm_source=notification&utm_medium=email&utm_campaign=daily-updates&utm_content=view-board-cta&lid=ilk838wmgwc3
+```
+
+## 設計稿
+```
+https://www.figma.com/design/JR0sze2fVEr2cuvrhDuXd1/%E5%9C%98%E9%9A%8A%E5%B0%88%E9%A1%8C--A-8-%E7%BE%8A%E8%B9%84%E5%92%96%E5%95%A1?m=auto&t=WblgXowAmwolyREO-6
+```
+
+## Git
+```
+https://github.com/MarcoChiu/coffee
+https://marcochiu.github.io/coffee/
+```
+
 ## 結構說明
 
 ```

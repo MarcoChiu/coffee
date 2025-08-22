@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo</title>
+    <%- include('./layout/style'); -%>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Color -->
+        <h3>Color 直接套用../assets/scss/customize/_variables.scss變數</h3>
+        <div class="row">
+            <div class="col-4">
+                <div class="bg-primary-500 text-grey-50">class="bg-primary-500 text-grey-50"</div>
+            </div>
+             <div class="col-4">
+                <div class="bg-primary-600 text-primary-200">class="bg-primary-600 text-primary-200"</div>
+            </div>
+             <div class="col-4">
+                <div class="bg-alert-info-dark text-grey-500">class="bg-alert-info-dark text-grey-500"</div>
+            </div>
+        </div>
+        
+    </div>
+    <script type="module" src="../main.js"></script>
+    <%- include('./layout/js'); -%>
+</body>
+
+</html>
