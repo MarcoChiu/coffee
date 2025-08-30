@@ -1,6 +1,12 @@
 // google 字體
 @import url('<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">');
 
+@font-face {
+  font-family: "ChenYuluoyan";
+  src:
+    url("./assets/fonts/ChenYuluoyan-2.0-Thin.ttf");
+}
+
 // 自訂義Bootstrap
 @import "../../node_modules/bootstrap/scss/functions";
 
