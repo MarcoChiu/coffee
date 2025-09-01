@@ -2,6 +2,11 @@
 @import url('<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">');
 
 @font-face {
+  font-family: cy2;
+  src: url('../fonts/ChenYuluoyan-2.0-Thin.woff2') format('woff2') 
+}
+
+@font-face {
   font-family: "ChenYuluoyan";
   src:
     url("/assets/fonts/ChenYuluoyan-2.0-Thin.ttf");
