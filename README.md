@@ -21,6 +21,8 @@ https://marcochiu.github.io/coffee/
 ```
 coffee
 ├─assests
+├───fonts (字體)
+├─────ChenYuluoyan-2.0-Thin.woff2
 ├───images (靜態圖片)
 ├───scss
 ├─────base (通用樣式)
