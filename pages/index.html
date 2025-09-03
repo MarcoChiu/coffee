@@ -11,10 +11,25 @@
 
 <body>
   <%- include('./layout/header'); -%>
-    <main class="container">
-      <h1 class="ChenYuluoyan">首頁</h1>
-
-      <button class="text-primary-50 bg-primary-800 border-radius-xl">逛逛商店</button>
+    <main class="index">
+      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item header1 active">
+            <div class="text-center header1-text d-flex flex-column">
+              <div class="vertical-line mb-40"></div>
+              <h1 class="heading-header-title text-primary-50 mb-24">步步踏實尋好豆</h1>
+              <p class="paragraph-xxlarge text-primary-50 mb-12">從產地到杯中</p>
+              <p class="paragraph-xxlarge text-primary-50 mb-40">Sheepo Coffee  為你萃取每一口的獨特與真誠</p>
+              <button type="button" class="btn btn-primary">逛逛商店</button>
+              <div class="vertical-line mt-40 mb-32"></div>
+              
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/assets/images/index/banner2.png" class="d-block w-100" alt="banner2">
+          </div>
+        </div>
+      </div>
     </main>
     <%- include('./layout/footer'); -%>
       <script type="module" src="../main.js"></script>

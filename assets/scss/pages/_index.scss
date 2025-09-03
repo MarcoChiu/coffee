@@ -1,3 +1,47 @@
 .index-title {
   font-size: 100px;
 }
+.header1{
+  height: calc(100vh - 88px);
+  background-size: cover;
+  background-image: url(/assets/images/index/banner1.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+}
+.header1-text{
+  position: absolute;
+  background-color: rgba(black, 0.23);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.vertical-line {
+  width: 1px;
+  height: 100vh;
+  background-color: #f7f6ef;
+}
+
+.vertical-line {
+  width: 1px;
+  height: 0;
+  background-color: #f7f6ef;
+  animation: lineGrow 5s ease-out forwards;
+}
+
+@keyframes lineGrow {
+  to {
+    height: 100vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .header1 {
+    height: calc(100vh - 72px);
+  }
+}
