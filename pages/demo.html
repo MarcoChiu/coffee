@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo</title>
+    <%- include('./layout/style'); -%>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Color -->
+        <h3>1.Color 直接套用../assets/scss/customize/_variables.scss變數</h3>
+        <div class="row g-12">
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="bg-primary-500 text-grey-50">class="bg-primary-500 text-grey-50"</div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="bg-primary-600 text-primary-200">class="bg-primary-600 text-primary-200"</div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="bg-alert-info-dark text-grey-500">class="bg-alert-info-dark text-grey-500"</div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="bg-alert-warning-normal text-grey-100">class="bg-alert-warning-dark text-grey-100"</div>
+            </div>
+        </div>
+        <hr />
+
+        <!-- Typography -->
+        <h3>2.Typography 直接套用../assets/scss/base/_utils.scss Class</h3>
+        <div class="heading-header-title">class="heading-header-title"</div>
+        <div class="heading-small">class="heading-small"</div>
+        <div class="label-large">class="label-large"</div>
+        <div class="paragraph-small">class="paragraph-small"</div>
+        <hr />
+
+        <!-- Spacing -->
+        <h3>3.Spacing 直接套用../assets/scss/customize/_variables.scss變數</h3> 　
+        <div class="mx-auto p-24" style="width: 100px;">
+            請參考 https://getbootstrap.com/docs/5.3/utilities/spacing/
+        </div>
+        <div class="mx-auto p-40" style="width: 100%;">
+            <div class="ms-40 p-56" style="max-width: 200px; background-color: red;">
+            </div>
+        </div>
+
+        <!-- Radius -->
+        <h3>4.Radius暫時使用bootstrap內建</h3>
+        <div>
+            請參考 https://getbootstrap.com/docs/5.3/utilities/borders/
+        </div>
+    </div>
+    <script type="module" src="../main.js"></script>
+    <%- include('./layout/js'); -%>
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+// 自訂義顏色(依設計稿)
+//Color
+
+  $primary-50: #f7f6ef;
+  $primary-100: #ece9d5;
+  $primary-200: #dad3ae;
+  $primary-300: #c5b77f;
+  $primary-400: #b39e5c;
+  $primary-500: #a48b4e;
+  $primary-600: #8d7141;
+  $primary-700: #715737;
+  $primary-800: #5b4530;
+  $primary-900: #543f2f;
+  $primary-950: #2f2119;
+
+  $accent-50: #fff7eb;
+  $accent-100: #fee9c7;
+  $accent-200: #fcd28b;
+  $accent-300: #fbaf44;
+  $accent-400: #fa9825;
+  $accent-500: #f4740c;
+  $accent-600: #d85107;
+  $accent-700: #b3340a;
+  $accent-800: #91280f;
+  $accent-900: #78220f;
+  $accent-950: #450e03;
+
+  $grey-0: #ffffff;
+  $grey-50: #f2f2f2;
+  $grey-100: #dbdbdb;
+  $grey-200: #c4c4c4;
+  $grey-300: #ADADAD;
+  $grey-400: #969696;
+  $grey-500: #808080;
+  $grey-600: #666666;
+  $grey-700: #4D4D4D;
+  $grey-800: #333333;
+  $grey-900: #1A1A1A;
+  $grey-1000: #000000;
+
+  $alert-success-light: #EAF9CE;
+  $alert-success-normal: #468C15;
+  $alert-success-dark: #185106;
+
+  $alert-danger-light: #FCE1D3;
+  $alert-danger-normal: #D3282B;
+  $alert-danger-dark: #7A0C2B;
+
+  $alert-warning-light: #FBEEC9;
+  $alert-warning-normal: #AF6803;
+  $alert-warning-dark: #652F00;
+
+  $alert-info-light: #C8FAF2;
+  $alert-info-normal: #008CA5;
+  $alert-info-dark: #003A5F;
+
+$theme-colors: (
+  "primary-50": $primary-50,
+  "primary-100": $primary-100,
+  "primary-200": $primary-200,
+  "primary-300": $primary-300,
+  "primary-400": $primary-400,
+  "primary-500": $primary-500,
+  "primary-600": $primary-600,
+  "primary-700": $primary-700,
+  "primary-800": $primary-800,
+  "primary-900": $primary-900,
+  "primary-950": $primary-950,
+
+  "accent-50": $accent-50,
+  "accent-100": $accent-100,
+  "accent-200": $accent-200,
+  "accent-300": $accent-300,
+  "accent-400": $accent-400,
+  "accent-500": $accent-500,
+  "accent-600": $accent-600,
+  "accent-700": $accent-700,
+  "accent-800": $accent-800,
+  "accent-900": $accent-900,
+  "accent-950": $accent-950,
+
+  "grey-0": $grey-0,
+  "grey-50": $grey-50,
+  "grey-100": $grey-100,
+  "grey-200": $grey-200,
+  "grey-300": $grey-300,
+  "grey-400": $grey-400,
+  "grey-500": $grey-500,
+  "grey-600": $grey-600,
+  "grey-700": $grey-700,
+  "grey-800": $grey-800,
+  "grey-900": $grey-900,
+  "grey-1000": $grey-1000,
+
+  "alert-success-light": $alert-success-light,
+  "alert-success-normal": $alert-success-normal,
+  "alert-success-dark": $alert-success-dark,
+
+  "alert-danger-light": $alert-danger-light,
+  "alert-danger-normal": $alert-danger-normal,
+  "alert-danger-dark": $alert-danger-dark,
+
+  "alert-warning-light": $alert-warning-light,
+  "alert-warning-normal": $alert-warning-normal,
+  "alert-warning-dark": $alert-warning-dark,
+
+  "alert-info-light": $alert-info-light,
+  "alert-info-normal": $alert-info-normal,
+  "alert-info-dark": $alert-info-dark
+);
+
+// 自訂義間距(依設計稿)
+//Spacing
+$spacer: 1px;
+$spacer4:4px;//#spacing-xxs
+$spacer8:8px;//#spacing-xs
+$spacer12:12px;//#spacing-s
+$spacer16:16px;//#spacing-m
+$spacer20:20px;//#spacing-l
+$spacer24:24px;//#spacing-xl
+$spacer32:32px;//#spacing-xxl
+$spacer40:40px;//#spacing-xxxl
+$spacer48:48px;//#spacing-4xl
+$spacer56:56px;//#spacing-5xl
+$spacer64:64px;//#spacing-6xl
+$spacer120:120px;//#spacing-12xl
+$spacer234:234px;//#spacing-23xl
+$spacers: (
+  0: 0,
+  4: $spacer4 ,
+  8: $spacer8,
+  12: $spacer12,
+  16: $spacer16,
+  20: $spacer20,
+  24: $spacer24,
+  32: $spacer32,
+  40: $spacer40,
+  48: $spacer48,
+  56: $spacer56,
+  64: $spacer64,
+  120: $spacer120,
+  234: $spacer234,
+); 
+
+//自訂圓角
+//Radius
+// $border-radius-s: 1px;//#radius-s
+// $border-radius-m: 8px;//#radius-m
+// $border-radius-l: 12px;//#radius-l
+// $border-radius-xl: 16px;//#radius-xl
+// $border-radius-round: 1000px;//#radius-round
+
+
+ 
