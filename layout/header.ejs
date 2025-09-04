@@ -1,50 +1,82 @@
-<div class="container">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">首頁</a>
-                    </li>
-                   <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="about.html">關於羊蹄</a>
-                    </li>
-                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="products.html">線上商店</a>
-                    </li>
-                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="explore.html">探索風味</a>
-                    </li>
-                     
-                    <!-- <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                    </li> -->
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>
-        </div>
-    </nav>
+<div class="bg-primary-800">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- 左側 breadcrumb -->
+      <div class="col-2 col-md-4">
+        <nav class="navbar nav-padding navbar-expand-lg">
+          <!-- RWD漢堡選單  拉出選單尚未設置-->
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- breadcrumb -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ol class="breadcrumb me-auto mb-2 mb-lg-0 text-primary-50">
+              <li class="breadcrumb-item">
+                <a class="nav-link" aria-current="page" href="about.html"
+                  >關於羊蹄</a
+                >
+              </li>
+              <li class="breadcrumb-item">
+                <a
+                  class="nav-link d-inline-block"
+                  aria-current="page"
+                  href="products.html"
+                  >線上商店</a
+                >
+              </li>
+              <li class="breadcrumb-item">
+                <a
+                  class="nav-link d-inline-block"
+                  aria-current="page"
+                  href="explore.html"
+                  >探索風味</a
+                >
+              </li>
+            </ol>
+          </div>
+        </nav>
+      </div>
+
+      <!-- 中間 logo -->
+      <div class="col-6 col-md-4 text-center">
+        <a class="navbar-brand py-16 d-inline-block" href="index.html">
+          <img
+            src="/assets/images/Type=White.png"
+            alt="品牌 Logo"
+            width="240"
+            height="56" />
+        </a>
+      </div>
+
+      <!-- 右側購物車 & 會員  RWD會消失-->
+      <div class="col-4 col-md-4">
+        <nav class="d-flex justify-content-end align-items-center gap-3 header-right">
+          <a class="nav-link p-12 me-12" href="#">
+            <img
+              src="/assets/images/ic_Shopping_Cart.png"
+              alt="購物車"
+              width="26"
+              height="26" />
+          </a>
+          <a class="nav-link p-12" href="#">
+            <img
+              src="/assets/images/ic_User.png"
+              alt="會員"
+              width="24"
+              height="30" />
+          </a>
+        </nav>
+      </div>
+    </div>
+
+    
+
+  </div>
 </div>
