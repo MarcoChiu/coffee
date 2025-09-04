@@ -1,63 +1,57 @@
-.index-title {
-  font-size: 100px;
-}
-.header1{
-  height: calc(100vh - 88px);
-  background-size: cover;
-  background-image: url(/assets/images/index/banner1.png);
-  background-repeat: no-repeat;
-  background-position: center center;
-  position: relative;
-}
-.header1-text{
-  position: absolute;
-  background-color: rgba(black, 0.23);
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.index-header-icon{
-  width: 30px;
-  height: 30px;
-  color: #f7f6ef;
-}
-.vertical-line1 {
-  width: 1px;
-  height: 30vh;
-  background-color: #f7f6ef;
-}
-.vertical-line2 {
-  width: 1px;
-  height: 20vh;
-  background-color: #f7f6ef;
-}
-
-.vertical-line1 {
-  width: 1px;
-  height: 0;
-  background-color: #f7f6ef;
-  animation: lineGrow1 2s ease-out forwards;
-}
-.vertical-line2 {
-  width: 1px;
-  height: 0;
-  background-color: #f7f6ef;
-  animation: lineGrow2 2s ease-out forwards;
-}
-
-@keyframes lineGrow1 {
-  to {
-    height: 30vh;
+.index{
+  .header1{
+    height: calc(100vh - 88px);
+    background-size: cover;
+    background-image: url(/assets/images/index/banner1.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
   }
-}
-@keyframes lineGrow2 {
-  to {
+  .header1-text{
+    position: absolute;
+    background-color: rgba(black, 0.23);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .vertical-line1 {
+    width: 1px;
+    height: 30vh;
+    background-color: #f7f6ef;
+  }
+  .vertical-line2 {
+    width: 1px;
     height: 20vh;
+    background-color: #f7f6ef;
+  }
+  
+  .vertical-line1 {
+    width: 1px;
+    height: 0;
+    background-color: #f7f6ef;
+    animation: lineGrow1 2s ease-out forwards;
+  }
+  .vertical-line2 {
+    width: 1px;
+    height: 0;
+    background-color: #f7f6ef;
+    animation: lineGrow2 2s ease-out forwards;
+  }
+  
+  @keyframes lineGrow1 {
+    to {
+      height: 30vh;
+    }
+  }
+  @keyframes lineGrow2 {
+    to {
+      height: 20vh;
+    }
   }
 }
 
