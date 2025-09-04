@@ -23,9 +23,12 @@
     padding: 16px 40px;
     border-radius: 100px;
   }
+  .btn:hover{
+    background-color: $primary-200;
+  }
   .vertical-line1 {
     width: 1px;
-    height: 30vh;
+    height: 28vh;
     background-color: #f7f6ef;
   }
   .vertical-line2 {
@@ -49,7 +52,7 @@
   
   @keyframes lineGrow1 {
     to {
-      height: 30vh;
+      height: 28vh;
     }
   }
   @keyframes lineGrow2 {
