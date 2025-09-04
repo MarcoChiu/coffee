@@ -31,14 +31,10 @@
 }
 
 /* 桌機 breadcrumb 連結顏色 */
-.breadcrumb .nav-link {
-  color: #F7F6EF;
-  text-decoration: none;
-
-  &:hover {
+.header-hover:hover {
     color: #FBAF44;
-  }
 }
+
 
 
 /* 漢堡 icon 白色 */
