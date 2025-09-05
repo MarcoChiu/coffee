@@ -1,8 +1,8 @@
 <div class="bg-primary-800">
   <div class="container">
-    <div class="row align-items-center">
+    <div class="d-flex justify-content-between align-items-center py-16">
       <!-- 左側 breadcrumb -->
-      <div class=" col-md-4">
+      
         <nav class="navbar nav-padding navbar-expand-md nav-font-size">
           <!-- RWD漢堡選單  拉出選單尚未設置-->
           <button
@@ -43,22 +43,18 @@
             </ol>
           </div>
         </nav>
-      </div>
+
 
       <!-- 中間 logo -->
-      <div class=" col-md-4 py-16 text-center">
-        <a class="navbar-brand d-inline-block" href="index.html">
-          <img
-            src="/assets/images/Logo.svg"
-            alt="品牌 Logo"
-            width="240"
-            height="56" />
-        </a>
+
+      <div class="logo-wrap d-flex justify-content-center flex-grow-1">
+        <a class="navbar-brand logo d-inline-block" href="index.html"></a>
       </div>
 
+
       <!-- 右側購物車 & 會員  RWD會消失-->
-      <div class=" col-md-4">
-        <nav class="d-flex justify-content-end align-items-center gap-3">
+
+        <nav class="d-flex  align-items-center gap-3">
           <a class="nav-link p-12 me-12" href="#">
             <img
               src="/assets/images/ic_Shopping_Cart.svg"
@@ -74,7 +70,7 @@
               height="30" />
           </a>
         </nav>
-      </div>
+
     </div>
   </div>
 </div>
