@@ -12,12 +12,6 @@
     background-size: cover;
     background-position: center;
 
-    // 內推
-    padding-top: 315px;
-    padding-left: 312px;
-    padding-right: 312px;
-    padding-bottom: 552px;
-
     // 透明度 半透明遮罩
     background-color: rgba(49, 32, 0, 0.4);
     // 設置背景混和模式為相乘模式
@@ -25,11 +19,16 @@
 
     text-align: center;
 
+    // 內推
+    padding-top: 315px;
+    padding-left: 312px;
+    padding-right: 312px;
+    padding-bottom: 552px;
+
     // 字體
     .h1 {
       font-family: 'cy2', sans-serif;
       font-weight: 400;
-      
       font-size: 96px;
       line-height: 1.2;
       letter-spacing: 0.08rem;
@@ -37,14 +36,29 @@
 
     p {
       font-weight: 400;
-      
-      // font-size: 24px;
+      font-size: 18px;
       line-height: 1.5;
       letter-spacing: 0.1rem;
     }
 
-     
+    @media (max-width: 768px) {
+      padding-top: 231px;
+      padding-left: 12px;
+      padding-right: 12px;
+      padding-bottom: 300px;
+
+      .h1 {
+        font-size: 48px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
   }
+
+  //section 找尋屬於我的咖啡風味
+
 
 
 

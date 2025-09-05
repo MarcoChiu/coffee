@@ -13,16 +13,26 @@
   <%- include('./layout/header'); -%>
     <main class="explore">
 
-      
+
       <!-- 找尋屬於我的咖啡風味 -->
       <section>
         <div class="start">
-          <h1 class="h1 text-primary-50 mb-24">
+          <h1 class="h1 text-primary-50 mb-16 mb-md-24">
             找尋屬於我的咖啡風味
-          </h1>
-          <p class="text-primary-50 mb-12">親愛的貴賓，很榮幸邀請您一同參與我們舉辦的羊蹄茶會</p>
-          <p class="text-primary-50 mb-40">我們將會帶領您探索屬於您的咖啡</p>
-          <button class="btn text-primary-950 bg-primary-50 fs-16">啟程探索風味</button>
+          </h1>          
+          <!-- https://getbootstrap.com/docs/5.3/utilities/display/ -->
+          <!-- 768以下顯示 -->
+          <div class="d-none d-sm-block d-md-none">
+            <p class="text-primary-50 mb-4">親愛的貴賓</p>
+            <p class="text-primary-50 mb-4">很榮幸邀請您一同參與我們舉辦的羊蹄茶會</p>
+            <p class="text-primary-50 mb-24">我們將會帶領您探索屬於您的咖啡</p>
+          </div>
+          <!-- 768以上顯示 -->
+          <div class="d-none d-md-block">
+            <p class="text-primary-50 mb-12">親愛的貴賓，很榮幸邀請您一同參與我們舉辦的羊蹄茶會</p>
+            <p class="text-primary-50 mb-40">我們將會帶領您探索屬於您的咖啡</p>
+          </div>
+          <button class="btn2">啟程探索風味</button>
         </div>
       </section>
 
