@@ -1,0 +1,25 @@
+.btn1 {
+    padding: 12px 24px;
+    border-radius: 100px;
+    background-color: $primary-800;
+    color: $primary-50;
+    border: none;
+    text-decoration: none;
+
+    &:hover {
+        background-color: $primary-600;
+    }
+}
+
+.btn2 {
+    padding: 12px 24px;
+    border-radius: 100px;
+    background-color: $primary-50;
+    color: $primary-950;
+    border: none;
+    text-decoration: none;
+
+    &:hover {
+        background-color: $primary-200;
+    }
+}
