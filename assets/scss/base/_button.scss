@@ -23,3 +23,18 @@
         background-color: $primary-200;
     }
 }
+
+//三條岔路 優雅回頭
+.btn3 {
+    padding: 12px 24px;
+    border-radius: 100px;
+    background-color: transparent;
+    color: $primary-50;
+    border: 1px solid $primary-50;
+    text-decoration: none;
+
+    &:hover {
+        color: $primary-200;
+        border: 1px solid $primary-200;
+    }
+}

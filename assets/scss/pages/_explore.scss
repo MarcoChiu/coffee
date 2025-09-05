@@ -1,13 +1,96 @@
 .explore {
 
-  //section 找尋屬於我的咖啡風味
-  .start {
+  // 字體
+  .h1 {
+    font-family: 'cy2', sans-serif;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 1.2;
+    letter-spacing: 0.08rem;
+    text-align: center;
+  }
+
+  .h2 {
+    font-family: 'cy2', sans-serif;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 1.2;
+    letter-spacing: 0.08rem;
+    text-align: center;
+  }
+
+  @media (max-width: 768px) {
+    .h1 {
+      font-size: 48px;
+    }
+
+    .h2 {
+      font-size: 32px;
+    }
+  }
+  .content {
+    &.bg1 {
+      background-image: url(/assets/images/explore/explore-bg1.png);
+      // 推
+      padding-top: 315px;
+      padding-left: 312px;
+      padding-right: 312px;
+      padding-bottom: 552px;
+
+      p {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.5;
+        letter-spacing: 0.1rem;
+        text-align: center;
+      }
+
+      @media (max-width: 768px) {
+        padding-top: 231px;
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-bottom: 300px;
+
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+
+    &.bg2 {
+      background-image: url(/assets/images/explore/explore-bg2.png);
+      // 推
+      padding-top: 220px;
+      padding-left: 312px;
+      padding-right: 312px;
+      padding-bottom: 220px;
+
+      @media (max-width: 768px) {
+        padding-top: 40px;
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-bottom: 16px;
+      }
+    }
+
+    &.bg3 {
+      background-image: url(/assets/images/explore/explore-bg3.png);
+      // 推
+      padding-top: 220px;
+      padding-left: 312px;
+      padding-right: 312px;
+      padding-bottom: 220px;
+
+      @media (max-width: 768px) {
+        padding-top: 40px;
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-bottom: 16px;
+      }
+    }
+
     // 大小
     max-width: 100%;
-    // height: 992px;
-
-    // 背景圖
-    background-image: url(/assets/images/explore/explore-bg1.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -17,49 +100,13 @@
     // 設置背景混和模式為相乘模式
     background-blend-mode: multiply;
 
-    text-align: center;
+    .ecard {
+      background-color: $grey-0 ;
+      text-align: center;
 
-    // 內推
-    padding-top: 315px;
-    padding-left: 312px;
-    padding-right: 312px;
-    padding-bottom: 552px;
-
-    // 字體
-    .h1 {
-      font-family: 'cy2', sans-serif;
-      font-weight: 400;
-      font-size: 96px;
-      line-height: 1.2;
-      letter-spacing: 0.08rem;
-    }
-
-    p {
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 1.5;
-      letter-spacing: 0.1rem;
-    }
-
-    @media (max-width: 768px) {
-      padding-top: 231px;
-      padding-left: 12px;
-      padding-right: 12px;
-      padding-bottom: 300px;
-
-      .h1 {
-        font-size: 48px;
-      }
-
-      p {
-        font-size: 16px;
+      &:hover {
+        background-color: $primary-200 ;
       }
     }
   }
-
-  //section 找尋屬於我的咖啡風味
-
-
-
-
 }
