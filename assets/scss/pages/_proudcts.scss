@@ -2,6 +2,8 @@
   background-color:#FCFAF8;
 }
 
+
+
 .productsHeart{
   width: 0;
   height: 0;
@@ -13,15 +15,35 @@
 
 .products-heartOutlined {
   position: absolute;
-  top: 28px;
-  right: 28px;
+  top: 8px;
+  right: 8px;
   cursor: pointer;
 }
 
 .products-heartFilled{
   position: absolute;
-  top: 28px;
-  right: 28px;
+  top: 8px;
+  right: 8px;
   opacity: 0;
   cursor: pointer;
+}
+
+
+@media(min-width:1200px){
+  .products-heartOutlined {
+  position: absolute;  
+  width:36px;
+  height:36px;
+  top: 28px;
+  right: 28px;
+}
+
+.products-heartFilled{
+  position: absolute;
+  width:36px;
+  height:36px;
+  top: 28px;
+  right: 28px;
+}
+
 }
