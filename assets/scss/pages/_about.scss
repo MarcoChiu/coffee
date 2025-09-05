@@ -25,14 +25,43 @@
 }
 
 .about-position{
-  padding: 140px 312px;
+  padding: 120px 312px;
 }
 
-.horizontal{
+.about-horizontal{
   width: 80px;
   height: 1px;
   background-color: $primary-950;
   margin-top: 21px;
   margin-bottom: 21px;
   margin-left: 16px;
+}
+
+.service-title{
+  margin-top: 120px;
+  margin-bottom: 80px;
+}
+
+.book{
+  margin-bottom: 80px;
+}
+
+.booking-spacing{
+  letter-spacing: $spacer24;
+}
+.service-horizontal{
+  width: 80px;
+  height: 1px;
+  background-color: $primary-950;
+  margin-top: 13px;
+  margin-bottom: 13px;
+  margin-left: 20px;
+}
+
+.btn-pd{
+  padding: 16px 40px;
+}
+
+.booking-right .img{
+  max-width: 100%;
 }
