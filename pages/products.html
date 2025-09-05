@@ -12,58 +12,86 @@
 <body>
   <%- include('./layout/header'); -%>
 
-    <main class="container">
+    <main class="products">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item header1 active">
+            <div class="container">
+              <div class="d-flex align-items-center mb-24">
+                <span class="heading-xxxlarge text-primary-50 mb-0">限時折扣</span>
+                <div class="horizontal-line me-16"></div>
+                <span class="heading-xxxlarge text-primary-50 mb-0">全店滿千折百</span>
+              </div>
+              <p class="paragraph-xxlarge mb-4 text-primary-50">現在下單滿 NT$1,000 現折 NT$100</p>
+              <p class="paragraph-xxlarge text-primary-50">把喜歡的風味一次帶回家！</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            
+          </div>
+        </div>
+      </div>
       <h1>線上商店</h1>
 
       <!-- 卡片 Bootsrap Grid cards -->
-      <div class="container"> 
+      <div class="container">
         <div class="row row-cols-2 row-cols-md-3 gx-md-64 gy-md-40 gx-16 gy-20">
-        <div class="col">
-          <div class="card rounded-0 border-0">
-            <!-- 商品照底色 -->
-            <div class="w-100 ratio ratio-1x1 position-relative bg-primary-50">
-              <img src="/assets/images/dog.jpg" class="w-100 object-fit-cover position-absolute top-50 start-50 translate-middle" alt="...">
+          <div class="col">
+            <div class="card rounded-0 border-0">
+              <!-- 商品照底色 -->
+              <div class="w-100 ratio ratio-1x1 position-relative bg-primary-50">
+                <img src="/assets/images/dog.jpg"
+                  class="w-100 object-fit-cover position-absolute top-50 start-50 translate-middle" alt="...">
+              </div>
+              <div class="card-body text-center py-20">
+                <h5 class="card-title label-xsmall text-primary-700 mb-8">經典咖啡豆 | 輕度烘焙</h5>
+                <p class="card-text paragraph-medium text-primary-950 mb-8">肯亞 涅里區聯合處理廠</p>
+                <p class="card-text label-medium text-primary-950">$350~$600</p>
+              </div>
             </div>
-            <div class="card-body text-center py-20">
-              <h5 class="card-title label-xsmall text-primary-700 mb-8">經典咖啡豆 | 輕度烘焙</h5>
-              <p class="card-text paragraph-medium text-primary-950 mb-8">肯亞 涅里區聯合處理廠</p>
-              <p class="card-text label-medium text-primary-950">$350~$600</p>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                  content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer.</p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
-          </div>
-        </div>
-        </div>
-      </div>  
+      </div>
     </main>
     <%- include('./layout/footer'); -%>
       <script type="module" src="../main.js"></script>
-    <%- include('./layout/js'); -%>
+      <%- include('./layout/js'); -%>
 </body>
 
 </html>

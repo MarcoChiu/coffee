@@ -1,4 +1,17 @@
 .products{
-  background: #69F0AE;
-  font-size: 64px;
+  .header1{
+    height: 400px-88px;
+    background-size: cover;
+    background-image: url(/assets/images/index/banner2.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    background-color: rgba(#312000, 0.4);
+    background-blend-mode: multiply;
+  }
+  .horizontal-line{
+    width: 80px;
+    height: 1.5px;
+    background-color: #F7F6EF;
+  }
 }
