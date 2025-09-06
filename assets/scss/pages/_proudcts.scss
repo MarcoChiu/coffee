@@ -1,4 +1,49 @@
-.products{
-  background: #69F0AE;
-  font-size: 64px;
+.products-bg{
+  background-color:#FCFAF8;
+}
+
+
+
+.productsHeart{
+  width: 0;
+  height: 0;
+}
+
+.productsHeart:checked + .products-heartFilled{
+  opacity: 1;
+}
+
+.products-heartOutlined {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+}
+
+.products-heartFilled{
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+
+@media(min-width:1200px){
+  .products-heartOutlined {
+  position: absolute;  
+  width:36px;
+  height:36px;
+  top: 28px;
+  right: 28px;
+}
+
+.products-heartFilled{
+  position: absolute;
+  width:36px;
+  height:36px;
+  top: 28px;
+  right: 28px;
+}
+
 }

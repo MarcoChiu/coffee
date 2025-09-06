@@ -123,6 +123,8 @@ $spacer40:40px;//#spacing-xxxl
 $spacer48:48px;//#spacing-4xl
 $spacer56:56px;//#spacing-5xl
 $spacer64:64px;//#spacing-6xl
+$spacer120:120px;//#spacing-12xl
+$spacer234:234px;//#spacing-23xl
 $spacers: (
   0: 0,
   4: $spacer4 ,
@@ -136,6 +138,8 @@ $spacers: (
   48: $spacer48,
   56: $spacer56,
   64: $spacer64,
+  120: $spacer120,
+  234: $spacer234,
 ); 
 
 //自訂圓角
