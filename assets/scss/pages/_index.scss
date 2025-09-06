@@ -15,6 +15,16 @@
     background-position: center center;
     position: relative;
   }
+  .explore-ad{
+    height: 454px;
+    background-size: cover;
+    background-image: url(/assets/images/index/explore-ad.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 60%;
+    position: relative;
+    background-color: rgba(#5F300F, 0.35);
+    background-blend-mode: multiply;
+  }
   .header1-text{
     position: absolute;
     background-color: rgba(#312000, 0.33);
@@ -43,6 +53,16 @@
     width: 80px;
     height: 1.5px;
     background-color: #2F2119;
+  }
+  .horizontal-line2{
+    flex-grow: 1;
+    height: 1.5px;
+    background-color: #715737;
+  }
+  .horizontal-line3{
+    width: 50px;
+    height: 3px;
+    background-color: #FFFFFF;
   }
   .vertical-line1 {
     width: 1px;
@@ -100,7 +120,7 @@
     padding-top: 5vh;
     padding-bottom: 5vh;
 
-    .col-4{
+    .vh-90{
       height: 90vh;
     }
   }

@@ -1,8 +1,34 @@
+.products{
+  .header1{
+    height: 400px-88px;
+    background-size: cover;
+    background-image: url(/assets/images/index/banner2.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    background-color: rgba(#312000, 0.4);
+    background-blend-mode: multiply;
+  }
+  .header2{
+    height: 400px-88px;
+    background-size: cover;
+    background-image: url(/assets/images/products/banner1.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    background-color: rgba(#312000, 0.4);
+    background-blend-mode: multiply;
+  }
+  .horizontal-line{
+    width: 80px;
+    height: 3px;
+    background-color: #F7F6EF;
+  }
+}
+
 .products-bg{
   background-color:#FCFAF8;
 }
-
-
 
 .productsHeart{
   width: 0;
@@ -45,5 +71,4 @@
   top: 28px;
   right: 28px;
 }
-
 }
