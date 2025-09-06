@@ -14,6 +14,12 @@
   float:none;
 }
 
+@media (max-width: 767px) {
+.breadcrumb-item + .breadcrumb-item::before{
+    display: none;
+  }
+}
+
 .navbar-toggler {
   border: none;
 
@@ -50,7 +56,7 @@
   .navbar-toggler-icon {
     background-image: none;
   }
-
+//  breadcrumb 
   &::after {
     content: "";
     display: inline-block;
