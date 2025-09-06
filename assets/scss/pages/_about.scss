@@ -1,5 +1,5 @@
 .about-1{
-  height: calc(100vh - 400px);
+  height: 400px;
   background-size: cover;
   background-image: url(/assets/images/index/banner1.png);
   background-repeat: no-repeat;
@@ -9,7 +9,7 @@
 
 .about-bg-color{
   background-color: rgba(#3120003B, 50%);  
-  height: calc(100vh - 400px);
+  height: 400px;
 }
 
 .about-2{
@@ -23,6 +23,14 @@
   // padding: 120px 312px 120px 312px;
 }
 
+.m-120{
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+.mt-140{
+  margin-top: 140px;
+}
 
 .about-horizontal{
   width: 80px;

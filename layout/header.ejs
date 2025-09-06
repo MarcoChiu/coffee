@@ -1,8 +1,8 @@
 <div class="bg-primary-800">
   <div class="container">
-    <div class="d-flex justify-content-between align-items-center py-16">
+    <div class="row align-items-center">
       <!-- 左側 breadcrumb -->
-      
+      <div class="col-2 col-md-4">
         <nav class="navbar nav-padding navbar-expand-md nav-font-size">
           <!-- RWD漢堡選單  拉出選單尚未設置-->
           <button
@@ -13,9 +13,10 @@
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
           </button>
           <!-- breadcrumb -->
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent py-18">
             <ol class="breadcrumb me-auto mb-2 mb-lg-0 color-primary-50">
               <li class="breadcrumb-item header-hover">
                 <a
@@ -44,18 +45,18 @@
             </ol>
           </div>
         </nav>
-
-
-      <!-- 中間 logo -->
-
-      <div class="logo-wrap d-flex justify-content-center flex-grow-1">
-        <a class="navbar-brand logo d-inline-block" href="index.html"></a>
       </div>
 
+      <!-- 中間 logo -->
+      <div class="col-6 col-md-4 text-center">
+        <div class="logo-wrap d-flex justify-content-center flex-grow-1 py-16">
+          <a class="navbar-brand logo d-inline-block" href="index.html"></a>
+        </div>
+      </div>
 
       <!-- 右側購物車 & 會員  RWD會消失-->
-
-        <nav class="d-flex  align-items-center gap-3">
+      <div class="col-4 col-md-4">
+        <nav class="d-flex align-items-center gap-3">
           <a class="nav-link p-12 me-12" href="#">
             <img
               src="/assets/images/ic_Shopping_Cart.svg"
@@ -71,7 +72,7 @@
               height="30" />
           </a>
         </nav>
-
+      </div>
     </div>
   </div>
 </div>
