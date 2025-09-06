@@ -9,9 +9,19 @@
     background-color: rgba(#312000, 0.4);
     background-blend-mode: multiply;
   }
+  .header2{
+    height: 400px-88px;
+    background-size: cover;
+    background-image: url(/assets/images/products/banner1.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    background-color: rgba(#312000, 0.4);
+    background-blend-mode: multiply;
+  }
   .horizontal-line{
     width: 80px;
-    height: 1.5px;
+    height: 3px;
     background-color: #F7F6EF;
   }
 }
