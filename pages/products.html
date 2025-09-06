@@ -11,10 +11,7 @@
 
 <body class="products-bg">
   <%- include('./layout/header'); -%>
-
-    <main class="container-xl">
-      <h1>線上商店</h1> 
-      
+      <!-- 輪播 -->
       <div class="products">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-indicators">
@@ -48,10 +45,35 @@
             </div>
           </div>
         </div>
-      </div>      
-      
+      </div>
+
+    <main class="container-xl">
+      <!-- 商品NAV -->
+      <div class="products-nav d-flex justify-content-between mb-md-40">
+        <ul class="nav nav-underline">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Active</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">全部商品</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+        </ul>
+
+        <div class="search my-12 position-relative">
+            
+            <input type="text" class="form-control paragraph-medium rounded-0 ps-52" id="search" placeholder="搜尋商品" aria-label="搜尋商品">
+
+            <svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="position-absolute top-50 start-0 translate-middle-y"><path d="M10 2.5a7.5 7.5 0 0 1 5.964 12.048l4.743 4.745a1 1 0 0 1-1.32 1.497l-.094-.083-4.745-4.743A7.5 7.5 0 1 1 10 2.5Zm0 2a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11Z" fill="#ADADAD"/></svg>
+            <!-- <button class="btn btn-outline-secondary" type="button" id="button-addon2">O-</button> -->
+        </div>
+
+      </div>
+
       <!-- 卡片 Bootsrap Grid cards -->
-      <div class="container-xl"> 
+      <div class="mb-20 mb-md-40"> 
         <div class="row row-cols-2 row-cols-md-3 gx-md-64 gy-md-40 gx-16 gy-20">
           <div class="col">
             <div class="card rounded-0 border-0">
@@ -59,9 +81,9 @@
               <div class="w-100 ratio ratio-1x1 position-relative bg-primary-50">
 
                 <!-- 加入最愛按鈕label -->
-                <label for="heart" class="z-3">
+                <label for="whiteCoffeeCup" class="z-3">
                                   
-                  <input type="checkbox" id="heart" class="productsHeart">
+                  <input type="checkbox" id="whiteCoffeeCup" class="productsHeart">
         
                   <!-- 實心愛心 -->
                   <svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="products-heartFilled">
@@ -84,15 +106,16 @@
                 <p class="card-text label-medium text-primary-950">$350~$600</p>
               </div>
             </div>
-
+          </div>  
+          <div class="col">
             <div class="card rounded-0 border-0">
               <!-- 商品照與底色 -->
               <div class="w-100 ratio ratio-1x1 position-relative bg-primary-50">
 
                 <!-- 加入最愛按鈕label -->
-                <label for="heart" class="z-3">
+                <label for="greenCoffeeCup" class="z-3">
                                   
-                  <input type="checkbox" id="heart" class="productsHeart">
+                  <input type="checkbox" id="greenCoffeeCup" class="productsHeart">
         
                   <!-- 實心愛心 -->
                   <svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="products-heartFilled">
@@ -106,7 +129,7 @@
                   
                 </label>
 
-                <img src="/assets/images/productsImg/whiteCoffeeCup.png" class="w-100 object-fit-cover position-absolute top-50 start-50 translate-middle" alt="...">
+                <img src="/assets/images/productsImg/greenCoffeeCup.png" class="w-100 object-fit-cover position-absolute top-50 start-50 translate-middle" alt="...">
               </div>
 
               <div class="card-body products-bg text-center py-20">
@@ -119,9 +142,30 @@
         </div> 
       </div>
 
+      <!-- 導覽頁碼 -->
+      <div class="d-flex justify-content-center mb-12">
+        <nav aria-label="Page navigation example">
+          <ul class="pagination mb-0">
+            <li class="page-item mx-6">
+              <a class="page-link products-pagination paragraph-large py-4 px-8" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li class="page-item mx-6"><a class="page-link products-pagination paragraph-large py-4 px-8" href="#">1</a></li>
+            <li class="page-item mx-6"><a class="page-link products-pagination paragraph-large py-4 px-8" href="#">2</a></li>
+            <li class="page-item mx-6">
+              <a class="page-link products-pagination paragraph-large py-4 px-8" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
 
-
-
+<!-- <div class="card h-100">
+  <div class="card-img-top"></div>
+  <div class="card-body flex-grow-1"></div>
+</div> -->
       
     </main>
     <%- include('./layout/footer'); -%>

@@ -30,6 +30,22 @@
   background-color:#FCFAF8;
 }
 
+.products-nav a{
+  color: grey-500;
+}
+
+.products-nav .nav-link:checked{
+  color: white;
+}
+
+// .products-nav .nav-link:visited{
+//   color:black;
+// }
+
+.search{
+  width: 298px;
+}
+
 .productsHeart{
   width: 0;
   height: 0;
@@ -54,6 +70,23 @@
   cursor: pointer;
 }
 
+.products-pagination{
+  background-color: #FCFAF8;
+  color: $primary-950;
+  border: 0px;
+  border-radius: 4px;
+}
+
+.products-pagination:hover{
+  background-color: $primary-700;
+  color: white;
+}
+
+.products-pagination:focus{
+  background-color: $primary-700;
+  color: white;
+  box-shadow: none;
+}
 
 @media(min-width:1200px){
   .products-heartOutlined {

@@ -113,6 +113,7 @@ $theme-colors: (
 //Spacing
 $spacer: 1px;
 $spacer4:4px;//#spacing-xxs
+$spacer6:6px;
 $spacer8:8px;//#spacing-xs
 $spacer12:12px;//#spacing-s
 $spacer16:16px;//#spacing-m
@@ -121,6 +122,7 @@ $spacer24:24px;//#spacing-xl
 $spacer32:32px;//#spacing-xxl
 $spacer40:40px;//#spacing-xxxl
 $spacer48:48px;//#spacing-4xl
+$spacer52:52px;
 $spacer56:56px;//#spacing-5xl
 $spacer64:64px;//#spacing-6xl
 $spacer82:82px;//#spacing-8xl
@@ -130,6 +132,7 @@ $spacer234:234px;//#spacing-23xl
 $spacers: (
   0: 0,
   4: $spacer4 ,
+  6: $spacer6,
   8: $spacer8,
   12: $spacer12,
   16: $spacer16,
@@ -138,6 +141,7 @@ $spacers: (
   32: $spacer32,
   40: $spacer40,
   48: $spacer48,
+  52: $spacer52,
   56: $spacer56,
   64: $spacer64,
   82: $spacer82,
