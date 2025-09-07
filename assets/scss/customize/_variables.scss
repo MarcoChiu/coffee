@@ -116,11 +116,13 @@ $spacer4:4px;//#spacing-xxs
 $spacer6:6px;
 $spacer8:8px;//#spacing-xs
 $spacer12:12px;//#spacing-s
+$spacer15:15px;
 $spacer16:16px;//#spacing-m
 $spacer20:20px;//#spacing-l
 $spacer24:24px;//#spacing-xl
 $spacer32:32px;//#spacing-xxl
 $spacer40:40px;//#spacing-xxxl
+$spacer44:44px;
 $spacer48:48px;//#spacing-4xl
 $spacer52:52px;
 $spacer56:56px;//#spacing-5xl
@@ -135,11 +137,13 @@ $spacers: (
   6: $spacer6,
   8: $spacer8,
   12: $spacer12,
+  15: $spacer15,
   16: $spacer16,
   20: $spacer20,
   24: $spacer24,
   32: $spacer32,
   40: $spacer40,
+  44: $spacer44,
   48: $spacer48,
   52: $spacer52,
   56: $spacer56,
