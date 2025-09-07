@@ -19,6 +19,14 @@
     text-align: center;
   }
 
+  p {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.5;
+    letter-spacing: 0.1rem;
+    text-align: center;
+  }
+
   @media (max-width: 768px) {
     .h1 {
       font-size: 48px;
@@ -27,7 +35,12 @@
     .h2 {
       font-size: 32px;
     }
+
+    p {
+      font-size: 16px;
+    }
   }
+
   .content {
     &.bg1 {
       background-image: url(/assets/images/explore/explore-bg1.png);
@@ -37,23 +50,14 @@
       padding-right: 312px;
       padding-bottom: 552px;
 
-      p {
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 1.5;
-        letter-spacing: 0.1rem;
-        text-align: center;
-      }
+      // 透明度 半透明遮罩
+      background-color: rgba(49, 32, 0, 0.4);
 
       @media (max-width: 768px) {
-        padding-top: 231px;
+        padding-top: 297px;
         padding-left: 12px;
         padding-right: 12px;
-        padding-bottom: 300px;
-
-        p {
-          font-size: 16px;
-        }
+        padding-bottom: 297px;
       }
     }
 
@@ -65,11 +69,14 @@
       padding-right: 312px;
       padding-bottom: 220px;
 
+      // 透明度 半透明遮罩
+      background-color: rgba(49, 32, 0, 0.55);
+
       @media (max-width: 768px) {
         padding-top: 40px;
-        padding-left: 24px;
-        padding-right: 24px;
-        padding-bottom: 16px;
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-bottom: 109px;
       }
     }
 
@@ -81,28 +88,59 @@
       padding-right: 312px;
       padding-bottom: 220px;
 
+      // 透明度 半透明遮罩
+      background-color: rgba(49, 32, 0, 0.3);
+
       @media (max-width: 768px) {
         padding-top: 40px;
-        padding-left: 24px;
-        padding-right: 24px;
-        padding-bottom: 16px;
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-bottom: 109px;
       }
     }
 
-     &.bg4 {
-      background-image: url(/assets/images/explore/explore-bg2.png);
+    &.bg4 {
+      background-image: url(/assets/images/explore/explore-bg4.png);
       // 推
-      padding-top: 220px;
+      padding-top: 165px;
       padding-left: 312px;
       padding-right: 312px;
-      padding-bottom: 220px;
+      padding-bottom: 165px;
+
+      // 透明度 半透明遮罩
+      background-color: rgba(49, 32, 0, 0.75);
 
       @media (max-width: 768px) {
         padding-top: 40px;
-        padding-left: 24px;
-        padding-right: 24px;
-        padding-bottom: 16px;
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-bottom: 109px;
       }
+
+      .coffee-type {
+        font-weight: 700;       
+        font-size: 14px;
+        line-height: 1.5;
+        letter-spacing: 2px;
+        text-align: center;
+      }
+
+      .coffee-name {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 1.5;
+        letter-spacing: 2px;
+        text-align: center;
+      }
+
+      .coffee-price {
+        font-weight: 700;       
+        font-size: 18px;
+        line-height: 1.5;
+        letter-spacing: 2px;
+        text-align: center;
+      }
+
     }
 
     // 大小
@@ -111,12 +149,10 @@
     background-size: cover;
     background-position: center;
 
-    // 透明度 半透明遮罩
-    background-color: rgba(49, 32, 0, 0.4);
     // 設置背景混和模式為相乘模式
     background-blend-mode: multiply;
 
-    .ecard {
+    .choosecard {
       background-color: $grey-0 ;
       text-align: center;
 
@@ -124,5 +160,7 @@
         background-color: $primary-200 ;
       }
     }
+
+
   }
 }
