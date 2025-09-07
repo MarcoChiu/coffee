@@ -112,8 +112,8 @@
       }
     }
 
-    &.bg3-1 {
-      background-image: url(/assets/images/explore/explore-bg3-1.png);
+    &.bg4 {
+      background-image: url(/assets/images/explore/explore-bg4.png);
       // 推
       padding-top: 220px;
       padding-left: 312px;
@@ -121,7 +121,7 @@
       padding-bottom: 220px;
 
       // 透明度 半透明遮罩
-      background-color: rgba(49, 32, 0, 0.3);
+      background-color: rgba(49, 32, 0, 0.75);
 
       @media (max-width: 768px) {
         padding-top: 40px;
@@ -131,8 +131,8 @@
       }
     }
 
-    &.bg4 {
-      background-image: url(/assets/images/explore/explore-bg4.png);
+    &.bg5 {
+      background-image: url(/assets/images/explore/explore-bg5.png);
       // 推
       padding-top: 165px;
       padding-left: 312px;
