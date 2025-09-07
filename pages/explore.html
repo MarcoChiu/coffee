@@ -6,7 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title></title>
-  <link rel="preload" href="/assets/fonts/ChenYuluoyan-2.0-Thin.woff2" as="font" type="font/woff2" crossorigin="anonymous" fetchpriority="high" />
+  <link rel="preload" href="/assets/fonts/ChenYuluoyan-2.0-Thin.woff2" as="font" type="font/woff2"
+    crossorigin="anonymous" fetchpriority="high" />
   <%- include('./layout/style'); -%>
 </head>
 
@@ -21,14 +22,14 @@
             找尋屬於我的咖啡風味
           </h1>
           <!-- https://getbootstrap.com/docs/5.3/utilities/display/ -->
-          <!-- 768以下顯示 -->
-          <div class="d-block d-sm-none">
+          <!-- 手機顯示 -->
+          <div class="d-block d-md-none">
             <p class="text-primary-50 mb-4">親愛的貴賓</p>
             <p class="text-primary-50 mb-4">很榮幸邀請您一同參與我們舉辦的羊蹄茶會</p>
             <p class="text-primary-50 mb-24">我們將會帶領您探索屬於您的咖啡</p>
           </div>
-          <!-- 768以上顯示 -->
-          <div class="d-none d-sm-block">
+          <!-- 電腦顯示 -->
+          <div class="d-none d-md-block">
             <p class="text-primary-50 mb-12">親愛的貴賓，很榮幸邀請您一同參與我們舉辦的羊蹄茶會</p>
             <p class="text-primary-50 mb-40">我們將會帶領您探索屬於您的咖啡</p>
           </div>
@@ -50,7 +51,7 @@
 
           <div class="row">
             <div class="col-12 col-md-4">
-              <div class="ecard rounded">
+              <div class="choosecard rounded">
                 <img class="rounded p-8 p-md-12" src="/assets/images/explore/explore-threeroad1.png"
                   alt="帶有酸甜花果香味的道路" />
                 <p class="text-primary-950 p-8 p-md-16">帶有酸甜花果香味的道路</p>
@@ -58,7 +59,7 @@
             </div>
 
             <div class="col-12 col-md-4">
-              <div class="ecard rounded">
+              <div class="choosecard rounded">
                 <img class="rounded p-8 p-md-12" src="/assets/images/explore/explore-threeroad2.png"
                   alt="溫和堅果巧克力味的道路" />
                 <p class="text-primary-950 p-8 p-md-16">溫和堅果巧克力味的道路</p>
@@ -66,7 +67,7 @@
             </div>
 
             <div class="col-12 col-md-4">
-              <div class="ecard rounded">
+              <div class="choosecard rounded">
                 <img class="rounded p-8 p-md-12" src="/assets/images/explore/explore-threeroad3.png"
                   alt="濃郁草本優雅香氣的道路" />
                 <p class="text-primary-950 p-8 p-md-16">濃郁草本優雅香氣的道路</p>
@@ -92,21 +93,21 @@
 
           <div class="row">
             <div class="col-12 col-md-4">
-              <div class="ecard rounded">
+              <div class="choosecard rounded">
                 <img class="rounded p-8 p-md-12" src="/assets/images/explore/explore-cake2-1.png" alt="柑橘磅蛋糕" />
                 <p class="text-primary-950 p-8 p-md-16">柑橘磅蛋糕</p>
               </div>
             </div>
 
             <div class="col-12 col-md-4">
-              <div class="ecard rounded">
+              <div class="choosecard rounded">
                 <img class="rounded p-8 p-md-12" src="/assets/images/explore/explore-cake2-2.png" alt="法式芒果軟糖" />
                 <p class="text-primary-950 p-8 p-md-16">法式芒果軟糖</p>
               </div>
             </div>
 
             <div class="col-12 col-md-4">
-              <div class="ecard rounded">
+              <div class="choosecard rounded">
                 <img class="rounded p-8 p-md-12" src="/assets/images/explore/explore-cake2-3.png" alt="黑醋栗奶油蛋糕" />
                 <p class="text-primary-950 p-8 p-md-16">黑醋栗奶油蛋糕</p>
               </div>
@@ -130,13 +131,13 @@
 
           <div class="row">
             <div class="col-12 col-md-6">
-              <div class="ecard rounded">
+              <div class="choosecard rounded">
                 <img class="rounded p-8 p-md-12" src="/assets/images/explore/explore-cake2-1.png" alt="白桃果凍" />
                 <p class="text-primary-950 p-8 p-md-16">白桃果凍</p>
               </div>
             </div>
             <div class="col-12 col-md-6">
-              <div class="ecard rounded">
+              <div class="choosecard rounded">
                 <img class="rounded p-8 p-md-12" src="/assets/images/explore/explore-cake2-2.png" alt="蜂蜜杯子蛋糕" />
                 <p class="text-primary-950 p-8 p-md-16">蜂蜜杯子蛋糕</p>
               </div>
@@ -160,28 +161,28 @@
 
           <div class="row">
             <div class="col-12 col-md-3">
-              <div class="ecard rounded">
+              <div class="choosecard rounded">
                 <img class="rounded p-8 p-md-12" src="/assets/images/explore/explore-cake2-1.png" alt="李子核桃塔" />
                 <p class="text-primary-950 p-8 p-md-16">李子核桃塔</p>
               </div>
             </div>
 
             <div class="col-12 col-md-3">
-              <div class="ecard rounded">
+              <div class="choosecard rounded">
                 <img class="rounded p-8 p-md-12" src="/assets/images/explore/explore-cake2-2.png" alt="萊姆夾心餅乾" />
                 <p class="text-primary-950 p-8 p-md-16">萊姆夾心餅乾</p>
               </div>
             </div>
 
             <div class="col-12 col-md-3">
-              <div class="ecard rounded">
+              <div class="choosecard rounded">
                 <img class="rounded p-8 p-md-12" src="/assets/images/explore/explore-cake2-3.png" alt="櫻桃核果磅蛋糕" />
                 <p class="text-primary-950 p-8 p-md-16">櫻桃核果磅蛋糕</p>
               </div>
             </div>
 
             <div class="col-12 col-md-3">
-              <div class="ecard rounded">
+              <div class="choosecard rounded">
                 <img class="rounded p-8 p-md-12" src="/assets/images/explore/explore-cake2-4.png" alt="柑橘磅蛋糕" />
                 <p class="text-primary-950 p-8 p-md-16">柑橘磅蛋糕</p>
               </div>
@@ -204,14 +205,14 @@
 
           <div class="row">
             <div class="col-12 col-md-6">
-              <div class="ecard rounded">
+              <div class="choosecard rounded">
                 <img class="rounded p-8 p-md-12" src="/assets/images/explore/explore-cake2-1.png" alt="黑糖榛果塔" />
                 <p class="text-primary-950 p-8 p-md-16">黑糖榛果塔</p>
               </div>
             </div>
 
             <div class="col-12 col-md-6">
-              <div class="ecard rounded">
+              <div class="choosecard rounded">
                 <img class="rounded p-8 p-md-12" src="/assets/images/explore/explore-cake2-2.png" alt="蜂蜜紅茶餅乾" />
                 <p class="text-primary-950 p-8 p-md-16">蜂蜜紅茶餅乾</p>
               </div>
@@ -227,8 +228,61 @@
 
       <!-- ############################### -->
 
-      
+      <!-- 茶會到了尾聲 -->
+      <section>
+        <div class="content bg4">
 
+          <!-- 手機顯示 -->
+          <div class="d-block d-md-none">
+            <p class="text-primary-50 mb-4">茶會到了尾聲，感謝您今日蒞臨羊蹄茶會</p>
+            <p class="text-primary-50 mb-16">最後為您獻上最適合的咖啡風味</p>
+            <h2 class="h1 text-primary-50 mb-16">祕魯 薇拉瑞卡<br>安迪亞斯莊園</h2>
+            <div class="rounded bg-white py-20 mb-16">
+              <img class="rounded" src="/assets/images/explore/explore-coffee-1.png" alt="祕魯 薇拉瑞卡 安迪亞斯莊園" />
+              <div class="coffee-type text-primary-700 mb-8">經典咖啡豆 | 中度烘焙</div>
+              <div class="coffee-name text-primary-950 mb-8">祕魯 薇拉瑞卡 安迪亞斯莊園</div>
+              <div class="coffee-price  text-primary-950">$280~$600</div>
+            </div>
+            <p class="text-primary-50 mb-24">歡迎您填寫線上預約至本店試喝~~</p>
+            <div class="text-center">
+              <button class="btn3 me-64">重新探索</button>
+              <button class="btn2">預約試喝</button>
+            </div>
+          </div>
+
+
+          <!-- 電腦顯示 -->
+          <div class="d-none d-md-block">
+
+            <div class="row">
+              <!-- 左邊 -->
+              <div class="col-7">
+                <p class="text-primary-50 mt-82 mb-12">茶會到了尾聲，感謝您今日蒞臨羊蹄茶會</p>
+                <p class="text-primary-50 mb-24">最後為您獻上最適合的咖啡風味</p>
+                <h2 class="h1 text-primary-50 mb-24">祕魯 薇拉瑞卡<br>安迪亞斯莊園</h2>
+                <p class="text-primary-50 mb-40">歡迎您填寫線上預約至本店試喝~~</p>
+                <div class="text-center">
+                  <button class="btn3 me-64">重新探索</button>
+                  <button class="btn2">預約試喝</button>
+                </div>
+              </div>
+
+              <!-- 右邊 -->
+              <div class="col-5">
+                <div class="rounded bg-white py-20">
+                  <img class="rounded" src="/assets/images/explore/explore-coffee-1.png" alt="祕魯 薇拉瑞卡 安迪亞斯莊園" />
+                  <div class="coffee-type text-primary-700 mb-8">經典咖啡豆 | 中度烘焙</div>
+                  <div class="coffee-name text-primary-950 mb-8">祕魯 薇拉瑞卡 安迪亞斯莊園</div>
+                  <div class="coffee-price  text-primary-950">$280~$600</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+      <!-- 茶會到了尾聲 end -->
     </main>
     <%- include('./layout/footer'); -%>
       <script type="module" src="../main.js"></script>
@@ -236,3 +290,42 @@
 </body>
 
 </html>
+
+
+<!-- <section>
+        <div class="content bg4">
+
+          <div class="row flex-md-row-reverse">
+
+             
+            <div class="col-12 col-md-6  mb-40">
+              <div class="rounded border bg-white">
+                <img class="rounded p-8 p-md-12" src="/assets/images/explore/explore-cake2-2.png"
+                  alt="衣索比亞 谷吉 郝瑪聯合處理廠" />
+                <p class="fs-4 text-center text-primary-950 p-8 p-md-16">衣索比亞 谷吉 郝瑪聯合處理廠</p>
+              </div>
+            </div>
+
+            
+            <div class="col-12 col-md-6">
+              <p class="fs-5 text-center text-primary-50 mb-16 mb-md-40">
+                茶會到了尾聲，感謝您今日蒞臨羊蹄茶會，最後為您獻上最適合的咖啡風味
+              </p>
+              <h2 class="h2 text-primary-50 mb-16 mb-md-40">
+                衣索比亞 谷吉 <br>
+                郝瑪聯合處理廠
+              </h2>
+              <p class="fs-5 text-center text-primary-50 mb-16 mb-md-40">
+                歡迎您填寫線上預約治本點試喝
+              </p>
+              <div class="text-center mb-16 mb-md-40">
+                <button class="btn2">預約試喝</button>
+              </div>
+              <div class="text-center ">
+                <button class="btn3">重新探索</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section> -->
