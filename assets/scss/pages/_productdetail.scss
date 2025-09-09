@@ -1,4 +1,18 @@
-.product{
-  background: #69F0AE;
-  font-size: 64px;
+.breadcrumb-item + .breadcrumb-item::before{
+  color: $grey-300;
+  padding-left: 12px;
+  padding-right: 12px;
 }
+
+/* 桌機 breadcrumb 連結顏色 */
+.breadcrumb .nav-link {
+  color: $grey-300;
+  text-decoration: none;
+
+  &:hover {
+    color: #FBAF44;
+  }
+}
+
+.breadcrumb-item.active { 
+  color:$primary-900; }
