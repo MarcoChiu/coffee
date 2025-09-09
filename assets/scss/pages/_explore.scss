@@ -60,7 +60,7 @@
 
   .content {
     &.bg1 {
-      background-image: url(/assets/images/explore/explore-bg1.png);
+      background-image: url(/images/explore/explore-bg1.png);
       // 推
       padding-top: 315px;
       padding-left: 312px;
@@ -79,7 +79,7 @@
     }
 
     &.bg2 {
-      background-image: url(/assets/images/explore/explore-bg2.png);
+      background-image: url(/images/explore/explore-bg2.png);
       // 推
       padding-top: 220px;
       padding-left: 312px;
@@ -98,7 +98,7 @@
     }
 
     &.bg3 {
-      background-image: url(/assets/images/explore/explore-bg3.png);
+      background-image: url(/images/explore/explore-bg3.png);
       // 推
       padding-top: 220px;
       padding-left: 312px;
@@ -117,7 +117,7 @@
     }
 
     &.bg4 {
-      background-image: url(/assets/images/explore/explore-bg4.png);
+      background-image: url(/images/explore/explore-bg4.png);
       // 推
       padding-top: 220px;
       padding-left: 312px;
@@ -136,7 +136,7 @@
     }
 
     &.bg5 {
-      background-image: url(/assets/images/explore/explore-bg5.png);
+      background-image: url(/images/explore/explore-bg5.png);
       // 推
       padding-top: 165px;
       padding-left: 312px;
@@ -150,7 +150,7 @@
         padding-top: 40px;
         padding-left: 12px;
         padding-right: 12px;
-        padding-bottom: 109px;        
+        padding-bottom: 109px;
       }
 
       .coffee-type {
@@ -178,6 +178,14 @@
         letter-spacing: 2px;
         text-align: center;
         color: $primary-950 ;
+      }
+
+      .productcard {
+        background-color: $grey-0;
+
+        &:hover {
+          background-color: $primary-50 ;
+        }
       }
     }
 
