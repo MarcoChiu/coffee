@@ -1,10 +1,22 @@
+html,
 body {
+  height: 100%;
+  margin: 0;
+}
+
+.scroll {
+  scrollbar-width: none;
+  height: 100%;
   overflow-y: scroll;
-  scroll-behavior: smooth;
+  /* 必須可滾動 */
   scroll-snap-type: y mandatory;
-  .index{
-    scroll-snap-align: start;
-  }
+  /* 垂直方向強制對齊 */
+}
+
+.index {
+  /* 每個 section 填滿螢幕 */
+  scroll-snap-align: start;
+  /* 對齊容器的開頭 */
 }
 
 .index {
@@ -26,17 +38,6 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     position: relative;
-  }
-
-  .explore-ad {
-    height: 454px;
-    background-size: cover;
-    background-image: url(/images/index/explore-ad.jpg);
-    background-repeat: no-repeat;
-    background-position: 50% 60%;
-    position: relative;
-    background-color: rgba(#5F300F, 0.35);
-    background-blend-mode: multiply;
   }
 
   .header1-text {
@@ -75,12 +76,6 @@ body {
     flex-grow: 1;
     height: 1.5px;
     background-color: #715737;
-  }
-
-  .horizontal-line3 {
-    width: 50px;
-    height: 3px;
-    background-color: #FFFFFF;
   }
 
   .vertical-line1 {
@@ -145,9 +140,36 @@ body {
     padding-top: 10vh;
     padding-bottom: 10vh;
 
-    .vh-90 {
+    .vh-80 {
       height: 80vh;
     }
+  }
+}
+
+.index2 {
+  background-color: #FCFAF8;
+
+  .explore-ad {
+    height: 454px;
+    background-size: cover;
+    background-image: url(/images/index/explore-ad.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 60%;
+    position: relative;
+    background-color: rgba(#5F300F, 0.35);
+    background-blend-mode: multiply;
+  }
+
+  .horizontal-line3 {
+    width: 50px;
+    height: 3px;
+    background-color: #FFFFFF;
+  }
+
+  .horizontal-line2 {
+    flex-grow: 1;
+    height: 1.5px;
+    background-color: #715737;
   }
 
   .feedback {
