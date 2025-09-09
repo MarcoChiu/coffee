@@ -2,7 +2,7 @@
   .header1{
     height: 400px-88px;
     background-size: cover;
-    background-image: url(/assets/images/index/banner2.png);
+    background-image: url(/images/index/banner2.png);
     background-repeat: no-repeat;
     background-position: center center;
     position: relative;
@@ -12,7 +12,7 @@
   .header2{
     height: 400px-88px;
     background-size: cover;
-    background-image: url(/assets/images/products/banner1.png);
+    background-image: url(/images/products/banner1.png);
     background-repeat: no-repeat;
     background-position: center center;
     position: relative;
@@ -30,23 +30,30 @@
   background-color:#FCFAF8;
 }
 
+.products-nav{
+  position: sticky;
+  top: 0px;
+  z-index: 3;
+  background-color:#FCFAF8;
 
+  .nav-underline{
+    gap: 0px;
+  }
 
-.products-nav .nav-underline{
-  gap: 0px;
+  .nav-link{
+    color: $grey-500;
+  }
+
+  a:hover,:focus{
+    color: $primary-800;
+    border-bottom-width: 2px;
+  }
 }
 
-// .products-nav a{
-//   color: grey-500;
-// }
-
-// .products-nav .nav-link:checked{
-//   color: white;
-// }
-
-// .products-nav .nav-link:visited{
-//   color:black;
-// }
+.nav-underline .nav-link.active{
+  color: $grey-500;
+  font-weight: 400;
+}
 
 .products-link .card{
   border: 0px;
@@ -54,24 +61,43 @@
   overflow: hidden;
 }
 
-.products-link .card:hover{
-  border: $primary-100 1px solid;
-  border-radius: 16px;
+// 平板以下不用hover
+// .products-link .card:hover{
+//   border: $primary-100 1px solid;
+//   border-radius: 16px;
   
-  .card-img-top{
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-  }
+//   .card-img-top{
+//     border-top-left-radius: 16px;
+//     border-top-right-radius: 16px;
+//     border-bottom-left-radius: 0px;
+//     border-bottom-right-radius: 0px;
+//   }
 
-  .card-body{
-    background-color: $primary-50;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 16px;
-    border-bottom-right-radius: 16px;
-  }
+//   .card-body{
+//     background-color: $primary-50;
+//     border-top-left-radius: 0px;
+//     border-top-right-radius: 0px;
+//     border-bottom-left-radius: 16px;
+//     border-bottom-right-radius: 16px;
+//   }
+// }
+
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    background: url(/public/images/icon/ic_fluent_dismiss_24_regular.png) no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+
+input[type="search"]::-webkit-search-cancel-button:hover {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    background: url(/public/images/icon/ic_fluent_dismiss_24_regular.png) no-repeat;
+    background-size: contain;
+    cursor: pointer;
 }
 
 .ratio>*{
@@ -101,9 +127,10 @@
   opacity: 1;
 }
 
-.productsHeart:hover + .products-heartFilled{
-  opacity: 1;
-}
+// 平板以下不用hover
+// .productsHeart:hover + .products-heartFilled{
+//   opacity: 1;
+// }
 
 .products-heartOutlined {
   position: absolute;
@@ -116,6 +143,20 @@
   opacity: 0;
   cursor: pointer;
   z-index: 3;
+}
+
+.page-link.active, .active > .page-link.products-pagination{
+  background-color: $primary-700;
+}
+
+.page-item:first-child .page-link.products-pagination{
+  border-top-left-radius:4px;
+  border-bottom-left-radius:4px;
+}
+
+.page-item:last-child .page-link.products-pagination{
+  border-top-right-radius:4px;
+  border-bottom-right-radius:4px;
 }
 
 .products-pagination{
@@ -137,6 +178,10 @@
   background-color: $primary-700;
   color: white;
   box-shadow: none;
+}
+
+.ellipsis{
+  user-select: none;
 }
 
 @media(min-width:1200px){
@@ -192,4 +237,28 @@
     line-height: 1.5;
     letter-spacing: 2px;
   }
+
+  .productsHeart:hover + .products-heartFilled{
+  opacity: 1;
+}
+
+.products-link .card:hover{
+  border: $primary-100 1px solid;
+  border-radius: 16px;
+  
+  .card-img-top{
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  .card-body{
+    background-color: $primary-50;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+  }
+}
 }
