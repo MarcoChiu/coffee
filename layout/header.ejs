@@ -3,7 +3,7 @@
     <div class="row align-items-center">
       <!-- 左側 breadcrumb -->
       <div class="col-2 col-md-4">
-        <nav class="navbar nav-padding navbar-expand-lg">
+        <nav class="navbar navbar-dark nav-padding navbar-expand-md nav-font-size">
           <!-- RWD漢堡選單  拉出選單尚未設置-->
           <button
             class="navbar-toggler border-0"
@@ -16,58 +16,57 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <!-- breadcrumb -->
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ol class="breadcrumb me-auto mb-2 mb-lg-0 text-primary-50">
-              <li class="breadcrumb-item">
-                <a class="nav-link" aria-current="page" href="about.html"
+          <div class="collapse navbar-collapse py-18" id="navbarSupportedContent">
+            <ul class="breadcrumb navnar-nav me-auto mb-2 mb-lg-0 color-primary-50">
+              <li class="breadcrumb-item nav-item header-hover">
+                <a
+                  class="nav-link d-inline-block p-12"
+                  aria-current="page"
+                  href="about.html"
                   >關於羊蹄</a
                 >
               </li>
-              <li class="breadcrumb-item">
+              <li class="breadcrumb-item navbar-item header-hover">
                 <a
-                  class="nav-link d-inline-block"
+                  class="nav-link d-inline-block p-12"
                   aria-current="page"
                   href="products.html"
                   >線上商店</a
                 >
               </li>
-              <li class="breadcrumb-item">
+              <li class="breadcrumb-item navbar-item header-hover">
                 <a
-                  class="nav-link d-inline-block"
+                  class="nav-link d-inline-block p-12"
                   aria-current="page"
                   href="explore.html"
                   >探索風味</a
                 >
               </li>
-            </ol>
+            </ul>
           </div>
         </nav>
       </div>
 
       <!-- 中間 logo -->
       <div class="col-6 col-md-4 text-center">
-        <a class="navbar-brand py-16 d-inline-block" href="index.html">
-          <img
-            src="/assets/images/Type=White.png"
-            alt="品牌 Logo"
-            width="240"
-            height="56" />
-        </a>
+        <div class="logo-wrap d-flex justify-content-center flex-grow-1 py-16">
+          <a class="navbar-brand logo d-inline-block" href="index.html"></a>
+        </div>
       </div>
 
       <!-- 右側購物車 & 會員  RWD會消失-->
       <div class="col-4 col-md-4">
-        <nav class="d-flex justify-content-end align-items-center gap-3 header-right">
+        <nav class="d-flex align-items-center gap-3">
           <a class="nav-link p-12 me-12" href="#">
             <img
-              src="/assets/images/ic_Shopping_Cart.png"
+              src="/public/images/header/ic_Shopping_Cart.svg"
               alt="購物車"
               width="26"
               height="26" />
           </a>
           <a class="nav-link p-12" href="#">
             <img
-              src="/assets/images/ic_User.png"
+              src="/public/images//header/ic_User.svg"
               alt="會員"
               width="24"
               height="30" />
@@ -75,8 +74,5 @@
         </nav>
       </div>
     </div>
-
-    
-
   </div>
 </div>

@@ -1,22 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>關於羊蹄</title>
+    <%- include('./layout/style'); -%>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title></title>
-  <%- include('./layout/style'); -%>
-</head>
+  <body>
+    <%- include('./layout/header'); -%>
 
-<body>
-  <%- include('./layout/header'); -%>
-    <main class="container">
-      <h1>關於羊蹄</h1>
+    <main class="">
+      <!-- 關於羊蹄 -->
+      <div class="about-1 ">
+        <div class="about-bg-color">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-3 text-primary-50 mt-140">
+                <h1 class="heading-header-title mb-24">關於羊蹄</h1>
+                <h5 class="heading-small">About Sheepo Coffee</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 品牌故事 -->
+      <div class="about-2">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-primary-950">
+              <div class="d-flex mb-56 align-items-center m-120">
+                <h2 class="heading-xlarge">品牌故事</h2>
+                <p class="about-horizontal"></p>
+              </div>
+              
+              <h3 class="paragraph-medium mb-40">Sheepo Coffee 羊蹄咖啡</h3>
+              <p>取​名源自於​咖​啡豆​的​故事​</p>
+              <p>傳說​衣索​比亞​的​高原​上，​有​個牧羊人​看到​自家​的​綿羊​特別​有​精神</p>
+              <p class="mb-40">走進​一​看​才​發現​他​們啃食​了​某種​紅色果實，​而​這正​是​咖啡​漿果。</p>
+              <p>取羊蹄​為名，​就是要強調步步踏實的精神。</p>
+              <p>與獨立尋豆師合作，持續找尋獨具特色的咖啡生豆。</p>
+              <p class="mb-56">從烘焙到沖煮，皆是我們親自生產與測試，為的就是建立品質一致性。</p>
+              <p class="Paragraph/Medium text-primary-500">
+                「我們不想只賣咖啡，我想賣一種值得信賴的味道。」
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- service -->
+      <div class="container">
+        <div class="service">
+          <div class="text-center service-title">
+            <h3 class="heading-small text-accent-300 pb-12">Service</h3>
+            <h2 class="heading-xxlarge text-primary-950">服務項目</h2>
+          </div>
+
+          <!-- Book a tasting -->
+          <div class="row book">
+            <div class="booking-left pe-40 col-md-6">
+              <h2 class="heading-xlarge text-primary-950 booking-spacing pb-12">
+                預約試喝
+              </h2>
+              <div class="d-flex mb-40">
+                <h3 class="label-large text-primary-950">Book a tasting</h3>
+                <p class="service-horizontal"></p>
+              </div>
+
+              <div class="paragraph-large text-primary-950 mb-40">
+                <p>由於工作室內空間有限，目前暫無開放內用服務。</p>
+                <p>
+                  若您有咖啡試飲需求，歡迎填寫預約表單，我們將為您保留專屬時段。
+                </p>
+                <br />
+                <p>每日各時段僅開放 一組預約，最多可 5 位同行入場</p>
+                <p>讓我們有足夠時間，與您分享每一杯咖啡的風味故事</p>
+              </div>
+
+              <div class="btn-ground">
+                <button
+                  type="button"
+                  class="btn btn-primary-800 rounded-pill btn-pd">
+                  立即預約
+                </button>
+              </div>
+          </div>
+
+          <div class="booking-right col-md-6">
+            <img src="/public/images/index/about-2.png" alt="" />
+          </div>
+
+        </div>
+
+
+
+      <div class="container">
+          <!-- Business Cooperation -->
+          <div class="row book">
+            <div class="booking-left pe-40 col-md-6">
+              <h2 class="heading-xlarge text-primary-950 booking-spacing pb-12">
+                商業合作
+              </h2>
+              <div class="d-flex mb-40">
+                <h3 class="label-large text-primary-950">Business Cooperation</h3>
+                <p class="service-horizontal"></p>
+              </div>
+
+              <div class="paragraph-large text-primary-950 mb-40">
+                <p>工作室提供以下服務：</p><br>
+                <ul>
+                  <li>代客烘焙、客製化禮盒</li>
+                  <li>公司行號&營業用咖啡豆批發</li>
+                  <li>不定期舉辦課程、講座、活動</li>
+                </ul>
+                <br>
+                <p>若您有商業合作需求，歡迎填寫洽詢表單 
+                  <br>我們會與您聯繫。
+                </p>
+              </div>
+
+              <div class="btn-ground">
+                <button
+                  type="button"
+                  class="btn btn-primary-800 rounded-pill btn-pd">
+                  立即預約
+                </button>
+              </div>
+          </div>
+
+          <div class="booking-right col-md-6">
+            <img src="/public/images/index/about-1.png" alt="" />
+          </div>
+
+          </div>
+
+        </div>
+      </div>
+
+
+    <!-- FAQ -->
+      <div class="faq">
+
+        <div class="text-center service-title">
+          <h3 class="heading-small text-accent-300 pb-12">FAQ</h3>
+          <h2 class="heading-xxlarge text-primary-950">常見ＱＡ</h2>
+
+          
+        </div>
+
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                工作室開放內用嗎？
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                由於工作室內空間有限，目前暫無開放內用服務。
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                可以取消訂單嗎?
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                很抱歉，已下訂的訂單無法取消。
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                可以選擇什麼送貨方式？
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                工作室提供 7-11 店到店以及郵局包裹寄送服務
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                接受哪些付款方式？
+              </button>
+            </h2>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                我們接受以下付款方式：信用卡付款 / LINE Pay / ATM 匯款 / PayPal
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                送貨需多久時間？
+              </button>
+            </h2>
+            <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                訂單一般會在 3 個工作天內發貨，而送貨需時 1 至 2 個工作天。
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+
     </main>
-    <%- include('./layout/footer'); -%>
-      <script type="module" src="../main.js"></script>
-      <%- include('./layout/js'); -%>
-</body>
 
+    <%- include('./layout/footer'); -%>
+    <script type="module" src="../main.js"></script>
+    <%- include('./layout/js'); -%>
+  </body>
 </html>

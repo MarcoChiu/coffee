@@ -1,11 +1,23 @@
-.nav-padding{
-  padding: 5px 10px;
+.nav-font-size{
+  font-size: 18px;
+  font-weight: 400px;
+  line-height: 1.5;
+}
+.color-primary-50{
+  color: $primary-50;
 }
 
 .breadcrumb-item + .breadcrumb-item::before{
-  color: #F7F6EF;
+  color: $primary-50;
   padding-left: 12px;
   padding-right: 12px;
+  float:none;
+}
+
+@media (max-width: 767px) {
+.breadcrumb-item + .breadcrumb-item::before{
+    display: none;
+  }
 }
 
 .navbar-toggler {
@@ -18,15 +30,24 @@
 }
 
 /* 桌機 breadcrumb 連結顏色 */
-.breadcrumb .nav-link {
-  color: #F7F6EF;
-  text-decoration: none;
-
-  &:hover {
-    color: #FBAF44;
-  }
+.header-hover:hover {
+  color: #FBAF44;
 }
 
+.logo {
+  display: inline-block;
+  width: 240px;
+  height: 56px;
+  background: url("/public/images/Logo.svg") no-repeat center / contain;
+}
+
+@media (max-width: 767px) {
+  .logo {
+    width: 40px;
+    height: 40px;
+    background: url("/public/images/small-logo.svg") no-repeat center / contain;
+  }
+}
 
 /* 漢堡 icon 白色 */
 .navbar-toggler {
@@ -35,7 +56,7 @@
   .navbar-toggler-icon {
     background-image: none;
   }
-
+//  breadcrumb 
   &::after {
     content: "";
     display: inline-block;

@@ -1,4 +1,77 @@
-.about{
-  background: #69F0AE;
-  font-size: 64px;
+.about-1{
+  height: 400px;
+  background-size: cover;
+  background-image: url(/public/images/index/banner1.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
 }
+
+.about-bg-color{
+  background-color: rgba(#3120003B, 50%);  
+  height: 400px;
+}
+
+.about-2{
+  max-width: 100%;
+  height: 667px;
+  background-size: cover;
+  background-image: url(/public/images/index/banner3.png);
+  background-repeat: no-repeat;
+  background-position:  top 50%;
+  position: relative;
+  // padding: 120px 312px 120px 312px;
+}
+
+.m-120{
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+.mt-140{
+  margin-top: 140px;
+}
+
+.about-horizontal{
+  width: 80px;
+  height: 1px;
+  background-color: $primary-950;
+  margin-top: 21px;
+  margin-bottom: 21px;
+  margin-left: 16px;
+}
+
+.service-title{
+  margin-top: 120px;
+  margin-bottom: 80px;
+}
+
+.book{
+  margin-bottom: 80px;
+}
+
+.booking-spacing{
+  letter-spacing: $spacer24;
+}
+.service-horizontal{
+  width: 80px;
+  height: 1px;
+  background-color: $primary-950;
+  margin-top: 13px;
+  margin-bottom: 13px;
+  margin-left: 20px;
+}
+
+.btn-pd{
+  padding: 16px 40px;
+}
+
+.booking-right .img{
+  max-width: 100%;
+}
+
+.faq{
+  background-color: $primary-50;
+  max-width: 100%;
+}
+
