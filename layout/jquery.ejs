@@ -1,0 +1,67 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    $(function () {
+
+        $(document).on("click", ".btn2,.btn3,.choosecard", function () {
+
+            //手機版移動到最上面
+            if (window.innerWidth < 768) {
+                $('html, body').animate({ scrollTop: 0 }, 100);
+            }
+
+            //顯示secion
+            var go = $(this).data('go');
+            if (go.startsWith("d")) {
+                //處理咖啡資料   
+                const coffeeid = parseInt(go.replace('d', ''));
+                $.each(data, function (index, item) {
+                    if (item.id === coffeeid) {
+                        //更換資料
+                        $('.coffee-name-br').html(item.country + ' ' + item.city + '<br>' + item.place);
+                        $('.coffee-name').text(item.country + ' ' + item.city + ' ' + item.place);
+                        console.log(item.photo);
+
+                        $('.coffee-img').attr('src', item.photo);
+                        $('.coffee-img').attr('alt', item.country + ' ' + item.city + ' ' + item.place);
+                        $('.coffee-type').text(item.type);
+                        $('.coffee-price').text(item.price);
+                    }
+                });
+                $('#d').removeClass('d-none').siblings('section').addClass('d-none');
+            } else {
+                $('#' + go).removeClass('d-none').siblings('section').addClass('d-none');
+            }
+        });
+
+
+        $(document).on("click", ".cicon", function () {
+            $(this).addClass('d-none').siblings('.cicon').removeClass('d-none');
+        });
+
+
+        $(window).on('resize', function () {
+            resize();
+        });
+
+        function resize() {
+            if (window.innerWidth < 768) {
+                //console.log('小於768');
+                const html = $(".x2").html();
+                if (html != "") {
+                    $(".x1").append(html);
+                    $(".x2").html("");
+                }
+
+            } else {
+                //console.log('大於768');
+                const html = $(".x1").html();
+                if (html != "") {
+                    $(".x2").append(html);
+                    $(".x1").html("");
+                }
+            };
+        }
+
+        resize();
+    });
+</script>
