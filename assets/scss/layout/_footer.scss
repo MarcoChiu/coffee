@@ -1,4 +1,18 @@
+.breadcrumb-item + .breadcrumb-item::before{
+  color: #F7F6EF;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.d-flex{
+display: flex;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
 .footer{
-  background: #69F0AE;
-  font-size: 64px;
+    color: $grey-300;
+    border-top: 1px solid $primary-50;
 }

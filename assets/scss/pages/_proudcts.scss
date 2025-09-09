@@ -30,6 +30,8 @@
   background-color:#FCFAF8;
 }
 
+
+
 .products-nav .nav-underline{
   gap: 0px;
 }
@@ -46,32 +48,74 @@
 //   color:black;
 // }
 
-// .search{
-//   width: 298px;
-// }
+.products-link .card{
+  border: 0px;
+  border-radius: 0px;
+  overflow: hidden;
+}
+
+.products-link .card:hover{
+  border: $primary-100 1px solid;
+  border-radius: 16px;
+  
+  .card-img-top{
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  .card-body{
+    background-color: $primary-50;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+  }
+}
+
+.ratio>*{
+  left: auto;
+  user-select: none;
+}
+
+.products-label{
+  width: 100%;
+  height: 100%;
+}
 
 .productsHeart{
-  width: 0;
-  height: 0;
+  display: none;
+}
+
+.heartArea{
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 2;
 }
 
 .productsHeart:checked + .products-heartFilled{
   opacity: 1;
 }
 
+.productsHeart:hover + .products-heartFilled{
+  opacity: 1;
+}
+
 .products-heartOutlined {
   position: absolute;
-  top: 8px;
-  right: 8px;
   cursor: pointer;
+  z-index: 2;
 }
 
 .products-heartFilled{
   position: absolute;
-  top: 8px;
-  right: 8px;
   opacity: 0;
   cursor: pointer;
+  z-index: 3;
 }
 
 .products-pagination{
@@ -96,20 +140,27 @@
 }
 
 @media(min-width:1200px){
+  .heartArea{
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  top: 28px;
+  right: 28px;
+  bottom: auto;
+  left: auto;
+  z-index: 2;  
+}
+
   .products-heartOutlined {
   position: absolute;  
   width:36px;
-  height:36px;
-  top: 28px;
-  right: 28px;
+  height:36px;  
 }
 
 .products-heartFilled{
   position: absolute;
   width:36px;
-  height:36px;
-  top: 28px;
-  right: 28px;
+  height:36px;  
 }
 }
 
@@ -127,18 +178,18 @@
   }
 
   .products-paragraph-md-xlarge{
-     font-family: "Noto Sans TC", sans-serif;
-     font-weight: 400;
-     font-size: 20px;
-     line-height: 1.5;
-     letter-spacing: 2px;
- }
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 2px;
+  }
 
- .products-label-md-large{
+  .products-label-md-large{
     font-family: "Noto Sans TC", sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 1.5;
     letter-spacing: 2px;
- }
+  }
 }
