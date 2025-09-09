@@ -12,6 +12,49 @@
   height: 400px;
 }
 
+.about-1 {
+  .about-sheepo {
+    margin-top: 140px;
+
+    h1 {
+      @extend .heading-header-title; // 套用共用樣式 (含 font-size)
+
+      // 桌機板覆寫 (如果需要不同字級)
+      @media (max-width: 767px) {
+      font-family: "Noto Sans TC", sans-serif;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 1.2;
+      text-align: center;
+      }
+    }
+
+    h5 {
+      @extend .heading-small; // 假設這裡也有定義共用樣式
+
+      // 桌機板覆寫
+      @media (max-width: 767px) {
+        font-family: "Noto Sans TC", sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 1.2;
+        letter-spacing: 0.3;
+        text-align: center;
+      }
+    }
+  }
+}
+
+
+@media (max-width:767px) {
+  .about-sheepo{
+    padding-top: 56px ;
+    padding-bottom: 44px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
 .about-2{
   max-width: 100%;
   height: 667px;
@@ -28,9 +71,6 @@
   margin-bottom: 120px;
 }
 
-.mt-140{
-  margin-top: 140px;
-}
 
 .about-horizontal{
   width: 80px;
@@ -83,4 +123,33 @@
 
 .accordion {
   --bs-accordion-bg: transparent;
+}
+
+.faq-qa{
+  padding-left: 312px;
+  padding-right: 312px;
+  padding-bottom: 120px;
+}
+
+@media (max-width: 767px) {
+  .faq-qa{
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 32px;
+  padding-bottom: 40px;
+  }
+}
+
+.accordion {
+  --bs-accordion-bg: transparent;
+}
+.accordion-flush{
+  .accordion-item  {
+    border-bottom: 1px solid $primary-950; /* 底線顏色 */
+    
+    &:last-child{
+      border-bottom: 1px solid $primary-950; /* 覆寫回來  */
+    }
+
+  } 
 }
