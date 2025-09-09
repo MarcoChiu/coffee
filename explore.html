@@ -8,8 +8,10 @@
   <title></title>
   <link rel="preload" href="/coffee/assets/ChenYuluoyan-2.0-Thin-CUaGSzYh.woff2" as="font" type="font/woff2"
     crossorigin="anonymous" fetchpriority="high" />
-    <script type="module" crossorigin src="/coffee/assets/main-CacwV8NT.js"></script>
-    <link rel="stylesheet" crossorigin href="/coffee/assets/main-DOK6W2p0.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css"
+    rel="stylesheet">
+    <script type="module" crossorigin src="/coffee/assets/main-C0Td-eYM.js"></script>
+    <link rel="stylesheet" crossorigin href="/coffee/assets/main-WStk0Csp.css">
   </head>
 
 <body>
@@ -95,28 +97,28 @@
 
   </div>
 </div>
-    <main class="explore">
 
+    <main class="explore">
       <!-- 找尋屬於我的咖啡風味 -->
-      <section>
+      <section id="a">
         <div class="content bg1">
-          <h1 class="h1 text-primary-50 mb-16 mb-md-24">
+          <h1 class="h1 mb-16 mb-md-24">
             找尋屬於我的咖啡風味
           </h1>
           <!-- https://getbootstrap.com/docs/5.3/utilities/display/ -->
           <!-- 手機顯示 -->
           <div class="d-block d-md-none">
-            <p class="text-primary-50 mb-4">親愛的貴賓</p>
-            <p class="text-primary-50 mb-4">很榮幸邀請您一同參與我們舉辦的羊蹄茶會</p>
-            <p class="text-primary-50 mb-24">我們將會帶領您探索屬於您的咖啡</p>
+            <p class="mb-4">親愛的貴賓</p>
+            <p class="mb-4">很榮幸邀請您一同參與我們舉辦的羊蹄茶會</p>
+            <p class="mb-24">我們將會帶領您探索屬於您的咖啡</p>
           </div>
           <!-- 電腦顯示 -->
           <div class="d-none d-md-block">
-            <p class="text-primary-50 mb-12">親愛的貴賓，很榮幸邀請您一同參與我們舉辦的羊蹄茶會</p>
-            <p class="text-primary-50 mb-40">我們將會帶領您探索屬於您的咖啡</p>
+            <p class="mb-12">親愛的貴賓，很榮幸邀請您一同參與我們舉辦的羊蹄茶會</p>
+            <p class="mb-40">我們將會帶領您探索屬於您的咖啡</p>
           </div>
           <div class="text-center">
-            <button class="btn2">啟程探索風味</button>
+            <button class="btn2" data-go="b">啟程探索風味</button>
           </div>
         </div>
       </section>
@@ -125,40 +127,40 @@
       <!-- ############################### -->
 
       <!-- 三條岔路 -->
-      <section>
+      <section id="b" class="d-none">
         <div class="content bg2">
-          <h2 class="h2 text-primary-50 mb-16 mb-md-40">
+          <h2 class="h2 mb-16 mb-md-40">
             在前往羊蹄茶會的路上，您遇到了三條岔路您決定往哪一條前進?
           </h2>
 
           <div class="row">
             <div class="col-12 col-md-4">
-              <div class="choosecard rounded">
+              <div class="choosecard rounded" data-go="c1">
                 <img class="rounded p-8 p-md-12" src="/coffee/assets/explore-threeroad1-D4BSYSVf.png"
                   alt="帶有酸甜花果香味的道路" />
-                <p class="text-primary-950 p-8 p-md-12">帶有酸甜花果香味的道路</p>
+                <p class=" p-8 p-md-12">帶有酸甜花果香味的道路</p>
               </div>
             </div>
 
             <div class="col-12 col-md-4">
-              <div class="choosecard rounded">
+              <div class="choosecard rounded" data-go="c2">
                 <img class="rounded p-8 p-md-12" src="/coffee/assets/explore-threeroad2-Dtt5t4RG.png"
                   alt="溫和堅果巧克力味的道路" />
-                <p class="text-primary-950 p-8 p-md-12">溫和堅果巧克力味的道路</p>
+                <p class="p-8 p-md-12">溫和堅果巧克力味的道路</p>
               </div>
             </div>
 
             <div class="col-12 col-md-4">
-              <div class="choosecard rounded">
+              <div class="choosecard rounded" data-go="c3">
                 <img class="rounded p-8 p-md-12" src="/coffee/assets/explore-threeroad3-C-cBBucw.png"
                   alt="濃郁草本優雅香氣的道路" />
-                <p class="text-primary-950 p-8 p-md-12">濃郁草本優雅香氣的道路</p>
+                <p class="p-8 p-md-12">濃郁草本優雅香氣的道路</p>
               </div>
             </div>
           </div>
 
           <div class="text-center text-md-start mt-md-24">
-            <button class="btn3">優雅回頭</button>
+            <button class="btn3" data-go="a">優雅回頭</button>
           </div>
         </div>
       </section>
@@ -167,141 +169,141 @@
       <!-- ############################### -->
 
       <!-- 帶有酸甜花果香味的道路 -->
-      <section>
+      <section id="c1" class="d-none">
         <div class="content bg3">
-          <h2 class="h2 text-primary-50 mb-16 mb-md-40">
+          <h2 class="h2 mb-16 mb-md-40">
             終於抵達羊蹄茶會現場了，我們佈置了各種茶點提供給您享用，您想先享用什麼點心呢?
           </h2>
 
           <div class="row">
             <div class="col-12 col-md-4">
-              <div class="choosecard rounded">
+              <div class="choosecard rounded" data-go="c4">
                 <img class="rounded p-8 p-md-12" src="/coffee/assets/explore-cake1-1-DTVZJsfW.png" alt="柑橘磅蛋糕" />
-                <p class="text-primary-950 p-8 p-md-12">柑橘磅蛋糕</p>
+                <p class="p-8 p-md-12">柑橘磅蛋糕</p>
               </div>
             </div>
 
             <div class="col-12 col-md-4">
-              <div class="choosecard rounded">
+              <div class="choosecard rounded" data-go="d3">
                 <img class="rounded p-8 p-md-12" src="/coffee/assets/explore-cake1-2-BapPVQB_.png" alt="法式芒果軟糖" />
-                <p class="text-primary-950 p-8 p-md-12">法式芒果軟糖</p>
+                <p class="p-8 p-md-12">法式芒果軟糖</p>
               </div>
             </div>
 
             <div class="col-12 col-md-4">
-              <div class="choosecard rounded">
+              <div class="choosecard rounded" data-go="d4">
                 <img class="rounded p-8 p-md-12" src="/coffee/assets/explore-cake1-3-BV_beUgG.png" alt="黑醋栗奶油蛋糕" />
-                <p class="text-primary-950 p-8 p-md-12">黑醋栗奶油蛋糕</p>
+                <p class="p-8 p-md-12">黑醋栗奶油蛋糕</p>
               </div>
             </div>
           </div>
 
           <div class="text-center text-md-start mt-md-24">
-            <button class="btn3">優雅回頭</button>
+            <button class="btn3" data-go="b">優雅回頭</button>
           </div>
         </div>
       </section>
       <!-- 帶有酸甜花果香味的道路 end -->
 
       <!--  接著享用時麼點心呢 -->
-      <section>
+      <section id="c4" class="d-none">
         <div class="content bg4">
-          <h2 class="h2 text-primary-50 mb-16 mb-md-40">
+          <h2 class="h2 mb-16 mb-md-40">
             接著享用時麼點心呢?
           </h2>
 
           <div class="row">
             <div class="col-12 col-md-6">
-              <div class="choosecard rounded">
+              <div class="choosecard rounded" data-go="d1">
                 <img class="rounded p-8 p-md-12" src="/coffee/assets/explore-cake4-1-G_S2npvA.png" alt="白桃果凍" />
-                <p class="text-primary-950 p-8 p-md-12">白桃果凍</p>
+                <p class="p-8 p-md-12">白桃果凍</p>
               </div>
             </div>
             <div class="col-12 col-md-6">
-              <div class="choosecard rounded">
+              <div class="choosecard rounded" data-go="d2">
                 <img class="rounded p-8 p-md-12" src="/coffee/assets/explore-cake4-2-DG4R5Tx8.png" alt="蜂蜜杯子蛋糕" />
-                <p class="text-primary-950 p-8 p-md-12">蜂蜜杯子蛋糕</p>
+                <p class="p-8 p-md-12">蜂蜜杯子蛋糕</p>
               </div>
             </div>
 
           </div>
 
           <div class="text-center text-md-start mt-md-24">
-            <button class="btn3">優雅回頭</button>
+            <button class="btn3" data-go="c1">優雅回頭</button>
           </div>
         </div>
       </section>
       <!-- 接著享用時麼點心呢 end -->
 
       <!-- 溫和堅果巧克力味的道路 -->
-      <section>
+      <section id="c2" class="d-none">
         <div class="content bg3">
-          <h2 class="h2 text-primary-50 mb-16 mb-md-40">
+          <h2 class="h2 mb-16 mb-md-40">
             終於抵達羊蹄茶會現場了，我們佈置了各種茶點提供給您享用，您想先享用什麼點心呢?
           </h2>
 
           <div class="row">
             <div class="col-12 col-md-3">
-              <div class="choosecard rounded">
+              <div class="choosecard rounded" data-go="d5">
                 <img class="rounded p-8 p-md-12" src="/coffee/assets/explore-cake2-1-DmFeBR6D.png" alt="李子核桃塔" />
-                <p class="text-primary-950 p-8 p-md-12">李子核桃塔</p>
+                <p class="p-8 p-md-12">李子核桃塔</p>
               </div>
             </div>
 
             <div class="col-12 col-md-3">
-              <div class="choosecard rounded">
+              <div class="choosecard rounded" data-go="d6">
                 <img class="rounded p-8 p-md-12" src="/coffee/assets/explore-cake2-2-aHBdFiLI.png" alt="萊姆夾心餅乾" />
-                <p class="text-primary-950 p-8 p-md-12">萊姆夾心餅乾</p>
+                <p class="p-8 p-md-12">萊姆夾心餅乾</p>
               </div>
             </div>
 
             <div class="col-12 col-md-3">
-              <div class="choosecard rounded">
+              <div class="choosecard rounded" data-go="d6">
                 <img class="rounded p-8 p-md-12" src="/coffee/assets/explore-cake2-3-cdAo6w2Y.png" alt="櫻桃核果磅蛋糕" />
-                <p class="text-primary-950 p-8 p-md-12">櫻桃核果磅蛋糕</p>
+                <p class="p-8 p-md-12">櫻桃核果磅蛋糕</p>
               </div>
             </div>
 
             <div class="col-12 col-md-3">
-              <div class="choosecard rounded">
+              <div class="choosecard rounded" data-go="d8">
                 <img class="rounded p-8 p-md-12" src="/coffee/assets/explore-cake1-1-DTVZJsfW.png" alt="柑橘磅蛋糕" />
-                <p class="text-primary-950 p-8 p-md-12">柑橘磅蛋糕</p>
+                <p class="p-8 p-md-12">柑橘磅蛋糕</p>
               </div>
             </div>
           </div>
 
           <div class="text-center text-md-start mt-md-24">
-            <button class="btn3">優雅回頭</button>
+            <button class="btn3" data-go="b">優雅回頭</button>
           </div>
         </div>
       </section>
       <!-- 溫和堅果巧克力味的道路 end -->
 
       <!-- 濃郁草本優雅香氣的道路 -->
-      <section>
+      <section id="c3" class="d-none">
         <div class="content bg3">
-          <h2 class="h2 text-primary-50 mb-16 mb-md-40">
+          <h2 class="h2 mb-16 mb-md-40">
             終於抵達羊蹄茶會現場了，我們佈置了各種茶點提供給您享用，您想先享用什麼點心呢?
           </h2>
 
           <div class="row">
             <div class="col-12 col-md-6">
-              <div class="choosecard rounded">
+              <div class="choosecard rounded" data-go="d9">
                 <img class="rounded p-8 p-md-12" src="/coffee/assets/explore-cake3-1-CsMOuJNy.png" alt="黑糖榛果塔" />
-                <p class="text-primary-950 p-8 p-md-12">黑糖榛果塔</p>
+                <p class="p-8 p-md-12">黑糖榛果塔</p>
               </div>
             </div>
 
             <div class="col-12 col-md-6">
-              <div class="choosecard rounded">
+              <div class="choosecard rounded" data-go="d10">
                 <img class="rounded p-8 p-md-12" src="/coffee/assets/explore-cake3-2-BNqGVHeL.png" alt="蜂蜜紅茶餅乾" />
-                <p class="text-primary-950 p-8 p-md-12">蜂蜜紅茶餅乾</p>
+                <p class="p-8 p-md-12">蜂蜜紅茶餅乾</p>
               </div>
             </div>
           </div>
 
           <div class="text-center text-md-start mt-md-24">
-            <button class="btn3">優雅回頭</button>
+            <button class="btn3" data-go="b">優雅回頭</button>
           </div>
         </div>
       </section>
@@ -310,57 +312,36 @@
       <!-- ############################### -->
 
       <!-- 茶會到了尾聲 -->
-      <section>
-        <div class="content bg5">
-
-          <!-- 手機顯示 -->
-          <div class="d-block d-md-none">
-            <p class="text-primary-50 mb-4">茶會到了尾聲，感謝您今日蒞臨羊蹄茶會</p>
-            <p class="text-primary-50 mb-16">最後為您獻上最適合的咖啡風味</p>
-            <h2 class="h1 text-primary-50 mb-16">祕魯 薇拉瑞卡<br>安迪亞斯莊園</h2>
-            <div class="rounded bg-white py-20 mb-16">
-              <img class="rounded" src="/coffee/assets/greenCoffeeCup-t3TFSIeZ.png" alt="祕魯 薇拉瑞卡 安迪亞斯莊園" />
-              <div class="coffee-type text-primary-700 mb-8">經典咖啡豆 | 中度烘焙</div>
-              <div class="coffee-name text-primary-950 mb-8">祕魯 薇拉瑞卡 安迪亞斯莊園</div>
-              <div class="coffee-price  text-primary-950">$280~$600</div>
-            </div>
-            <p class="text-primary-50 mb-24">歡迎您填寫線上預約至本店試喝~~</p>
-            <div class="text-center">
-              <button class="btn3 me-64">重新探索</button>
-              <button class="btn2">預約試喝</button>
-            </div>
-          </div>
-
-
-          <!-- 電腦顯示 -->
-          <div class="d-none d-md-block">
-
-            <div class="row align-items-center">
-              <!-- 左邊 -->
-              <div class="col-7">
-                <p class="text-primary-50 mb-12">茶會到了尾聲，感謝您今日蒞臨羊蹄茶會</p>
-                <p class="text-primary-50 mb-24">最後為您獻上最適合的咖啡風味</p>
-                <h2 class="h3 text-primary-50 mb-24">祕魯 薇拉瑞卡<br>安迪亞斯莊園</h2>
-                <p class="text-primary-50 mb-40">歡迎您填寫線上預約至本店試喝~~</p>
-                <div class="text-center">
-                  <button class="btn3 me-64">重新探索</button>
-                  <button class="btn2">預約試喝</button>
-                </div>
-              </div>
-
-              <!-- 右邊 -->
-              <div class="col-5">
-                <div class="rounded bg-white py-20">
-                  <img class="rounded" src="/coffee/assets/greenCoffeeCup-t3TFSIeZ.png" alt="祕魯 薇拉瑞卡 安迪亞斯莊園" />
-                  <div class="coffee-type text-primary-700 mb-8">經典咖啡豆 | 中度烘焙</div>
-                  <div class="coffee-name text-primary-950 mb-8">祕魯 薇拉瑞卡 安迪亞斯莊園</div>
-                  <div class="coffee-price  text-primary-950">$280~$600</div>
-                </div>
+      <section id="d" class="d-none">
+        <div class="content bg5">    
+          <div class="row align-items-center">
+            <!-- 左邊 -->
+            <div class="col-12 col-md-7">
+              <p class="mb-4 mb-md-12">茶會到了尾聲，感謝您今日蒞臨羊蹄茶會</p>
+              <p class="mb-16 mb-md-24">最後為您獻上最適合的咖啡風味</p>
+              <h2 class="coffee-name-br h1 mb-16 mb-md-24">祕魯 薇拉瑞卡<br>安迪亞斯莊園</h2>
+              <div class="x1 mb-16 mb-md-0"></div>
+              <p class="mb-md-40">歡迎您填寫線上預約至本店試喝~~</p>
+              <div class="text-center">
+                <button class="btn3 me-64" data-go="a">重新探索</button>
+                <a href="products.html" class="btn2">預約試喝</a>
               </div>
             </div>
-
+            <!-- 右邊 -->
+            <div class="col-12 col-md-5 x2">
+              <div class="rounded bg-white pb-20 position-relative">
+                <div class="hearticon">
+                  <i class="bi bi-heart cicon"></i>
+                  <i class="bi bi-heart-fill cicon d-none"></i>
+                </div>
+                <img class="coffee-img rounded" src="/coffee/assets/greenCoffeeCup-t3TFSIeZ.png"
+                  alt="祕魯 薇拉瑞卡 安迪亞斯莊園" />
+                <div class="coffee-type mb-8">經典咖啡豆 | 中度烘焙</div>
+                <div class="coffee-name mb-8">祕魯 薇拉瑞卡 安迪亞斯莊園</div>
+                <div class="coffee-price">$280~$600</div>
+              </div>
+            </div>
           </div>
-
         </div>
       </section>
       <!-- 茶會到了尾聲 end -->
@@ -393,6 +374,7 @@
 
 
 </div>      
+
       <script>
     let pagetilte = "羊蹄咖啡";
     const url = window.location.pathname;
@@ -420,45 +402,188 @@
             break;
     }
     document.title = pagetilte;
+</script>
+
+ 
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+
+    const data = [
+        {
+            "id": 1,
+            "country": "衣索比亞",
+            "city": "谷吉",
+            "place": "郝瑪璉何處理廠",
+            "photo": "/coffee/assets/images/productsImg/blackCoffeeBean.png",
+            "type": "經典咖啡豆 | 中度烘焙",
+            "price": "$200~$600"
+        },
+        {
+            "id": 2,
+            "country": "衣索比亞",
+            "city": "西達摩",
+            "place": "蕾羅莎處理廠",
+            "photo": "/coffee/assets/images/productsImg/redCoffeeBean.png",
+            "type": "經典咖啡豆 | 深度烘焙",
+            "price": "$280~$600"
+        },
+        {
+            "id": 3,
+            "country": "衣索比亞",
+            "city": "谷吉",
+            "place": "罕被拉",
+            "photo": "/coffee/assets/images/productsImg/blackCoffeeBean.png",
+            "type": "經典咖啡豆 | 中度烘焙",
+            "price": "$200~$600"
+        },
+        {
+            "id": 4,
+            "country": "肯亞",
+            "city": "",
+            "place": "涅里區聯合處理廠",
+            "photo": "/coffee/assets/images/productsImg/whiteCoffeeCup.png",
+            "type": "經典咖啡豆 | 輕度烘焙",
+            "price": "$350~$600"
+        },
+        {
+            "id": 5,
+            "country": "祕魯",
+            "city": "薇拉瑞卡",
+            "place": "安迪亞斯莊園",
+            "photo": "/coffee/assets/images/productsImg/greenCoffeeCup.png",
+            "type": "經典咖啡豆 | 深度烘焙",
+            "price": "$280~$600"
+        },
+        {
+            "id": 6,
+            "country": "哥倫比亞",
+            "city": "",
+            "place": "萊姆柑橙",
+            "photo": "/coffee/assets/images/productsImg/khakiCoffeeBag.png",
+            "type": "經典咖啡豆 | 輕度烘焙",
+            "price": "$350~$600"
+        },
+        {
+            "id": 7,
+            "country": "巴西",
+            "city": "南米納斯",
+            "place": "法罕莊園",
+            "photo": "/coffee/assets/images/productsImg/yellowCoffeeCup.png",
+            "type": "經典咖啡豆 | 中度烘焙",
+            "price": "$200~$600"
+        },
+        {
+            "id": 8,
+            "country": "巴西",
+            "city": "",
+            "place": "星河莊園",
+            "photo": "/coffee/assets/images/productsImg/purpleCoffeeBag.png",
+            "type": "經典咖啡豆 | 中度烘焙",
+            "price": "$200~$600"
+        },
+        {
+            "id": 9,
+            "country": "印尼",
+            "city": "蘇門答臘",
+            "place": "純波旁種 曼特寧",
+            "photo": "/coffee/assets/images/productsImg/brownCoffeeBean.png",
+            "type": "經典咖啡豆 | 輕度烘焙",
+            "price": "$350~$600"
+        },
+        {
+            "id": 10,
+            "country": "冬雪藏梅",
+            "city": "",
+            "place": "配方",
+            "photo": "/coffee/assets/images/productsImg/greenCoffeeBag.png",
+            "type": "經典咖啡豆 | 深度烘焙",
+            "price": "$280~$600"
+        }
+    ];
+
+    $(function () {
+
+        $(document).on("click", ".btn2,.btn3,.choosecard", function () {
+
+            //手機版移動到最上面
+            if (window.innerWidth < 768) {
+                $('html, body').animate({ scrollTop: 0 }, 100);
+            }
+
+            //顯示secion
+            var go = $(this).data('go');
+            if (go.startsWith("d")) {
+                //處理咖啡資料   
+                const coffeeid = parseInt(go.replace('d', ''));
+                $.each(data, function (index, item) {
+                    if (item.id === coffeeid) {
+                        //更換資料
+                        $('.coffee-name-br').html(item.country + ' ' + item.city + '<br>' + item.place);
+                        $('.coffee-name').text(item.country + ' ' + item.city + ' ' + item.place);
+                        console.log(item.photo);
+
+                        $('.coffee-img').attr('src', item.photo);
+                        $('.coffee-img').attr('alt', item.country + ' ' + item.city + ' ' + item.place);
+                        $('.coffee-type').text(item.type);
+                        $('.coffee-price').text(item.price);
+                    }
+                });
+                $('#d').removeClass('d-none').siblings('section').addClass('d-none');
+            } else {
+                $('#' + go).removeClass('d-none').siblings('section').addClass('d-none');
+            }
+        });
+
+
+        $(document).on("click", ".cicon", function () {
+            $(this).addClass('d-none').siblings('.cicon').removeClass('d-none');
+        });
+
+
+        $(window).on('resize', function () {
+            resize();
+        });
+
+        function resize() {
+            if (window.innerWidth < 768) {
+                //console.log('小於768');
+                const html = $(".x2").html();
+                if (html != "") {
+                    $(".x1").append(html);
+                    $(".x2").html("");
+                }
+
+            } else {
+                //console.log('大於768');
+                const html = $(".x1").html();
+                if (html != "") {
+                    $(".x2").append(html);
+                    $(".x1").html("");
+                }
+            };
+        }
+
+        resize();
+    });
 </script></body>
 
 </html>
 
 
-<!-- <section>
-        <div class="content bg4">
-
-          <div class="row flex-md-row-reverse">
-
-             
-            <div class="col-12 col-md-6  mb-40">
-              <div class="rounded border bg-white">
-                <img class="rounded p-8 p-md-12" src="/assets/images/explore/explore-cake2-2.png"
-                  alt="衣索比亞 谷吉 郝瑪聯合處理廠" />
-                <p class="fs-4 text-center text-primary-950 p-8 p-md-16">衣索比亞 谷吉 郝瑪聯合處理廠</p>
-              </div>
+   <!-- 手機顯示 -->
+          <!-- <div class="d-block d-md-none">
+            <p class="mb-4">茶會到了尾聲，感謝您今日蒞臨羊蹄茶會</p>
+            <p class="mb-16">最後為您獻上最適合的咖啡風味</p>
+            <h2 class="coffee-name-br h1 mb-16">祕魯 薇拉瑞卡<br>安迪亞斯莊園</h2>
+            <div class="rounded bg-white py-20 mb-16">
+              <img class="coffee-img rounded" src="/assets/images/explore/explore-coffee-1.png" alt="祕魯 薇拉瑞卡 安迪亞斯莊園" />
+              <div class="coffee-type mb-8">經典咖啡豆 | 中度烘焙</div>
+              <div class="coffee-name mb-8">祕魯 薇拉瑞卡 安迪亞斯莊園</div>
+              <div class="coffee-price">$280~$600</div>
             </div>
-
-            
-            <div class="col-12 col-md-6">
-              <p class="fs-5 text-center text-primary-50 mb-16 mb-md-40">
-                茶會到了尾聲，感謝您今日蒞臨羊蹄茶會，最後為您獻上最適合的咖啡風味
-              </p>
-              <h2 class="h2 text-primary-50 mb-16 mb-md-40">
-                衣索比亞 谷吉 <br>
-                郝瑪聯合處理廠
-              </h2>
-              <p class="fs-5 text-center text-primary-50 mb-16 mb-md-40">
-                歡迎您填寫線上預約治本點試喝
-              </p>
-              <div class="text-center mb-16 mb-md-40">
-                <button class="btn2">預約試喝</button>
-              </div>
-              <div class="text-center ">
-                <button class="btn3">重新探索</button>
-              </div>
+            <p class="mb-24">歡迎您填寫線上預約至本店試喝~~</p>
+            <div class="text-center">
+              <button class="btn3 me-64" data-go="a">重新探索</button>
+              <a href="products.html" class="btn2">預約試喝</a>
             </div>
-          </div>
-
-        </div>
-      </section> -->
+          </div> -->
