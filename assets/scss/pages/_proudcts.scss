@@ -2,7 +2,7 @@
   .header1{
     height: 400px-88px;
     background-size: cover;
-    background-image: url(/assets/images/index/banner2.png);
+    background-image: url(/images/index/banner2.png);
     background-repeat: no-repeat;
     background-position: center center;
     position: relative;
@@ -12,7 +12,7 @@
   .header2{
     height: 400px-88px;
     background-size: cover;
-    background-image: url(/assets/images/products/banner1.png);
+    background-image: url(/images/products/banner1.png);
     background-repeat: no-repeat;
     background-position: center center;
     position: relative;
@@ -30,23 +30,25 @@
   background-color:#FCFAF8;
 }
 
+.products-nav{
+  .nav-underline{
+    gap: 0px;
+  }
 
+  .nav-link{
+    color: $grey-500;
+  }
 
-.products-nav .nav-underline{
-  gap: 0px;
+  a:hover,:focus{
+    color: $primary-800;
+    border-bottom-width: 2px;
+  }
 }
 
-// .products-nav a{
-//   color: grey-500;
-// }
-
-// .products-nav .nav-link:checked{
-//   color: white;
-// }
-
-// .products-nav .nav-link:visited{
-//   color:black;
-// }
+.nav-underline .nav-link.active{
+  color: $grey-500;
+  font-weight: 400;
+}
 
 .products-link .card{
   border: 0px;
@@ -54,25 +56,54 @@
   overflow: hidden;
 }
 
-.products-link .card:hover{
-  border: $primary-100 1px solid;
-  border-radius: 16px;
+// 平板以下不用hover
+// .products-link .card:hover{
+//   border: $primary-100 1px solid;
+//   border-radius: 16px;
   
-  .card-img-top{
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-  }
+//   .card-img-top{
+//     border-top-left-radius: 16px;
+//     border-top-right-radius: 16px;
+//     border-bottom-left-radius: 0px;
+//     border-bottom-right-radius: 0px;
+//   }
 
-  .card-body{
-    background-color: $primary-50;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 16px;
-    border-bottom-right-radius: 16px;
-  }
+//   .card-body{
+//     background-color: $primary-50;
+//     border-top-left-radius: 0px;
+//     border-top-right-radius: 0px;
+//     border-bottom-left-radius: 16px;
+//     border-bottom-right-radius: 16px;
+//   }
+// }
+
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    height: 16px;
+    width: 16px;
+    background: url(/assets/images/ic_User.png) no-repeat;
+    background-size: contain;
+    cursor: pointer;
 }
+
+input[type="search"]::-webkit-search-cancel-button:hover {
+    -webkit-appearance: none;
+    height: 16px;
+    width: 16px;
+    background: url(图片路径) no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+
+// .DocSearch-Reset{
+//   border: 0px;
+//   background-color: transparent;
+//   display: none;
+// }
+
+// .form-control:focus + .DocSearch-Reset{
+//     display: block;
+// }
 
 .ratio>*{
   left: auto;
@@ -101,9 +132,10 @@
   opacity: 1;
 }
 
-.productsHeart:hover + .products-heartFilled{
-  opacity: 1;
-}
+// 平板以下不用hover
+// .productsHeart:hover + .products-heartFilled{
+//   opacity: 1;
+// }
 
 .products-heartOutlined {
   position: absolute;
@@ -192,4 +224,28 @@
     line-height: 1.5;
     letter-spacing: 2px;
   }
+
+  .productsHeart:hover + .products-heartFilled{
+  opacity: 1;
+}
+
+.products-link .card:hover{
+  border: $primary-100 1px solid;
+  border-radius: 16px;
+  
+  .card-img-top{
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  .card-body{
+    background-color: $primary-50;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+  }
+}
 }
