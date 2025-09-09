@@ -38,14 +38,14 @@
   display: inline-block;
   width: 240px;
   height: 56px;
-  background: url("/assets/images/Logo.svg") no-repeat center / contain;
+  background: url("/public/images/Logo.svg") no-repeat center / contain;
 }
 
 @media (max-width: 767px) {
   .logo {
     width: 40px;
     height: 40px;
-    background: url("/assets/images/small-logo.svg") no-repeat center / contain;
+    background: url("/public/images/small-logo.svg") no-repeat center / contain;
   }
 }
 
