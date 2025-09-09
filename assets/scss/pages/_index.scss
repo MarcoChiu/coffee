@@ -1,3 +1,12 @@
+body {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  .index{
+    scroll-snap-align: start;
+  }
+}
+
 .index {
   background-color: #FCFAF8;
 
