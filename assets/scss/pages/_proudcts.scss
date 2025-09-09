@@ -31,6 +31,11 @@
 }
 
 .products-nav{
+  position: sticky;
+  top: 0px;
+  z-index: 3;
+  background-color:#FCFAF8;
+
   .nav-underline{
     gap: 0px;
   }
@@ -79,31 +84,21 @@
 
 input[type="search"]::-webkit-search-cancel-button {
     -webkit-appearance: none;
-    height: 16px;
-    width: 16px;
-    background: url(/assets/images/ic_User.png) no-repeat;
+    height: 20px;
+    width: 20px;
+    background: url(/public/images/icon/ic_fluent_dismiss_24_regular.png) no-repeat;
     background-size: contain;
     cursor: pointer;
 }
 
 input[type="search"]::-webkit-search-cancel-button:hover {
     -webkit-appearance: none;
-    height: 16px;
-    width: 16px;
-    background: url(图片路径) no-repeat;
+    height: 20px;
+    width: 20px;
+    background: url(/public/images/icon/ic_fluent_dismiss_24_regular.png) no-repeat;
     background-size: contain;
     cursor: pointer;
 }
-
-// .DocSearch-Reset{
-//   border: 0px;
-//   background-color: transparent;
-//   display: none;
-// }
-
-// .form-control:focus + .DocSearch-Reset{
-//     display: block;
-// }
 
 .ratio>*{
   left: auto;
@@ -150,6 +145,20 @@ input[type="search"]::-webkit-search-cancel-button:hover {
   z-index: 3;
 }
 
+.page-link.active, .active > .page-link.products-pagination{
+  background-color: $primary-700;
+}
+
+.page-item:first-child .page-link.products-pagination{
+  border-top-left-radius:4px;
+  border-bottom-left-radius:4px;
+}
+
+.page-item:last-child .page-link.products-pagination{
+  border-top-right-radius:4px;
+  border-bottom-right-radius:4px;
+}
+
 .products-pagination{
   background-color: #FCFAF8;
   color: $primary-950;
@@ -169,6 +178,10 @@ input[type="search"]::-webkit-search-cancel-button:hover {
   background-color: $primary-700;
   color: white;
   box-shadow: none;
+}
+
+.ellipsis{
+  user-select: none;
 }
 
 @media(min-width:1200px){
