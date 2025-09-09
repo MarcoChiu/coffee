@@ -31,7 +31,7 @@
 
 /* 桌機 breadcrumb 連結顏色 */
 .header-hover:hover {
-  color: #FBAF44;
+  color: $accent-300;
 }
 
 .logo {
@@ -39,6 +39,14 @@
   width: 240px;
   height: 56px;
   background: url("/public/images//header/Logo.svg") no-repeat center / contain;
+}
+
+.logo:hover {
+  filter: brightness(0) saturate(100%) invert(76%) sepia(52%) saturate(300%) hue-rotate(350deg) brightness(102%) contrast(97%);
+}
+
+.icon:hover{
+  filter: brightness(0) saturate(100%) invert(76%) sepia(52%) saturate(300%) hue-rotate(350deg) brightness(102%) contrast(97%);
 }
 
 @media (max-width: 767px) {
@@ -55,6 +63,7 @@
 
   .navbar-toggler-icon {
     background-image: none;
+    display: none;
   }
 //  breadcrumb 
   &::after {
@@ -62,7 +71,7 @@
     display: inline-block;
     width: 1.5em;
     height: 1.5em;
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    background-image: url("/public/images/header/ic_Hamburger.svg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
