@@ -1,20 +1,20 @@
 .products{
   .header1{
-    height: 400px-88px;
+    height: 400px; //-88px;
     background-size: cover;
     background-image: url(/images/index/banner2.png);
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center -630px;
     position: relative;
     background-color: rgba(#312000, 0.4);
     background-blend-mode: multiply;
   }
   .header2{
-    height: 400px-88px;
+    height: 400px; //-88px;
     background-size: cover;
     background-image: url(/images/products/banner1.png);
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center -325px;
     position: relative;
     background-color: rgba(#312000, 0.4);
     background-blend-mode: multiply;
@@ -302,6 +302,10 @@ input[type="search"]::-webkit-search-cancel-button:hover {
 
 .ellipsis{
   user-select: none;
+}
+
+.page-item:not(:first-child) .page-link.products-pagination {
+  margin-left: 0px
 }
 
 @media(min-width:1200px){
