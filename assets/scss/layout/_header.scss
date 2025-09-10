@@ -3,8 +3,24 @@
   font-weight: 400px;
   line-height: 1.5;
 }
+
+@media (max-width:1200px) {
+  .nav-font-size{
+    font-size: 14px;
+  }
+}
+@media (max-width:976px) {
+  .nav-font-size{
+    font-size: 11px;
+
+  }
+}
 .color-primary-50{
   color: $primary-50;
+}
+
+.breadcrumb{
+  flex-wrap: nowrap;
 }
 
 .breadcrumb-item + .breadcrumb-item::before{
