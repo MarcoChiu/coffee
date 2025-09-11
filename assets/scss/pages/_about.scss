@@ -112,13 +112,33 @@
   margin-bottom: 80px;
 }
 
-.book{
-  margin-bottom: 80px;
+.service{
+  h2{
+    @include heading-xxlarge;
+  }
+
+  h3{
+    @include heading-xlarge;
+    letter-spacing: $spacer24;
+  }
+
+  h4{
+    @include heading-small;
+    color:$accent-300;
+  }
+
+  h5{
+    @include label-large;
+  }
+
+  p{
+    @include paragraph-large;
+  }
 }
 
-.booking-spacing{
-  letter-spacing: $spacer24;
-}
+
+
+
 .service-horizontal{
   width: 80px;
   height: 1px;
