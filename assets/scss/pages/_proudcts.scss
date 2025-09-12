@@ -1,10 +1,10 @@
 .products{
   .header1{
-    height: 400px; //-88px;
+    height: 160px; //-88px;
     background-size: cover;
     background-image: url(/images/index/banner2.png);
     background-repeat: no-repeat;
-    background-position: center -630px;
+    background-position: center;
     position: relative;
     background-color: rgba(#312000, 0.4);
     background-blend-mode: multiply;
@@ -19,11 +19,65 @@
     background-color: rgba(#312000, 0.4);
     background-blend-mode: multiply;
   }
+
+  .carousel-title{
+    display: block;
+    flex-direction: column;
+  }
+
   .horizontal-line{
+    display: none;
     width: 80px;
     height: 3px;
     background-color: #F7F6EF;
   }
+}
+
+@media(min-width:676px){
+.products{
+  .header1{
+    height: 400px; //-88px;
+    background-size: 100% auto;
+    background-image: url(/images/index/banner2.png);
+    background-repeat: no-repeat;
+    background-position: center -630px;
+    position: relative;
+    background-color: rgba(#312000, 0.4);
+    background-blend-mode: multiply;
+    
+    .heading-small{
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 1.2;
+    letter-spacing: 0.3em;
+    color: text-primary-50;
+    }
+  }
+
+  .header2{
+    height: 400px; //-88px;
+    background-size: cover;
+    background-image: url(/images/products/banner1.png);
+    background-repeat: no-repeat;
+    background-position: center -325px;
+    position: relative;
+    background-color: rgba(#312000, 0.4);
+    background-blend-mode: multiply;
+  }
+
+  .carousel-title{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .horizontal-line{
+    display: inline;
+    width: 80px;
+    height: 3px;
+    background-color: #F7F6EF;
+  }
+}
 }
 
 .products-bg{
@@ -40,8 +94,10 @@
     gap: 0px;
   }
 
+  // 設計稿文字色碼顏色太淺，改用標籤的名稱
   .nav-link{
     color: $grey-500;
+    width: 100px;
   }
 
   a:hover,a:focus{
@@ -51,7 +107,7 @@
 }
 
 .nav-underline .nav-link.active{
-  color: $grey-500;
+  color: $primary-800;
   font-weight: 400;
 }
 
@@ -92,7 +148,7 @@
   width: 100%;
   padding: $input-padding-y $input-padding-x;
   font-family: $input-font-family;
-  @include font-size($input-font-size);
+  // @include font-size($input-font-size);
   font-weight: $input-font-weight;
   line-height: $input-line-height;
   color: $input-color;
@@ -264,6 +320,7 @@ input[type="search"]::-webkit-search-cancel-button:hover {
 
 .page-link.active, .active > .page-link.products-pagination{
   background-color: $primary-700;
+  z-index: 0;
 }
 
 .page-item:first-child .page-link.products-pagination{
@@ -277,6 +334,9 @@ input[type="search"]::-webkit-search-cancel-button:hover {
 }
 
 .products-pagination{
+  width: 39px;
+  height: 36px;
+  text-align: center;
   background-color: #FCFAF8;
   color: $primary-950;
   border: 0px;
@@ -289,6 +349,7 @@ input[type="search"]::-webkit-search-cancel-button:hover {
   path{
     fill:white;
   }
+  z-index: 1;
 }
 
 .products-pagination:focus{
@@ -298,6 +359,26 @@ input[type="search"]::-webkit-search-cancel-button:hover {
     fill:white;
   }  
   box-shadow: none;
+  z-index: 0;
+}
+
+.products-pagination.products-pagination-bothSide:focus{
+  background-color:transparent;
+  color: white;
+  path{
+    fill:$primary-950;
+  }  
+  box-shadow: none;
+  z-index: 0;
+
+  &:hover{
+    background-color: $primary-700;
+    color: white;
+    path{
+    fill:white;
+    }
+    z-index: 1;
+  }
 }
 
 .ellipsis{
@@ -334,6 +415,11 @@ input[type="search"]::-webkit-search-cancel-button:hover {
 }
 
 @media(min-width:768px){
+
+  .products-nav-link.nav-link{
+    width: auto;
+  }
+
   .search .paragraph-small{
     font-size: 16px;
   }
