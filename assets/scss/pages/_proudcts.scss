@@ -4,25 +4,35 @@
     background-size: cover;
     background-image: url(/images/index/banner2.png);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center center;
     position: relative;
     background-color: rgba(#312000, 0.4);
     background-blend-mode: multiply;
   }
   .header2{
-    height: 400px; //-88px;
+    height: 160px; //-88px;
     background-size: cover;
     background-image: url(/images/products/banner1.png);
     background-repeat: no-repeat;
-    background-position: center -325px;
+    background-position: center bottom; // 72%
     position: relative;
     background-color: rgba(#312000, 0.4);
     background-blend-mode: multiply;
   }
 
+  .paragraph-xxlarge{
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  text-align: center;
+  }
+
   .carousel-title{
     display: block;
     flex-direction: column;
+    letter-spacing: 0.3em;
   }
 
   .horizontal-line{
@@ -31,28 +41,23 @@
     height: 3px;
     background-color: #F7F6EF;
   }
+
+  .carousel-indicators{
+    display: none;
+  }
 }
 
 @media(min-width:676px){
 .products{
   .header1{
     height: 400px; //-88px;
-    background-size: 100% auto;
+    background-size: cover;
     background-image: url(/images/index/banner2.png);
     background-repeat: no-repeat;
-    background-position: center -630px;
+    background-position: center 72%;
     position: relative;
     background-color: rgba(#312000, 0.4);
     background-blend-mode: multiply;
-    
-    .heading-small{
-    font-family: "Noto Sans TC", sans-serif;
-    font-weight: 400;
-    font-size: 50px;
-    line-height: 1.2;
-    letter-spacing: 0.3em;
-    color: text-primary-50;
-    }
   }
 
   .header2{
@@ -60,7 +65,7 @@
     background-size: cover;
     background-image: url(/images/products/banner1.png);
     background-repeat: no-repeat;
-    background-position: center -325px;
+    background-position: center 72%;
     position: relative;
     background-color: rgba(#312000, 0.4);
     background-blend-mode: multiply;
@@ -77,8 +82,28 @@
     height: 3px;
     background-color: #F7F6EF;
   }
+
+.heading-small{
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 1.2;
+  letter-spacing: 0.3em;
+  color: text-primary-50;
+  }
+
+.paragraph-xxlarge{
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  text-align: left;
+  }  
 }
 }
+
+
 
 .products-bg{
   background-color:#FCFAF8;
