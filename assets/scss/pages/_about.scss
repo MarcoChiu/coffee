@@ -193,7 +193,7 @@
 /* 讓圖片滿版並跟文字區塊等高 */
 .booking-right img {
   object-fit: cover;  /* 填滿區域，不變形 */
-  weight:100%;
+  width:100%;
   height: 100%;
   display: block;
 }
