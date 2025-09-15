@@ -334,7 +334,7 @@
 }
 
 /* RWD 手機版微調 */ 
-@media (max-width: 767.98px) {
+@media (max-width: 767px) {
   .accordion-button {
     @include paragraph-small;   /* 手機版按鈕文字稍微小一點 */
   }
