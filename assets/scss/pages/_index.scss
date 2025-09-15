@@ -22,6 +22,14 @@ body {
 .index {
   background-color: #FCFAF8;
 
+  .moon-title {
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 1.2;
+    letter-spacing: 0.3em;
+  }
+
   .header1 {
     height: calc(100vh - 88px);
     background-size: cover;
@@ -227,8 +235,10 @@ body {
       font-size: 20px;
     }
 
-    .heading-xxxlarge {
-      font-size: 36px;
+    .moon {
+      .heading-xxxlarge {
+        font-size: 36px;
+      }
     }
 
     .label-large {
@@ -271,7 +281,13 @@ body {
       font-size: 14px;
     }
 
-    .heading-xxxlarge {
+    .moon {
+      .heading-xxxlarge {
+        font-size: 24px;
+      }
+    }
+
+    .moon-title {
       font-size: 24px;
     }
 
@@ -321,6 +337,12 @@ body {
 
     .heading-xxxlarge {
       font-size: 24px;
+    }
+
+    .moon {
+      .heading-xxxlarge {
+        font-size: 24px;
+      }
     }
 
     .paragraph-xlarge {

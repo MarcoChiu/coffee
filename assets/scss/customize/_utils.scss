@@ -1,5 +1,143 @@
-
 //因為font-sze預設沒有開啟RWD這邊開啟 fs-3 fs-lg-1才會有用
 // $utilities: map-merge($utilities,
 //     ("font-size": map-merge(map-get($utilities, "font-size"),
 //         (responsive: true))));
+.heading-header-title {
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 1.2;
+    letter-spacing: 12px;
+}
+
+.heading-xxxlarge {
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 1.2;
+    letter-spacing: 0.3em;
+
+}
+
+.heading-xxlarge {
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.2;
+
+}
+
+.heading-xlarge {
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.2;
+
+}
+
+.heading-medium {
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.2;
+}
+
+.heading-small {
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+
+.heading-xsmall {
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+
+.label-large {
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.label-medium {
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.label-small {
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.label-xsmall {
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.paragraph-xxlarge {
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+}
+
+.paragraph-xlarge {
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.paragraph-large {
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 2px;
+}
+
+.paragraph-medium {
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 2px;
+}
+
+.paragraph-small {
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.paragraph-xsamll {
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.ChenYuluoyan {
+    font-family: "ChenYuluoyan", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.ls-2 {
+    letter-spacing: 2px;
+}
