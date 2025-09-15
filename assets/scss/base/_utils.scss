@@ -1,6 +1,6 @@
 //https://learn.microsoft.com/zh-tw/dotnet/api/system.drawing.fontstyle?view=windowsdesktop-9.0&viewFallbackFrom=dotnet-plat-ext-8.0
 
-.heading-header-title {
+@mixin heading-header-title {
      font-family: "Noto Sans TC", sans-serif;
      font-weight: 400;
      font-size: 50px;
@@ -8,7 +8,7 @@
      letter-spacing: 12px;
  }
 
-  .heading-xxxlarge {
+@mixin heading-xxxlarge {
      font-family: "Noto Sans TC", sans-serif;
      font-weight: 400;
      font-size: 50px;
@@ -17,7 +17,7 @@
 
  }
 
- .heading-xxlarge {
+@mixin heading-xxlarge {
      font-family: "Noto Sans TC", sans-serif;
      font-weight: 400;
      font-size: 40px;
@@ -25,7 +25,7 @@
 
  }
 
- .heading-xlarge {
+@mixin heading-xlarge {
      font-family: "Noto Sans TC", sans-serif;
      font-weight: 400;
      font-size: 36px;
@@ -33,14 +33,14 @@
 
  }
 
- .heading-medium {
+@mixin heading-medium {
      font-family: "Noto Sans TC", sans-serif;
      font-weight: 400;
      font-size: 28px;
      line-height: 1.2;
  }
 
- .heading-small {
+@mixin heading-small {
      font-family: "Noto Sans TC", sans-serif;
      font-weight: 400;
      font-size: 24px;
@@ -48,7 +48,7 @@
  }
 
 
- .heading-xsmall {
+@mixin heading-xsmall {
      font-family: "Noto Sans TC", sans-serif;
      font-weight: 400;
      font-size: 20px;
@@ -56,35 +56,35 @@
  }
 
 
- .label-large {
+@mixin label-large {
      font-family: "Noto Sans TC", sans-serif;
      font-weight: 700;
      font-size: 18px;
      line-height: 1.5;
  }
 
- .label-medium {
+@mixin label-medium {
      font-family: "Noto Sans TC", sans-serif;
      font-weight: 700;
      font-size: 16px;
      line-height: 1.5;
  }
 
- .label-small {
+@mixin label-small {
      font-family: "Noto Sans TC", sans-serif;
      font-weight: 700;
      font-size: 14px;
      line-height: 1.5;
  }
 
- .label-xsmall {
+@mixin label-xsmall {
      font-family: "Noto Sans TC", sans-serif;
      font-weight: 700;
      font-size: 12px;
      line-height: 1.5;
  }
 
- .paragraph-xxlarge{
+@mixin paragraph-xxlarge{
      font-family: "Noto Sans TC", sans-serif;
      font-weight: 400;
      font-size: 24px;
@@ -99,7 +99,7 @@
      line-height: 1.5;
  }
 
-  .paragraph-large{
+@mixin paragraph-large{
      font-family: "Noto Sans TC", sans-serif;
      font-weight: 400;
      font-size: 18px;
@@ -107,7 +107,7 @@
      letter-spacing: 2px;
  }
 
-  .paragraph-medium{
+@mixin paragraph-medium{
      font-family: "Noto Sans TC", sans-serif;
      font-weight: 400;
      font-size: 16px;
@@ -115,27 +115,27 @@
      letter-spacing: 2px;
  }
 
-  .paragraph-small{
+@mixin paragraph-small{
      font-family: "Noto Sans TC", sans-serif;
      font-weight: 400;
      font-size: 14px;
      line-height: 1.5;
  }
 
-  .paragraph-xsamll{
+@mixin paragraph-xsamll{
      font-family: "Noto Sans TC", sans-serif;
      font-weight: 400;
      font-size: 12px;
      line-height: 1.5;
  }
 
-   .ChenYuluoyan{
+@mixin ChenYuluoyan{
      font-family: "ChenYuluoyan", sans-serif;
      font-weight: 400;
      font-size: 12px;
      line-height: 1.5;
  }
 
- .ls-2{
+@mixin ls-2{
     letter-spacing: 2px;
  }

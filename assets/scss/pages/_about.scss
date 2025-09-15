@@ -15,22 +15,27 @@
 .about-1 {
   .about-sheepo {
     margin-top: 140px;
+    @media (max-width:767px) {
+      .about-sheepo{
+        margin-top: 56px;   //margin rwd設置吃不到
+        margin-bottom: 44px;
+        padding-left: 12px;
+        padding-right: 12px;
+      }
+    }
 
     h1 {
-      @extend .heading-header-title; // 套用共用樣式 (含 font-size)
+      @include heading-header-title; // 套用共用樣式 (含 font-size)
 
       // 桌機板覆寫 (如果需要不同字級)
       @media (max-width: 767px) {
-      font-family: "Noto Sans TC", sans-serif;
-      font-weight: 400;
-      font-size: 24px;
-      line-height: 1.2;
-      text-align: center;
+        @include heading-small;
+        text-align: center;
       }
     }
 
     h5 {
-      @extend .heading-small; // 假設這裡也有定義共用樣式
+      @include heading-small; // 假設這裡也有定義共用樣式
 
       // 桌機板覆寫
       @media (max-width: 767px) {
@@ -40,20 +45,14 @@
         line-height: 1.2;
         letter-spacing: 0.3;
         text-align: center;
+        
       }
     }
   }
 }
 
 
-@media (max-width:767px) {
-  .about-sheepo{
-    padding-top: 56px ;
-    padding-bottom: 44px;
-    padding-left: 12px;
-    padding-right: 12px;
-  }
-}
+
 
 .about-2{
   max-width: 100%;
@@ -63,36 +62,83 @@
   background-repeat: no-repeat;
   background-position:  top 50%;
   position: relative;
-  // padding: 120px 312px 120px 312px;
+
+
+  h2{
+    white-space: nowrap;
+    @include heading-xlarge;    
+  }
+
+  p{
+    @include  paragraph-medium;
+  }
+
+  .about-horizontal{
+    width: 80px;
+    height: 1px;
+    background-color: $primary-950;
+    margin-top: 21px;
+    margin-bottom: 21px;
+    margin-left: 8px;
+  }  
+
+  @media (max-width:767px) {
+
+    .d-flex{
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .about-horizontal {
+      margin-left: 8px; // 縮小左右間距，適合手機
+    }
+
+    h2{
+      @include  heading-medium;
+    }
+
+    p{
+      @include label-small;
+    }
+  }
 }
 
-.m-120{
+.mt-md-120{
   margin-top: 120px;
-  margin-bottom: 120px;
 }
 
-
-.about-horizontal{
-  width: 80px;
-  height: 1px;
-  background-color: $primary-950;
-  margin-top: 21px;
-  margin-bottom: 21px;
-  margin-left: 16px;
-}
-
-.service-title{
-  margin-top: 120px;
+.mb-md-80{
   margin-bottom: 80px;
 }
 
-.book{
-  margin-bottom: 80px;
+.service{
+  h2{
+    @include heading-xxlarge;
+  }
+
+  h3{
+    @include heading-xlarge;
+    letter-spacing: $spacer24;
+  }
+
+  h4{
+    @include heading-small;
+    color:$accent-300;
+  }
+
+  h5{
+    @include label-large;
+  }
+
+  p{
+    @include paragraph-large;
+  }
 }
 
-.booking-spacing{
-  letter-spacing: $spacer24;
-}
+
+
+
 .service-horizontal{
   width: 80px;
   height: 1px;
@@ -152,4 +198,34 @@
     }
 
   } 
+}
+
+/* 移除藍色邊框與陰影 */
+.accordion-button:focus {
+  box-shadow: none;
+  border-color: transparent;
+  // background-image: url(/images/icon/ic_plus.svg);  
+}
+
+/* 移除展開時的藍色背景 */
+.accordion-button:not(.collapsed) {
+  background-color: transparent;
+  color: inherit;
+}
+
+/* 預設關閉狀態（有 collapsed 類別） */
+.accordion-button::after {
+  // content: "";
+  background-image: url(/images/icon/ic_plus.svg);  /* 關閉時的圖片 */
+  // background-size: 1.2rem;
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // width: 1.2rem;
+  // height: 1.2rem;
+  // transform: none !important; /* 移除 bootstrap 預設旋轉 */
+}
+
+/* 展開狀態（沒有 collapsed 類別） */
+.accordion-button:not(.collapsed)::after {
+  background-image: url(/images/icon/ic_minus.svg); /* 展開時的圖片 */
 }
