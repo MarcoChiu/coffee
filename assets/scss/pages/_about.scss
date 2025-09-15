@@ -27,10 +27,14 @@
     h1 {
       @include heading-header-title; // 套用共用樣式 (含 font-size)
 
-      // 桌機板覆寫 (如果需要不同字級)
+      // 桌機板覆寫 
       @media (max-width: 767px) {
         @include heading-small;
         text-align: center;
+      }
+      @media (max-width: 1199px) {
+        @include heading-xxlarge;
+        // text-align: center;
       }
     }
 
@@ -44,9 +48,12 @@
         font-size: 15px;
         line-height: 1.2;
         letter-spacing: 0.3;
-        text-align: center;
-        
+        text-align: center;      
       }
+      @media (max-width: 1199px) {
+        @include heading-xsmall;
+        // text-align: center;
+      }      
     }
   }
 }
@@ -161,6 +168,8 @@
 .booking-right .img{
   max-width: 100%;
 }
+
+// FAQ
 
 .faq{
   background-color: $primary-50;
