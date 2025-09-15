@@ -322,3 +322,23 @@
 .accordion-button:not(.collapsed)::after {
   background-image: url(/images/icon/ic_minus.svg); /* 展開時的圖片 */
 }
+
+/* Accordion 按鈕文字大小 */
+.accordion-button {
+  @include paragraph-xlarge;      /* 調整按鈕文字大小 */
+}
+
+/* Accordion 展開的內容文字大小 */
+.accordion-body {
+  @include paragraph-xlarge;     /* 調整展開內容文字大小 */
+}
+
+/* RWD 手機版微調 */ 
+@media (max-width: 767.98px) {
+  .accordion-button {
+    @include paragraph-small;   /* 手機版按鈕文字稍微小一點 */
+  }
+  .accordion-body {
+    @include paragraph-small;   /* 手機版展開文字稍微小一點 */
+  }
+}
