@@ -199,3 +199,33 @@
 
   } 
 }
+
+/* 移除藍色邊框與陰影 */
+.accordion-button:focus {
+  box-shadow: none;
+  border-color: transparent;
+  // background-image: url(/images/icon/ic_plus.svg);  
+}
+
+/* 移除展開時的藍色背景 */
+.accordion-button:not(.collapsed) {
+  background-color: transparent;
+  color: inherit;
+}
+
+/* 預設關閉狀態（有 collapsed 類別） */
+.accordion-button::after {
+  // content: "";
+  background-image: url(/images/icon/ic_plus.svg);  /* 關閉時的圖片 */
+  // background-size: 1.2rem;
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // width: 1.2rem;
+  // height: 1.2rem;
+  // transform: none !important; /* 移除 bootstrap 預設旋轉 */
+}
+
+/* 展開狀態（沒有 collapsed 類別） */
+.accordion-button:not(.collapsed)::after {
+  background-image: url(/images/icon/ic_minus.svg); /* 展開時的圖片 */
+}
