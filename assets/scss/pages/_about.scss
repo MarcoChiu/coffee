@@ -25,21 +25,21 @@
     }
 
     h1 {
-      @include heading-header-title; // 套用共用樣式 (含 font-size)
+      @include heading(header-title); // 套用共用樣式 (含 font-size)
 
       // 桌機板覆寫 
       @media (max-width: 767px) {
-        @include heading-small;
-        text-align: center;
+        @include heading(small);
+        text-align: center; //使用原子化填寫在scss
       }
       @media (max-width: 1199px) {
-        @include heading-xxlarge;
+        @include heading(xxlarge);
         // text-align: center;
       }
     }
 
     h5 {
-      @include heading-small; // 假設這裡也有定義共用樣式
+      @include heading(small); // 假設這裡也有定義共用樣式
 
       // 桌機板覆寫
       @media (max-width: 767px) {
@@ -51,7 +51,7 @@
         text-align: center;      
       }
       @media (max-width: 1199px) {
-        @include heading-xsmall;
+        @include heading(xsmall);
         // text-align: center;
       }      
     }
@@ -73,11 +73,11 @@
 
   h2{
     white-space: nowrap;
-    @include heading-xlarge;    
+    @include heading(xlarge);    
   }
 
   p{
-    @include  paragraph-medium;
+    @include  paragraph(medium);
   }
 
   .about-horizontal{
@@ -102,11 +102,11 @@
     }
 
     h2{
-      @include  heading-medium;
+      @include  heading(medium);
     }
 
     p{
-      @include label-small;
+      @include label(small);
     }
   }
 }
@@ -138,54 +138,54 @@
 
 .service{
   h2{
-    @include heading-xxlarge;
+    @include heading(xxlarge);
   }
 
   h3{
-    @include heading-xlarge;
+    @include heading(xlarge);
     letter-spacing: $spacer24;
   }
 
   h4{
-    @include heading-small;
+    @include heading(small);
     color:$accent-300;
   }
 
   h5{
-    @include label-large;
+    @include label(large);
   }
 
   p{
-    @include paragraph-large;
+    @include paragraph(large);
   }
 
   ul{
-    @include paragraph-large;
+    @include paragraph(large);
   }
 
   @media (max-width:767px) {
     h2{
-      @include heading-medium;
+      @include heading(medium);
     }
 
     h3{
-      @include heading-small;
+      @include heading(small);
     }
 
     h4{
-      @include heading-xsmall;
+      @include heading(xsmall);
     }
 
     h5{
-      @include label-xsmall;
+      @include label(xsmall);
     }
 
     p{
-      @include paragraph-small;
+      @include paragraph(small);
     }
 
     ul{
-      @include paragraph-small;
+      @include paragraph(small);
     }
   }
 }
@@ -237,13 +237,13 @@
   padding-bottom: 32px;
 
   h2{
-    @include heading-xxlarge; 
+    @include heading(xxlarge); 
     color:$primary-950;
     letter-spacing: 11px;
   }
 
   h3{
-    @include heading-small; 
+    @include heading(small); 
     color: $accent-300; 
   }
 }
@@ -253,10 +253,10 @@
   }
 
   h2{
-    @include heading-medium;
+    @include heading(medium);
   }
   h3{
-    @include heading-xsmall;
+    @include heading(xsmall);
   }
 }
 
@@ -325,20 +325,20 @@
 
 /* Accordion 按鈕文字大小 */
 .accordion-button {
-  @include paragraph-xlarge;      /* 調整按鈕文字大小 */
+  @include paragraph(xlarge);      /* 調整按鈕文字大小 */
 }
 
 /* Accordion 展開的內容文字大小 */
 .accordion-body {
-  @include paragraph-xlarge;     /* 調整展開內容文字大小 */
+  @include paragraph(xlarge);     /* 調整展開內容文字大小 */
 }
 
 /* RWD 手機版微調 */ 
 @media (max-width: 767px) {
   .accordion-button {
-    @include paragraph-small;   /* 手機版按鈕文字稍微小一點 */
+    @include paragraph(small);   /* 手機版按鈕文字稍微小一點 */
   }
   .accordion-body {
-    @include paragraph-small;   /* 手機版展開文字稍微小一點 */
+    @include paragraph(small);   /* 手機版展開文字稍微小一點 */
   }
 }
