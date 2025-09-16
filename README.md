@@ -15,6 +15,24 @@ https://www.figma.com/design/PrGtcgM9NgwmM1fsdcZSAd/%E5%9C%98%E9%9A%8A%E5%B0%88%
 https://www.figma.com/design/JR0sze2fVEr2cuvrhDuXd1/%E5%9C%98%E9%9A%8A%E5%B0%88%E9%A1%8C--A-8-%E7%BE%8A%E8%B9%84%E5%92%96%E5%95%A1?m=auto&t=WblgXowAmwolyREO-6
 ```
 
+## 目前進度
+```
+header
+電腦: % 手機: % 
+footer
+電腦: % 手機: %
+about.html
+電腦: % 手機: %
+explore.html
+電腦: 100% 手機:100%
+index.html
+電腦: % 手機: %
+products.html
+電腦: % 手機: %
+porductdetail.html
+電腦: % 手機: %
+```
+
 ## Git
 ```
 https://github.com/MarcoChiu/coffee
