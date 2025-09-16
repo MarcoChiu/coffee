@@ -15,6 +15,24 @@ https://www.figma.com/design/PrGtcgM9NgwmM1fsdcZSAd/%E5%9C%98%E9%9A%8A%E5%B0%88%
 https://www.figma.com/design/JR0sze2fVEr2cuvrhDuXd1/%E5%9C%98%E9%9A%8A%E5%B0%88%E9%A1%8C--A-8-%E7%BE%8A%E8%B9%84%E5%92%96%E5%95%A1?m=auto&t=WblgXowAmwolyREO-6
 ```
 
+## 目前進度
+```
+header
+電腦: % 手機: % 
+footer
+電腦: % 手機: %
+about.html
+電腦: % 手機: %
+explore.html
+電腦: 100% 手機:100%
+index.html
+電腦: % 手機: %
+products.html
+電腦: % 手機: %
+porductdetail.html
+電腦: % 手機: %
+```
+
 ## Git
 ```
 https://github.com/MarcoChiu/coffee
@@ -26,9 +44,6 @@ https://marcochiu.github.io/coffee/
 ```
 coffee
 ├─assests
-├───fonts (字體)
-├─────ChenYuluoyan-2.0-Thin.woff2
-├───images (靜態圖片)
 ├───scss
 ├─────base (通用樣式)
 ├───────_base.scss (全域通用樣式)
@@ -61,7 +76,11 @@ coffee
 ├───index.html (首頁)
 ├───productdetail.html (產品詳情頁)
 ├───products.html (線上商店)
- 
+├─public (靜態不編譯檔案)
+├───fonts (字體)
+├─────ChenYuluoyan-2.0-Thin.woff2
+├───images (靜態圖片)
+
 ```
 
 # 網頁切版直播班 Vite 範例 - Bootstrap 版本

@@ -1,6 +1,140 @@
+// .nav-test{
+//   .test-navbar {
+//   background-color: #6F4E37;
+//   color: white;
+//   position: relative;
+// }
+
+//   .test-breadcrumb + .test-breadcrumb ::before{
+//     content: "/";
+//   }
+//   .test-breadcrumb{
+//     display: flex;
+//   }
+
+// /* 隱藏 checkbox */
+//   .menu-toggle {
+//     display: none;
+//   }
+
+//   /* nav-top 排版用 flex 水平三欄 */
+//   .nav-top {
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     padding: 10px 20px;
+//   }
+
+//   /* 每一欄用 flex: 1 來均分空間 */
+//   .nav-left,
+//   .nav-logo,
+//   .nav-icons {
+//     flex: 1;
+//     display: flex;
+//     align-items: center;
+//   }
+
+//   /* LOGO 置中 */
+//   .nav-logo {
+//     justify-content: center;
+//   }
+
+//   .nav-logo a {
+//     color: white;
+//     font-size: 1.5em;
+//     font-weight: bold;
+//     text-decoration: none;
+//   }
+
+//   /* icon 靠右對齊 */
+//   .nav-icons {
+//     justify-content: flex-end;
+//   }
+
+//   .nav-icons a {
+//     color: white;
+//     margin-left: 15px;
+//     font-size: 1.2em;
+//     text-decoration: none;
+//   }
+
+//   /* 導覽列（桌面） */
+//   .nav-links {
+//     list-style: none;
+//     display: flex;
+//     margin: 0;
+//     padding: 0;
+//   }
+
+//   .nav-links li {
+//     margin-right: 20px;
+//   }
+
+//   .nav-links a {
+//     color: white;
+//     text-decoration: none;
+//     font-weight: bold;
+//   }
+
+//   /* 漢堡 icon 預設隱藏 */
+//   .hamburger {
+//     font-size: 1.5em;
+//     color: white;
+//     cursor: pointer;
+//     display: none;
+//   }
+
+//   /* 手機展開選單 */
+//   .mobile-menu {
+//     display: none;
+//     flex-direction: column;
+//     background-color: white;
+//     width: 100%;
+//     position: absolute;
+//     top: 100%;
+//     left: 0;
+//     z-index: 10;
+//     padding: 10px 0;
+//     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+//   }
+
+//   .mobile-menu li {
+//     text-align: center;
+//     margin: 10px 0;
+//   }
+
+//   .mobile-menu a {
+//     color: #333;
+//     text-decoration: none;
+//     font-weight: bold;
+//   }
+
+//   /* ==== 手機版設定 ==== */
+//   @media (max-width: 768px) {
+//     .nav-links {
+//       display: none;
+//     }
+
+//     .hamburger {
+//       display: block;
+//     }
+
+//     .nav-left {
+//       justify-content: flex-start;
+//     }
+
+//     /* 顯示展開選單 */
+//     .menu-toggle:checked ~ .mobile-menu {
+//       display: flex;
+//     }
+//   }
+// }
+
+
+
 .products{
   .header1{
-    height: 400px-88px;
+    height: 160px; //-88px;
     background-size: cover;
     background-image: url(/images/index/banner2.png);
     background-repeat: no-repeat;
@@ -10,20 +144,97 @@
     background-blend-mode: multiply;
   }
   .header2{
-    height: 400px-88px;
+    height: 160px; //-88px;
     background-size: cover;
     background-image: url(/images/products/banner1.png);
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center bottom; // 72%
     position: relative;
     background-color: rgba(#312000, 0.4);
     background-blend-mode: multiply;
   }
+
+  .paragraph-xxlarge{
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  text-align: center;
+  }
+
+  .carousel-title{
+    display: block;
+    flex-direction: column;
+    letter-spacing: 0.3em;
+  }
+
   .horizontal-line{
+    display: none;
     width: 80px;
     height: 3px;
     background-color: #F7F6EF;
   }
+
+  .carousel-indicators{
+    display: none;
+  }
+}
+
+@media(min-width:768px){
+.products{
+  .header1{
+    height: 400px; //-88px;
+    background-size: cover;
+    background-image: url(/images/index/banner2.png);
+    background-repeat: no-repeat;
+    background-position: center 72%;
+    position: relative;
+    background-color: rgba(#312000, 0.4);
+    background-blend-mode: multiply;
+  }
+
+  .header2{
+    height: 400px; //-88px;
+    background-size: cover;
+    background-image: url(/images/products/banner1.png);
+    background-repeat: no-repeat;
+    background-position: center 72%;
+    position: relative;
+    background-color: rgba(#312000, 0.4);
+    background-blend-mode: multiply;
+  }
+
+  .carousel-title{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .horizontal-line{
+    display: inline;
+    width: 80px;
+    height: 3px;
+    background-color: #F7F6EF;
+  }
+
+.heading-small{
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 1.2;
+  letter-spacing: 0.3em;
+  color: text-primary-50;
+  }
+
+.paragraph-xxlarge{
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  text-align: left;
+  }  
+}
 }
 
 .products-bg{
@@ -40,18 +251,20 @@
     gap: 0px;
   }
 
+  // 設計稿文字色碼顏色太淺，改用標籤的名稱
   .nav-link{
     color: $grey-500;
+    width: 100px;
   }
 
-  a:hover,:focus{
+  a:hover,a:focus{
     color: $primary-800;
     border-bottom-width: 2px;
   }
 }
 
 .nav-underline .nav-link.active{
-  color: $grey-500;
+  color: $primary-800;
   font-weight: 400;
 }
 
@@ -82,11 +295,128 @@
 //   }
 // }
 
+// .form-control{
+//   border:$primary-200 1px solid;
+// }
+
+// 搜尋框樣式包
+.products-form-control {
+  display: block;
+  width: 100%;
+  padding: $input-padding-y $input-padding-x;
+  font-family: $input-font-family;
+  // @include font-size($input-font-size);
+  font-weight: $input-font-weight;
+  line-height: $input-line-height;
+  color: $input-color;
+  appearance: none; // Fix appearance for date inputs in Safari
+  background-color: $input-bg;
+  background-clip: padding-box;
+  // border: $input-border-width solid $input-border-color;
+  border:$primary-200 1px solid;
+
+  // Note: This has no effect on <select>s in some browsers, due to the limited stylability of `<select>`s in CSS.
+  @include border-radius($input-border-radius, 0);
+
+  @include box-shadow($input-box-shadow);
+  @include transition($input-transition);
+
+  &[type="file"] {
+    overflow: hidden; // prevent pseudo element button overlap
+
+    &:not(:disabled):not([readonly]) {
+      cursor: pointer;
+    }
+  }
+
+  // Customize the `:focus` state to imitate native WebKit styles.
+  &:focus {
+    color: $input-focus-color;
+    background-color: $input-focus-bg;
+    // border-color: $input-focus-border-color;
+    border-color: $primary-700;
+    outline: 0;
+    @if $enable-shadows {
+      @include box-shadow($input-box-shadow, $input-focus-box-shadow);
+    } @else {
+      // Avoid using mixin so we can pass custom focus shadow properly
+      box-shadow: none;
+    }
+  }
+
+  &::-webkit-date-and-time-value {
+    // On Android Chrome, form-control's "width: 100%" makes the input width too small
+    // Tested under Android 11 / Chrome 89, Android 12 / Chrome 100, Android 13 / Chrome 109
+    //
+    // On iOS Safari, form-control's "appearance: none" + "width: 100%" makes the input width too small
+    // Tested under iOS 16.2 / Safari 16.2
+    min-width: 85px; // Seems to be a good minimum safe width
+
+    // Add some height to date inputs on iOS
+    // https://github.com/twbs/bootstrap/issues/23307
+    // TODO: we can remove this workaround once https://bugs.webkit.org/show_bug.cgi?id=198959 is resolved
+    // Multiply line-height by 1em if it has no unit
+    height: if(unit($input-line-height) == "", $input-line-height * 1em, $input-line-height);
+
+    // Android Chrome type="date" is taller than the other inputs
+    // because of "margin: 1px 24px 1px 4px" inside the shadow DOM
+    // Tested under Android 11 / Chrome 89, Android 12 / Chrome 100, Android 13 / Chrome 109
+    margin: 0;
+  }
+
+  // Prevent excessive date input height in Webkit
+  // https://github.com/twbs/bootstrap/issues/34433
+  &::-webkit-datetime-edit {
+    display: block;
+    padding: 0;
+  }
+
+  // Placeholder
+  &::placeholder {
+    color: $input-placeholder-color;
+    // Override Firefox's unusual default opacity; see https://github.com/twbs/bootstrap/pull/11526.
+    opacity: 1;
+  }
+
+  // Disabled inputs
+  //
+  // HTML5 says that controls under a fieldset > legend:first-child won't be
+  // disabled if the fieldset is disabled. Due to implementation difficulty, we
+  // don't honor that edge case; we style them as disabled anyway.
+  &:disabled {
+    color: $input-disabled-color;
+    background-color: $input-disabled-bg;
+    border-color: $input-disabled-border-color;
+    // iOS fix for unreadable disabled content; see https://github.com/twbs/bootstrap/issues/11655.
+    opacity: 1;
+  }
+
+  // File input buttons theming
+  &::file-selector-button {
+    padding: $input-padding-y $input-padding-x;
+    margin: (-$input-padding-y) (-$input-padding-x);
+    margin-inline-end: $input-padding-x;
+    color: $form-file-button-color;
+    @include gradient-bg($form-file-button-bg);
+    pointer-events: none;
+    border-color: inherit;
+    border-style: solid;
+    border-width: 0;
+    border-inline-end-width: $input-border-width;
+    border-radius: 0; // stylelint-disable-line property-disallowed-list
+    @include transition($btn-transition);
+  }
+
+  &:hover:not(:disabled):not([readonly])::file-selector-button {
+    background-color: $form-file-button-hover-bg;
+  }
+}
+
 input[type="search"]::-webkit-search-cancel-button {
     -webkit-appearance: none;
     height: 20px;
     width: 20px;
-    background: url(/public/images/icon/ic_fluent_dismiss_24_regular.png) no-repeat;
+    background: url(/images/icon/ic_fluent_dismiss_24_regular.png) no-repeat;
     background-size: contain;
     cursor: pointer;
 }
@@ -95,7 +425,7 @@ input[type="search"]::-webkit-search-cancel-button:hover {
     -webkit-appearance: none;
     height: 20px;
     width: 20px;
-    background: url(/public/images/icon/ic_fluent_dismiss_24_regular.png) no-repeat;
+    background: url(/images/icon/ic_fluent_dismiss_24_regular.png) no-repeat;
     background-size: contain;
     cursor: pointer;
 }
@@ -147,6 +477,7 @@ input[type="search"]::-webkit-search-cancel-button:hover {
 
 .page-link.active, .active > .page-link.products-pagination{
   background-color: $primary-700;
+  z-index: 0;
 }
 
 .page-item:first-child .page-link.products-pagination{
@@ -160,6 +491,9 @@ input[type="search"]::-webkit-search-cancel-button:hover {
 }
 
 .products-pagination{
+  width: 39px;
+  height: 36px;
+  text-align: center;
   background-color: #FCFAF8;
   color: $primary-950;
   border: 0px;
@@ -172,16 +506,35 @@ input[type="search"]::-webkit-search-cancel-button:hover {
   path{
     fill:white;
   }
+  z-index: 1;
 }
 
 .products-pagination:focus{
-  background-color: $primary-700;
+  background-color:$primary-700;
   color: white;
+  path{
+    fill:white;
+  }  
   box-shadow: none;
+  z-index: 0;
+}
+
+.products-pagination.products-pagination-bothSide:focus{
+  background-color:transparent;
+  color: white;
+  path{
+    fill:$primary-950;
+  }  
+  box-shadow: none;
+  z-index: 0;
 }
 
 .ellipsis{
   user-select: none;
+}
+
+.page-item:not(:first-child) .page-link.products-pagination {
+  margin-left: 0px
 }
 
 @media(min-width:1200px){
@@ -210,6 +563,11 @@ input[type="search"]::-webkit-search-cancel-button:hover {
 }
 
 @media(min-width:768px){
+
+  .products-nav-link.nav-link{
+    width: auto;
+  }
+
   .search .paragraph-small{
     font-size: 16px;
   }
@@ -240,25 +598,34 @@ input[type="search"]::-webkit-search-cancel-button:hover {
 
   .productsHeart:hover + .products-heartFilled{
   opacity: 1;
-}
-
-.products-link .card:hover{
-  border: $primary-100 1px solid;
-  border-radius: 16px;
-  
-  .card-img-top{
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
   }
 
-  .card-body{
-    background-color: $primary-50;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 16px;
-    border-bottom-right-radius: 16px;
+  .products-link .card:hover{
+    border: $primary-100 1px solid;
+    border-radius: 16px;
+    
+    .card-img-top{
+      border-top-left-radius: 16px;
+      border-top-right-radius: 16px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+    }
+
+    .card-body{
+      background-color: $primary-50;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 16px;
+      border-bottom-right-radius: 16px;
+    }
   }
-}
+
+  .products-pagination.products-pagination-bothSide:hover{
+    background-color: $primary-700;
+    color: white;
+    path{
+    fill:white;
+    }
+    z-index: 1;
+  }
 }
