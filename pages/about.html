@@ -65,8 +65,8 @@
           </div>
 
           <!-- Booking a test -->
-          <div class="row service-mb80 text-primary-950 align-items-stretch">
-            <div class="booking-left pe-40 col-md-6 order-md-1 order-1">
+          <div class="row mb-40 mb-mt-80 text-primary-950 align-items-stretch">
+            <div class="booking-left pe-40 col-md-6">
               <div class="mb-md-40 mb-20">
                 <h3 class="pb-12">
                   預約試喝
@@ -77,9 +77,12 @@
                   <p class="service-horizontal"></p>
                 </div>
 
+                <!-- RWD和圖片x2 交換位置 使用js效果-->                 
+                <div class="x1 mb-md-0 mt-20 mb-20"></div> 
+
               </div>
 
-              <div class="order-md-3 order-3">
+              <div>
                 <p>由於工作室內空間有限，目前暫無開放內用服務。</p>
                 <p>
                   若您有咖啡試飲需求，歡迎填寫預約表單，我們將為您保留專屬時段。
@@ -89,7 +92,7 @@
                 <p>讓我們有足夠時間，與您分享每一杯咖啡的風味故事</p>
               </div>
 
-              <div class="btn-ground order-md-4 order-4">
+              <div class="btn-ground">
                 <button
                   type="button"
                   class="btn btn-primary-800 rounded-pill btn-pd">
@@ -98,7 +101,7 @@
               </div>
           </div>
 
-          <div class="booking-right col-md-6 order-md-2 order-2">
+          <div class="booking-right col-md-6 x2">
             <img src="/images/index/about-2.png" alt="" class="img-fluid w-100 object-fit-cover" />
           </div>
 
@@ -106,28 +109,28 @@
 
 
           <!-- Business Cooperation -->
-          <div class="row align-items-stretch mb-md-120">
-            <!-- 圖片 -->
-            <div class="booking-right col-md-6 order-md-2 order-2">
-              <img src="/images/index/about-1.png" alt="" class="img-fluid w-100 object-fit-cover"/>
-            </div>
-
+          <div class="row align-items-stretch mb-md-120 mb-40">
+            <!-- 左邊 -->
             <div class="booking-left pe-40  col-md-6">
               <!-- 標題 -->
-              <div class="mb-md-40 mb-20 order-md-1 order-1">
+              <div class="mb-md-40 mb-20">
                 <h3 class="booking-spacing pb-12">
                   商業合作
                 </h3>
-  
+                
                 <div class="d-flex">
                   <h5 class="label-large">Business Cooperation</h5>
                   <p class="service-horizontal"></p>
                 </div>
 
+                  <!-- RWD和圖片x2 交換位置 使用js效果-->                 
+                <div class="x1 mb-md-0 mt-20 mb-20"></div> 
+                
               </div>
-
+              
+              
               <!-- 文字內容 -->
-              <div class="text-primary-950 mb-40 order-md-2 order-3">
+              <div class="text-primary-950 mb-40">
                 <p>工作室提供以下服務：</p><br>
                 <ul class="pdl-1">
                   <li>代客烘焙、客製化禮盒</li>
@@ -139,17 +142,22 @@
                   <br>我們會與您聯繫。
                 </p>
               </div>
-
+              
+              <!-- 按鈕 -->
+              <div class="btn-ground">
+                <button
+                  type="button"
+                  class="btn btn-primary-800 rounded-pill btn-pd">
+                  立即預約
+                </button>
+              </div>
+              
             </div>
             
-          </div>
-          <!-- 按鈕 -->
-          <div class="btn-ground order-4 order-md-3">
-            <button
-              type="button"
-              class="btn btn-primary-800 rounded-pill btn-pd">
-              立即預約
-            </button>
+            <!--右邊 圖片 -->
+            <div class="booking-right col-md-6 x2">
+              <img src="/images/index/about-1.png" alt="" class="img-fluid w-100 object-fit-cover"/>
+            </div>
           </div>
 
 
@@ -242,5 +250,6 @@
     <%- include('./layout/footer'); -%>
     <script type="module" src="../main.js"></script>
     <%- include('./layout/js'); -%>
+    <%- include('./layout/jquery'); -%>
   </body>
 </html>
