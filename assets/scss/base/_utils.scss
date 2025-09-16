@@ -1,4 +1,5 @@
 //https://learn.microsoft.com/zh-tw/dotnet/api/system.drawing.fontstyle?view=windowsdesktop-9.0&viewFallbackFrom=dotnet-plat-ext-8.0
+
 // 定義 heading 設定
 $headings: (
     header-title: (50px, 12px),
@@ -20,7 +21,7 @@ $headings: (
     letter-spacing: nth($config, 2);
 }
 
-// heading
+// 維持class heading
 .heading-header-title { @include heading(header-title); }
 .heading-xxxlarge     { @include heading(xxxlarge); }
 .heading-xxlarge      { @include heading(xxlarge); }
