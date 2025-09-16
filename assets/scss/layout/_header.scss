@@ -1,96 +1,149 @@
-.nav-font-size{
-  font-size: 18px;
-  font-weight: 400px;
-  line-height: 1.5;
-}
-
-@media (max-width:1200px) {
+.header{
   .nav-font-size{
-    font-size: 14px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
   }
-}
-@media (max-width:976px) {
-  .nav-font-size{
-    font-size: 11px;
-
+  
+  @media (max-width:1200px) {
+    .nav-font-size{
+      font-size: 14px;
+    }
   }
-}
-.color-primary-50{
-  color: $primary-50;
-}
-
-.breadcrumb{
-  flex-wrap: nowrap;
-}
-
-.breadcrumb-item + .breadcrumb-item::before{
-  color: $primary-50;
-  padding-left: 12px;
-  padding-right: 12px;
-  float:none;
-}
-
-@media (max-width: 767px) {
-.breadcrumb-item + .breadcrumb-item::before{
-    display: none;
+  @media (max-width:976px) {
+    .nav-font-size{
+      font-size: 11px;
+  
+    }
   }
-}
-
-.navbar-toggler {
-  border: none;
-
-  // 移除 bootstrap 預設灰色背景
-  .navbar-toggler-icon {
-    background-image: none;
+  .color-primary-50{
+    color: $primary-50;
   }
-}
-
-/* 桌機 breadcrumb 連結顏色 */
-.header-hover:hover {
-  color: $accent-300;
-}
-
-.logo {
-  display: inline-block;
-  width: 240px;
-  height: 56px;
-  background: url("/images/header/Logo.svg") no-repeat center / contain;
-}
-
-.logo:hover {
-  filter: brightness(0) saturate(100%) invert(76%) sepia(52%) saturate(300%) hue-rotate(350deg) brightness(102%) contrast(97%);
-}
-
-.icon:hover{
-  filter: brightness(0) saturate(100%) invert(76%) sepia(52%) saturate(300%) hue-rotate(350deg) brightness(102%) contrast(97%);
-}
-
-@media (max-width: 767px) {
+  
+  .breadcrumb{
+    flex-wrap: nowrap;
+  }
+  
+  .breadcrumb-item + .breadcrumb-item::before{
+    color: $primary-50;
+    padding-left: 12px;
+    padding-right: 12px;
+    float:none;
+  }
+  
+  @media (max-width: 767px) {
+    nav .breadcrumb{
+      display: none;
+    }
+  
+  .breadcrumb-item + .breadcrumb-item::before{
+      display: none;
+    }
+  }
+  
+  .navbar-toggler {
+    border: none;
+  
+    // 移除 bootstrap 預設灰色背景
+    .navbar-toggler-icon {
+      background-image: none;
+    }
+  }
+  
+  /* 桌機 breadcrumb 連結顏色 */
+  .header-hover:hover {
+    color: $accent-300;
+  }
+  
   .logo {
-    width: 40px;
-    height: 40px;
-    background: url("/images/header/small-logo.svg") no-repeat center / contain;
-  }
-}
-
-/* 漢堡 icon 白色 */
-.navbar-toggler {
-  border: none;
-
-  .navbar-toggler-icon {
-    background-image: none;
-    display: none;
-  }
-//  breadcrumb 
-  &::after {
-    content: "";
     display: inline-block;
-    width: 1.5em;
-    height: 1.5em;
-    background-image: url("/images/header/ic_Hamburger.svg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    width: 240px;
+    height: 56px;
+    background: url("/images/header/Logo.svg") no-repeat center / contain;
   }
-}
-
-
+  
+  .logo:hover {
+    filter: brightness(0) saturate(100%) invert(76%) sepia(52%) saturate(300%) hue-rotate(350deg) brightness(102%) contrast(97%);
+  }
+  
+  .icon:hover{
+    filter: brightness(0) saturate(100%) invert(76%) sepia(52%) saturate(300%) hue-rotate(350deg) brightness(102%) contrast(97%);
+  }
+  
+  @media (max-width: 767px) {
+    .logo {
+      width: 40px;
+      height: 40px;
+      background: url("/images/header/small-logo.svg") no-repeat center / contain;
+    }
+  }
+  
+  /* 漢堡 icon 白色 */
+  .navbar-toggler {
+    border: none;
+  
+    .navbar-toggler-icon {
+      background-image: none;
+      display: none;
+    }
+  //  breadcrumb 
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 1.5em;
+      height: 1.5em;
+      background-image: url("/images/header/ic_Hamburger.svg");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+  }
+  
+  /* Mobile slide-in menu */
+  .mobile-menu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: calc(100vh - 72px);
+    width: 100vw;
+    background-color: #ffffff;
+    z-index: 1040; /* Higher than navbar (default Bootstrap is 1030) */
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .mobile-menu.open {
+    transform: translateX(0);
+  }
+  
+  /* Menu list style */
+  .menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .menu-list li {
+    margin: 20px 0;
+  }
+  
+  .menu-list a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .menu-list a:hover {
+    color: #888;
+  }
+  
+  /* Only show on small screens */
+  @media (min-width: 768px) {
+    .mobile-menu {
+      display: none;
+    }
+  }
+}  

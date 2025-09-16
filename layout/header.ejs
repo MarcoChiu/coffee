@@ -1,78 +1,107 @@
-<div class="bg-primary-800">
-  <div class="container">
-    <div class="row align-items-center">
-      <!-- 左側 breadcrumb -->
-      <div class="col-2 col-md-4">
-        <nav class="navbar navbar-dark nav-padding navbar-expand-md nav-font-size">
-          <!-- RWD漢堡選單  拉出選單尚未設置-->
-          <button
-            class="navbar-toggler border-0"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <!-- 折疊內容 -->
-          <div class="collapse navbar-collapse py-18" id="navbarSupportedContent">
-            <ul class="breadcrumb navnar-nav me-auto mb-2 mb-md-0 color-primary-50">
-              <li class="breadcrumb-item nav-item header-hover">
-                <a
-                  class="nav-link d-inline-block"
-                  aria-current="page"
-                  href="about.html"
-                  >關於羊蹄</a
-                >
-              </li>
-              <li class="breadcrumb-item navbar-item header-hover">
-                <a
-                  class="nav-link d-inline-block"
-                  aria-current="page"
-                  href="products.html"
-                  >線上商店</a
-                >
-              </li>
-              <li class="breadcrumb-item navbar-item header-hover">
-                <a
-                  class="nav-link d-inline-block"
-                  aria-current="page"
-                  href="explore.html"
-                  >探索風味</a
-                >
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-
-      <!-- 中間 logo -->
-      <div class="col-8 col-md-4 text-center">
-        <div class="logo-wrap d-flex justify-content-center flex-grow-1 py-16">
-          <a class="navbar-brand logo d-inline-block" href="index.html"></a>
+<div class="header">
+  <div class="bg-primary-800">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- 左側 breadcrumb -->
+        <div class="col-2 col-md-4">
+          <nav class="navbar navbar-dark nav-padding navbar-expand-md nav-font-size">
+            <!-- RWD漢堡選單  拉出選單尚未設置-->
+            <button class="navbar-toggler border-0" type="button" id="menuToggle">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- 手機滑動選單面板 -->
+  
+            <!-- 折疊內容 -->
+            
+              <ul class="breadcrumb navnar-nav me-auto mb-2 mb-md-0 color-primary-50">
+                <li class="breadcrumb-item nav-item header-hover">
+                  <a class="nav-link d-inline-block" aria-current="page" href="about.html">關於羊蹄</a>
+                </li>
+                <li class="breadcrumb-item navbar-item header-hover">
+                  <a class="nav-link d-inline-block" aria-current="page" href="products.html">線上商店</a>
+                </li>
+                <li class="breadcrumb-item navbar-item header-hover">
+                  <a class="nav-link d-inline-block" aria-current="page" href="explore.html">探索風味</a>
+                </li>
+              </ul>
+            
+          </nav>
         </div>
-      </div>
-
-      <!-- 右側購物車 & 會員 -->
-      <div class="col-2 col-md-4">
-        <nav class="d-flex justify-content-end gap-3">
-          <a class="nav-link me-12 icon" href="#">
-            <img
-              src="/images/header/ic_Shopping_Cart.svg"
-              alt="購物車"
-              width="26"
-              height="26" />
-          </a>
-          <a class="nav-link icon" href="#">
-            <img
-              src="/images//header/ic_User.svg"
-              alt="會員"
-              width="24"
-              height="30" />
-          </a>
-        </nav>
+  
+        <!-- 中間 logo -->
+        <div class="col-8 col-md-4 text-center">
+          <div class="logo-wrap d-flex justify-content-center flex-grow-1 py-16">
+            <a class="navbar-brand logo d-inline-block" href="index.html"></a>
+          </div>
+        </div>
+  
+        <!-- 右側購物車 & 會員 -->
+        <div class="col-2 col-md-4">
+          <nav class="d-flex justify-content-end gap-3">
+            <a class="nav-link me-12 icon" href="#">
+              <img src="/images/header/ic_Shopping_Cart.svg" alt="購物車" width="26" height="26" />
+            </a>
+            <a class="nav-link icon" href="#">
+              <img src="/images//header/ic_User.svg" alt="會員" width="24" height="30" />
+            </a>
+          </nav>
+        </div>
       </div>
     </div>
   </div>
+  <div id="mobileMenu" class="mobile-menu">
+    <ul class="menu-list">
+      <li><a href="about.html">關於羊蹄</a></li>
+      <li><a href="products.html">線上商店</a></li>
+      <li><a href="explore.html">探索風味</a></li>
+    </ul>
+  </div>
 </div>
+
+<script>
+ document.addEventListener("DOMContentLoaded", function () {
+  const toggleBtn = document.getElementById("menuToggle");
+  const mobileMenu = document.getElementById("mobileMenu");
+  let isMenuOpen = false;
+
+  // ✅ 只點擊 toggleBtn 本身時，才切換 menu
+  toggleBtn.addEventListener("click", function (e) {
+    // ⛔ 如果點的是 <a> 裡面的東西，不做任何事
+    if (e.target.closest("a")) return;
+
+    e.stopPropagation();
+    isMenuOpen = !isMenuOpen;
+    mobileMenu.classList.toggle("open", isMenuOpen);
+  });
+
+  // ✅ 點 menu 本體不關閉
+  mobileMenu.addEventListener("click", function (e) {
+    e.stopPropagation();
+  });
+
+  // ✅ 點其他地方才關閉
+  document.addEventListener("click", function (e) {
+    // 點選的是 toggleBtn、menu、本身或 <a> 連結，通通不處理
+    if (
+      e.target.closest("#menuToggle") ||
+      e.target.closest("#mobileMenu") ||
+      e.target.closest("a")
+    ) {
+      return;
+    }
+
+    isMenuOpen = false;
+    mobileMenu.classList.remove("open");
+  });
+
+  // ✅ 點 menu 裡的連結後關閉（可選）
+  const menuLinks = mobileMenu.querySelectorAll("a");
+  menuLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      isMenuOpen = false;
+      mobileMenu.classList.remove("open");
+    });
+  });
+});
+
+</script>
