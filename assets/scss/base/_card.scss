@@ -8,12 +8,11 @@
   // 愛心
   position: relative;
 
-
   .hearticon {
     position: absolute;
+    cursor: pointer; //滑鼠指標  
     top: 20px;
     right: 20px;
-    cursor: pointer; //滑鼠指標    
 
     .bi-heart {
       font-size: 36px;
@@ -27,6 +26,11 @@
 
     // 產品列表字要變小
     @media (max-width: 768px) {
+      .hearticon.psm {
+        top: 10px;
+        right: 10px;
+      }
+
       .bi-heart.psm {
         font-size: 24px;
       }
@@ -34,6 +38,8 @@
       .bi-heart-fill.psm {
         font-size: 24px;
       }
+
+
     }
   }
 
@@ -65,7 +71,6 @@
     text-align: center;
     color: $primary-950 ;
   }
-
 
   // 產品列表字要變小
   @media (max-width: 768px) {
