@@ -151,44 +151,9 @@
         padding-left: 12px;
         padding-right: 12px;
         padding-bottom: 109px;
-      }
+      }  
 
-      .coffee-type {
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.5;
-        letter-spacing: 2px;
-        text-align: center;
-        color: $primary-700 ;
-      }
-
-      .coffee-name {
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 1.5;
-        letter-spacing: 2px;
-        text-align: center;
-        color: $primary-950 ;
-      }
-
-      .coffee-price {
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 1.5;
-        letter-spacing: 2px;
-        text-align: center;
-        color: $primary-950 ;
-      }
-
-      .productcard {
-        background-color: $grey-0;
-
-        &:hover {
-          background-color: $primary-50 ;
-        }
-      }
-
-      a{
+      a {
         text-decoration: none;
       }
     }
@@ -220,19 +185,3 @@
   }
 }
 
-.hearticon {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  cursor: pointer; //滑鼠指標
-
-  .bi-heart {
-    font-size: 36px;
-    color: $grey-300;
-  }
-
-  .bi-heart-fill {
-    font-size: 36px;
-    color: $primary-950;
-  }
-}
