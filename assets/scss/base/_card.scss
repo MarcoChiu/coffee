@@ -23,17 +23,15 @@
     .bi-heart-fill {
       font-size: 36px;
       color: $primary-950;
-    }    
-
-    // 產品列表字要變小
-    .bi-heart.bp {
-      @media (max-width: 768px) {
-        font-size: 24px;
-      }
     }
 
-    .bi-heart-fill.bp {
-      @media (max-width: 768px) {
+    // 產品列表字要變小
+    @media (max-width: 768px) {
+      .bi-heart.psm {
+        font-size: 24px;
+      }
+
+      .bi-heart-fill.psm {
         font-size: 24px;
       }
     }
@@ -69,4 +67,18 @@
   }
 
 
+  // 產品列表字要變小
+  @media (max-width: 768px) {
+    .coffee-type.psm {
+      font-size: 12px;
+    }
+
+    .coffee-name.psm {
+      font-size: 16px;
+    }
+
+    .coffee-price.psm {
+      font-size: 16px;
+    }
+  }
 }
