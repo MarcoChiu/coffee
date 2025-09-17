@@ -18,7 +18,7 @@ https://www.figma.com/design/JR0sze2fVEr2cuvrhDuXd1/%E5%9C%98%E9%9A%8A%E5%B0%88%
 ## 目前進度
 ```
 header
-電腦: 100% 手機: 70% 
+電腦: 100% 手機: 90% 
 footer
 電腦: % 手機: %
 about.html
