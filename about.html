@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>關於羊蹄</title>
-        <script type="module" crossorigin src="/coffee/assets/main-UfO7Cm15.js"></script>
-        <link rel="stylesheet" crossorigin href="/coffee/assets/main-BvaMp9xn.css">
+        <script type="module" crossorigin src="/coffee/assets/main-Dyx7bzRs.js"></script>
+        <link rel="stylesheet" crossorigin href="/coffee/assets/main-CLrkU0aX.css">
       </head>
 
   <body>
@@ -134,27 +134,33 @@
       </div>
 
 
-      <!-- service -->
+      <!-- service  RWD圖文順序--> 
       <div class="service">
         <div class="container">
-          <div class="text-center mt-md-120 mb-md-80 mt-40 mb-40">
-            <h4 class="  pb-12">Service</h4>
+          <div class="text-center service-title">
+            <h4 class="pb-12">Service</h4>
             <h2 class="">服務項目</h2>
           </div>
 
           <!-- Booking a test -->
-          <div class="row mb-md-80 text-primary-950">
+          <div class="row mb-40 mb-mt-80 text-primary-950 align-items-stretch">
             <div class="booking-left pe-40 col-md-6">
-              <h3 class="pb-12">
-                預約試喝
-              </h3>
+              <div class="mb-md-40 mb-20">
+                <h3 class="pb-12">
+                  預約試喝
+                </h3>
+  
+                <div class="d-flex">
+                  <h5 class="">Book a tasting</h5>
+                  <p class="service-horizontal"></p>
+                </div>
 
-              <div class="d-flex mb-md-40 mb-20">
-                <h5 class="">Book a tasting</h5>
-                <p class="service-horizontal"></p>
+                <!-- RWD和圖片x2 交換位置 使用js效果-->                 
+                <div class="x1 mb-md-0 mt-20 mb-20"></div> 
+
               </div>
 
-              <div class="paragraph-large mb-40">
+              <div>
                 <p>由於工作室內空間有限，目前暫無開放內用服務。</p>
                 <p>
                   若您有咖啡試飲需求，歡迎填寫預約表單，我們將為您保留專屬時段。
@@ -173,29 +179,38 @@
               </div>
           </div>
 
-          <div class="booking-right col-md-6">
-            <img src="/coffee/images/index/about-2.png" alt="" />
+          <div class="booking-right col-md-6 x2">
+            <img src="/coffee/images/index/about-2.png" alt="" class="img-fluid w-100 object-fit-cover" />
           </div>
 
         </div>
 
 
-
-      <div class="container">
           <!-- Business Cooperation -->
-          <div class="row book">
-            <div class="booking-left pe-40 col-md-6">
-              <h3 class="heading-xlarge booking-spacing pb-12">
-                商業合作
-              </h3>
-              <div class="d-flex mb-md-40 mb-20">
-                <h5 class="label-large">Business Cooperation</h5>
-                <p class="service-horizontal"></p>
-              </div>
+          <div class="row align-items-stretch mb-md-120 mb-40">
+            <!-- 左邊 -->
+            <div class="booking-left pe-40  col-md-6">
+              <!-- 標題 -->
+              <div class="mb-md-40 mb-20">
+                <h3 class="booking-spacing pb-12">
+                  商業合作
+                </h3>
+                
+                <div class="d-flex">
+                  <h5 class="label-large">Business Cooperation</h5>
+                  <p class="service-horizontal"></p>
+                </div>
 
-              <div class="paragraph-large text-primary-950 mb-40">
+                  <!-- RWD和圖片x2 交換位置 使用js效果-->                 
+                <div class="x1 mb-md-0 mt-20 mb-20"></div> 
+                
+              </div>
+              
+              
+              <!-- 文字內容 -->
+              <div class="text-primary-950 mb-40">
                 <p>工作室提供以下服務：</p><br>
-                <ul>
+                <ul class="pdl-1">
                   <li>代客烘焙、客製化禮盒</li>
                   <li>公司行號&營業用咖啡豆批發</li>
                   <li>不定期舉辦課程、講座、活動</li>
@@ -205,7 +220,8 @@
                   <br>我們會與您聯繫。
                 </p>
               </div>
-
+              
+              <!-- 按鈕 -->
               <div class="btn-ground">
                 <button
                   type="button"
@@ -213,23 +229,24 @@
                   立即預約
                 </button>
               </div>
+              
+            </div>
+            
+            <!--右邊 圖片 -->
+            <div class="booking-right col-md-6 x2">
+              <img src="/coffee/images/index/about-1.png" alt="" class="img-fluid w-100 object-fit-cover"/>
+            </div>
           </div>
 
-          <div class="booking-right col-md-6">
-            <img src="/coffee/images/index/about-1.png" alt="" />
-          </div>
 
-          </div>
-
-        </div>
       </div>
 
 
     <!-- FAQ -->
-      <div class="faq">
-        <div class="text-center service-title">
-          <h3 class="heading-small text-accent-300 pb-12">FAQ</h3>
-          <h2 class="heading-xxlarge text-primary-950">常見ＱＡ</h2>
+      <div class="faq ">
+        <div class="text-center faq-title">
+          <h3 class="pb-12">FAQ</h3>
+          <h2 class="">常見 ＱＡ</h2>
 
           
         </div>
@@ -365,5 +382,163 @@
     document.title = pagetilte;
 </script>
 
-   </body>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+
+    const data = [
+        {
+            "id": 1,
+            "country": "衣索比亞",
+            "city": "谷吉",
+            "place": "郝瑪璉何處理廠",
+            "photo": "/coffee/images/productsImg/blackCoffeeBean.png",
+            "type": "經典咖啡豆 | 中度烘焙",
+            "price": "$200~$600"
+        },
+        {
+            "id": 2,
+            "country": "衣索比亞",
+            "city": "西達摩",
+            "place": "蕾羅莎處理廠",
+            "photo": "/coffee/images/productsImg/redCoffeeBean.png",
+            "type": "經典咖啡豆 | 深度烘焙",
+            "price": "$280~$600"
+        },
+        {
+            "id": 3,
+            "country": "衣索比亞",
+            "city": "谷吉",
+            "place": "罕被拉",
+            "photo": "/coffee/images/productsImg/blackCoffeeBean.png",
+            "type": "經典咖啡豆 | 中度烘焙",
+            "price": "$200~$600"
+        },
+        {
+            "id": 4,
+            "country": "肯亞",
+            "city": "",
+            "place": "涅里區聯合處理廠",
+            "photo": "/coffee/images/productsImg/whiteCoffeeCup.png",
+            "type": "經典咖啡豆 | 輕度烘焙",
+            "price": "$350~$600"
+        },
+        {
+            "id": 5,
+            "country": "祕魯",
+            "city": "薇拉瑞卡",
+            "place": "安迪亞斯莊園",
+            "photo": "/coffee/images/productsImg/greenCoffeeCup.png",
+            "type": "經典咖啡豆 | 深度烘焙",
+            "price": "$280~$600"
+        },
+        {
+            "id": 6,
+            "country": "哥倫比亞",
+            "city": "",
+            "place": "萊姆柑橙",
+            "photo": "/coffee/images/productsImg/khakiCoffeeBag.png",
+            "type": "經典咖啡豆 | 輕度烘焙",
+            "price": "$350~$600"
+        },
+        {
+            "id": 7,
+            "country": "巴西",
+            "city": "南米納斯",
+            "place": "法罕莊園",
+            "photo": "/coffee/images/productsImg/yellowCoffeeCup.png",
+            "type": "經典咖啡豆 | 中度烘焙",
+            "price": "$200~$600"
+        },
+        {
+            "id": 8,
+            "country": "巴西",
+            "city": "",
+            "place": "星河莊園",
+            "photo": "/coffee/images/productsImg/purpleCoffeeBag.png",
+            "type": "經典咖啡豆 | 中度烘焙",
+            "price": "$200~$600"
+        },
+        {
+            "id": 9,
+            "country": "印尼",
+            "city": "蘇門答臘",
+            "place": "純波旁種 曼特寧",
+            "photo": "/coffee/images/productsImg/brownCoffeeBean.png",
+            "type": "經典咖啡豆 | 輕度烘焙",
+            "price": "$350~$600"
+        },
+        {
+            "id": 10,
+            "country": "冬雪藏梅",
+            "city": "",
+            "place": "配方",
+            "photo": "/coffee/images/productsImg/greenCoffeeBag.png",
+            "type": "經典咖啡豆 | 深度烘焙",
+            "price": "$280~$600"
+        }
+    ];
+
+    $(function () {
+
+        $(document).on("click", ".btn2,.btn3,.choosecard", function () {
+
+            //手機版移動到最上面
+            if (window.innerWidth < 768) {
+                $('html, body').animate({ scrollTop: 0 }, 100);
+            }
+
+            //顯示secion
+            var go = $(this).data('go');
+            if (go.startsWith("d")) {
+                //處理咖啡資料   
+                const coffeeid = parseInt(go.replace('d', ''));
+                $.each(data, function (index, item) {
+                    if (item.id === coffeeid) {
+                        //更換資料
+                        $('.coffee-name-br').html(item.country + ' ' + item.city + '<br>' + item.place);
+                        $('.coffee-name').text(item.country + ' ' + item.city + ' ' + item.place);                        
+                        $('.coffee-img').attr('src', item.photo);
+                        $('.coffee-img').attr('alt', item.country + ' ' + item.city + ' ' + item.place);
+                        $('.coffee-type').text(item.type);
+                        $('.coffee-price').text(item.price);
+                    }
+                });
+                $('#d').removeClass('d-none').siblings('section').addClass('d-none');
+            } else {
+                $('#' + go).removeClass('d-none').siblings('section').addClass('d-none');
+            }
+        });
+
+
+        $(document).on("click", ".cicon", function () {
+            $(this).addClass('d-none').siblings('.cicon').removeClass('d-none');
+        });
+
+
+        $(window).on('resize', function () {
+            resize();
+        });
+
+        function resize() {
+            if (window.innerWidth < 768) {
+                //console.log('小於768');
+                const html = $(".x2").html();
+                if (html != "") {
+                    $(".x1").append(html);
+                    $(".x2").html("");
+                }
+
+            } else {
+                //console.log('大於768');
+                const html = $(".x1").html();
+                if (html != "") {
+                    $(".x2").append(html);
+                    $(".x1").html("");
+                }
+            };
+        }
+
+        resize();
+    });
+</script>  </body>
 </html>
