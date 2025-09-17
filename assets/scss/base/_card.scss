@@ -8,11 +8,12 @@
   // 愛心
   position: relative;
 
+
   .hearticon {
     position: absolute;
     top: 20px;
     right: 20px;
-    cursor: pointer; //滑鼠指標
+    cursor: pointer; //滑鼠指標    
 
     .bi-heart {
       font-size: 36px;
@@ -22,8 +23,22 @@
     .bi-heart-fill {
       font-size: 36px;
       color: $primary-950;
+    }    
+
+    // 產品列表字要變小
+    .bi-heart.bp {
+      @media (max-width: 768px) {
+        font-size: 24px;
+      }
+    }
+
+    .bi-heart-fill.bp {
+      @media (max-width: 768px) {
+        font-size: 24px;
+      }
     }
   }
+
 
   // 咖啡內文
   .coffee-type {
