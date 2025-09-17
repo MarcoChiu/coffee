@@ -13,33 +13,32 @@
     cursor: pointer; //滑鼠指標  
     top: 20px;
     right: 20px;
+   
+    @media (max-width: 768px) {
+      &.psm {
+        top: 10px;
+        right: 10px;
+      }
+    }
 
     .bi-heart {
       font-size: 36px;
       color: $grey-300;
+      @media (max-width: 768px) {
+        &.psm {
+          font-size: 18px;
+        }
+      }
     }
 
     .bi-heart-fill {
       font-size: 36px;
       color: $primary-950;
-    }
-
-    // 產品列表字要變小
-    @media (max-width: 768px) {
-      .hearticon.psm {
-        top: 10px;
-        right: 10px;
+      @media (max-width: 768px) {
+        &.psm {
+          font-size: 18px;
+        }
       }
-
-      .bi-heart.psm {
-        font-size: 24px;
-      }
-
-      .bi-heart-fill.psm {
-        font-size: 24px;
-      }
-
-
     }
   }
 
