@@ -27,7 +27,7 @@
   @include paragraph(large);
 
   @media (max-width:1380px){
-    @include paragraph(xsmall);
+    @include heading(xxsmall);
   }
 }
 
