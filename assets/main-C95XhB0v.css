@@ -1,4 +1,4 @@
-@charset "UTF-8";@import'<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">';@font-face{font-family:cy2;src:url(../fonts/ChenYuluoyan-2.0-Thin.woff2) format("woff2")}/*!
+@charset "UTF-8";@import"https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap";@import"https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css";@font-face{font-family:cy2;src:url(../fonts/ChenYuluoyan-2.0-Thin.woff2) format("woff2")}/*!
  * Bootstrap  v5.3.6 (https://getbootstrap.com/)
  * Copyright 2011-2025 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
