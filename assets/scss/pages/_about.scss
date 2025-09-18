@@ -1,20 +1,20 @@
-.about-1{
+.about-1 {
   height: 400px;
   background-size: cover;
   background-image: url(/images/index/banner1.png);
   background-repeat: no-repeat;
   background-position: center center;
   position: relative;
-}
 
-.about-bg-color{
-  background-color: rgba(#3120003B, 50%);  
-  height: 400px;
-}
+  .about-bg-color{
+    background-color: rgba(#3120003B, 50%);  
+    height: 400px;
+  }
 
-.about-1 {
   .about-sheepo {
     margin-top: 140px;
+
+    
     @media (max-width:767px) {
       .about-sheepo{
         margin-top: 56px;   //margin rwd設置吃不到
@@ -180,18 +180,6 @@
   }
 }
 
-/* 讓圖片滿版並跟文字區塊等高 */
-.booking-right img {
-  object-fit: cover;  /* 填滿區域，不變形 */
-  width:100%;
-  height: 100%;
-  display: block;
-}
-.book.service-title {
-  margin: 0;   /* 取消 margin */
-  padding: 0;  /* 取消 padding */
-}
-
 .service-horizontal{
   width: 80px;
   height: 1px;
@@ -199,6 +187,14 @@
   margin-top: 13px;
   margin-bottom: 13px;
   margin-left: 20px;
+}
+
+/* 讓圖片滿版並跟文字區塊等高 */
+.booking-right img {
+  object-fit: cover;  /* 填滿區域，不變形 */
+  width:100%;
+  height: 100%;
+  display: block;
 }
 
 
@@ -220,44 +216,43 @@
 .faq{
   background-color: $primary-50;
   max-width: 100%;
-}
 
-.faq-title{
-  padding-top: 120px;
-  padding-bottom: 32px;
-
-  h2{
-    @include heading(xxlarge); 
-    color:$primary-950;
-    letter-spacing: 11px;
-  }
-
-  h3{
-    @include heading(small); 
-    color: $accent-300; 
-  }
-}
-@media (max-width:767px) {
   .faq-title{
-    padding-top: 40px;
+    padding-top: 120px;
+    padding-bottom: 32px;
+  
+    h2{
+      @include heading(xxlarge); 
+      color:$primary-950;
+      letter-spacing: 11px;
+    }
+  
+    h3{
+      @include heading(small); 
+      color: $accent-300; 
+    }
   }
-
-  h2{
-    @include heading(medium);
-  }
-  h3{
-    @include heading(xsmall);
+  
+  @media (max-width:767px) {
+    .faq-title{
+      padding-top: 40px;
+    }
+  
+    h2{
+      @include heading(medium);
+    }
+    h3{
+      @include heading(xsmall);
+    }
   }
 }
 
-.accordion {
-  --bs-accordion-bg: transparent;
-}
 
 .faq-qa{
   padding-left: 312px;
   padding-right: 312px;
   padding-bottom: 120px;
+
 }
 
 @media (max-width: 767px) {
@@ -267,6 +262,7 @@
   padding-top: 32px;
   padding-bottom: 40px;
   }
+
 }
 
 .accordion {
