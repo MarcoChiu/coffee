@@ -1,6 +1,10 @@
 .coffeecard {
   background-color: $grey-0;
 
+  a {
+    text-decoration: none;
+  }
+
   &:hover {
     background-color: $primary-50 ;
   }
@@ -13,7 +17,7 @@
     cursor: pointer; //滑鼠指標  
     top: 20px;
     right: 20px;
-   
+
     @media (max-width: 768px) {
       &.psm {
         top: 10px;
@@ -24,6 +28,7 @@
     .bi-heart {
       font-size: 36px;
       color: $grey-300;
+
       @media (max-width: 768px) {
         &.psm {
           font-size: 18px;
@@ -34,6 +39,7 @@
     .bi-heart-fill {
       font-size: 36px;
       color: $primary-950;
+
       @media (max-width: 768px) {
         &.psm {
           font-size: 18px;
