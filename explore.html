@@ -10,89 +10,76 @@
     fetchpriority="high" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css"
     rel="stylesheet">
-    <script type="module" crossorigin src="/coffee/assets/main-gsq36a0R.js"></script>
-    <link rel="stylesheet" crossorigin href="/coffee/assets/main-DJ-EWbi4.css">
+    <script type="module" crossorigin src="/coffee/assets/main-AJFyL7VJ.js"></script>
+    <link rel="stylesheet" crossorigin href="/coffee/assets/main-vGISomwq.css">
   </head>
 
 <body>
-  <div class="bg-primary-800">
+  <!-- Header：固定在最上方 -->
+<header class="bg-primary-800">
   <div class="container">
-    <div class="row align-items-center">
-      <!-- 左側 breadcrumb -->
+    <div class="row align-items-center" style="min-height: var(--header-h)">
+      <!-- 左：導覽（漢堡 + 桌機連結） -->
       <div class="col-2 col-md-4">
-        <nav class="navbar navbar-dark nav-padding navbar-expand-md nav-font-size">
-          <!-- RWD漢堡選單  拉出選單尚未設置-->
-          <button
-            class="navbar-toggler border-0"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation">
+        <nav class="navbar navbar-light nav-padding navbar-expand-md nav-font-size">
+          <!-- 漢堡（控制下面的 #mobileMenu 面板） -->
+          <button class="navbar-toggler border-0" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#mobileMenu"
+                  aria-controls="mobileMenu" aria-expanded="false"
+                  aria-label="切換導覽選單">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <!-- 折疊內容 -->
-          <div class="collapse navbar-collapse py-18" id="navbarSupportedContent">
-            <ul class="breadcrumb navnar-nav me-auto mb-2 mb-md-0 color-primary-50">
-              <li class="breadcrumb-item nav-item header-hover">
-                <a
-                  class="nav-link d-inline-block"
-                  aria-current="page"
-                  href="about.html"
-                  >關於羊蹄</a
-                >
-              </li>
-              <li class="breadcrumb-item navbar-item header-hover">
-                <a
-                  class="nav-link d-inline-block"
-                  aria-current="page"
-                  href="products.html"
-                  >線上商店</a
-                >
-              </li>
-              <li class="breadcrumb-item navbar-item header-hover">
-                <a
-                  class="nav-link d-inline-block"
-                  aria-current="page"
-                  href="explore.html"
-                  >探索風味</a
-                >
-              </li>
-            </ul>
-          </div>
+
+          <!-- 桌機水平導覽 -->
+          <ul class="navbar-nav d-none d-md-flex mb-0 breadcrumb nav-font-size">
+            <li class="nav-item breadcrumb-item header-hover">
+              <a class="nav-link d-inline-block" href="about.html">關於羊蹄</a>
+            </li>
+            <li class="nav-item breadcrumb-item header-hover">
+              <a class="nav-link d-inline-block" href="products.html">線上商店</a>
+            </li>
+            <li class="nav-item breadcrumb-item header-hover">
+              <a class="nav-link d-inline-block" href="explore.html">探索風味</a>
+            </li>
+          </ul>
         </nav>
       </div>
 
-      <!-- 中間 logo -->
+      <!-- 中：LOGO -->
       <div class="col-8 col-md-4 text-center">
         <div class="logo-wrap d-flex justify-content-center flex-grow-1 py-16">
           <a class="navbar-brand logo d-inline-block" href="index.html"></a>
         </div>
       </div>
 
-      <!-- 右側購物車 & 會員 -->
+      <!-- 右：Icons -->
       <div class="col-2 col-md-4">
         <nav class="d-flex justify-content-end gap-3">
-          <a class="nav-link me-12 icon" href="#">
-            <img
-              src="/coffee/images/header/ic_Shopping_Cart.svg"
-              alt="購物車"
-              width="26"
-              height="26" />
+          <a class="nav-link me-12 icon" href="#" aria-label="購物車">
+            <img src="/coffee/images/header/ic_Shopping_Cart.svg" alt="" width="26" height="26" />
           </a>
-          <a class="nav-link icon" href="#">
-            <img
-              src="/coffee/images//header/ic_User.svg"
-              alt="會員"
-              width="24"
-              height="30" />
+          <a class="nav-link icon" href="#" aria-label="會員">
+            <img src="/coffee/images/header/ic_User.svg" alt="" width="24" height="30" />
           </a>
         </nav>
       </div>
     </div>
   </div>
+</header>
+
+<!-- ✅ 手機版下滑白底選單面板（由上方漢堡按鈕控制） -->
+<div id="mobileMenu" class="collapse mobile-menu-panel" data-bs-parent="body">
+  <nav class="container">
+    <ul class="list-unstyled mb-0">
+      <li class="py-2 text-center"><a class="menu-link" href="about.html">關於羊蹄</a></li>
+      <li class="py-2 text-center"><a class="menu-link" href="products.html">線上商店</a></li>
+      <li class="py-2 text-center"><a class="menu-link" href="explore.html">探索風味</a></li>
+    </ul>
+  </nav>
 </div>
+
+
+
 
     <main class="explore">
       <!-- 找尋屬於我的咖啡風味 -->
