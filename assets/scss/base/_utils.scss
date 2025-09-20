@@ -1,141 +1,97 @@
 //https://learn.microsoft.com/zh-tw/dotnet/api/system.drawing.fontstyle?view=windowsdesktop-9.0&viewFallbackFrom=dotnet-plat-ext-8.0
 
-@mixin heading-header-title {
-     font-family: "Noto Sans TC", sans-serif;
-     font-weight: 400;
-     font-size: 50px;
-     line-height: 1.2;
-     letter-spacing: 12px;
- }
+// 定義 heading 設定
+$headings: (
+    header-title: (50px, 12px),
+    xxxlarge:     (50px, 0.3em),
+    xxlarge:      (40px, 0),
+    xlarge:       (36px, 0),
+    medium:       (28px, 0),
+    small:        (24px, 0),
+    xsmall:       (20px, 0),
+    xxsmall:      (13px, 0),
+);
 
-@mixin heading-xxxlarge {
-     font-family: "Noto Sans TC", sans-serif;
-     font-weight: 400;
-     font-size: 50px;
-     line-height: 1.2;
-     letter-spacing: 0.3em;
+// 通用 mixin heading
+@mixin heading($type) {
+    $config: map-get($headings, $type);
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 400;
+    font-size: nth($config, 1);
+    line-height: 1.2;
+    letter-spacing: nth($config, 2);
+}
 
- }
-
-@mixin heading-xxlarge {
-     font-family: "Noto Sans TC", sans-serif;
-     font-weight: 400;
-     font-size: 40px;
-     line-height: 1.2;
-
- }
-
-@mixin heading-xlarge {
-     font-family: "Noto Sans TC", sans-serif;
-     font-weight: 400;
-     font-size: 36px;
-     line-height: 1.2;
-
- }
-
-@mixin heading-medium {
-     font-family: "Noto Sans TC", sans-serif;
-     font-weight: 400;
-     font-size: 28px;
-     line-height: 1.2;
- }
-
-@mixin heading-small {
-     font-family: "Noto Sans TC", sans-serif;
-     font-weight: 400;
-     font-size: 24px;
-     line-height: 1.2;
- }
+// 維持class heading
+.heading-header-title { @include heading(header-title); }
+.heading-xxxlarge     { @include heading(xxxlarge); }
+.heading-xxlarge      { @include heading(xxlarge); }
+.heading-xlarge       { @include heading(xlarge); }
+.heading-medium       { @include heading(medium); }
+.heading-small        { @include heading(small); }
+.heading-xsmall       { @include heading(xsmall); }
 
 
-@mixin heading-xsmall {
-     font-family: "Noto Sans TC", sans-serif;
-     font-weight: 400;
-     font-size: 20px;
-     line-height: 1.2;
- }
+// 定義 label 設定
+$labels: (
+    large:  (18px),
+    medium: (16px),
+    small:  (14px),
+    xsmall: (12px)
+);
 
+// 通用 mixin label
+@mixin label($type) {
+    $size: map-get($labels, $type);
 
-@mixin label-large {
-     font-family: "Noto Sans TC", sans-serif;
-     font-weight: 700;
-     font-size: 18px;
-     line-height: 1.5;
- }
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 700;
+    font-size: $size;
+    line-height: 1.5;
+}
 
-@mixin label-medium {
-     font-family: "Noto Sans TC", sans-serif;
-     font-weight: 700;
-     font-size: 16px;
-     line-height: 1.5;
- }
+// label
+.label-large  { @include label(large); }
+.label-medium { @include label(medium); }
+.label-small  { @include label(small); }
+.label-xsmall { @include label(xsmall); }
 
-@mixin label-small {
-     font-family: "Noto Sans TC", sans-serif;
-     font-weight: 700;
-     font-size: 14px;
-     line-height: 1.5;
- }
+// 定義 paragraph 設定 (size, letter-spacing)
+$paragraphs: (
+    xxlarge: (24px, 0.1em),
+    xlarge:  (20px, 0),
+    large:   (18px, 2px),
+    medium:  (16px, 2px),
+    small:   (14px, 0),
+    xsmall:  (12px, 0)
+);
 
-@mixin label-xsmall {
-     font-family: "Noto Sans TC", sans-serif;
-     font-weight: 700;
-     font-size: 12px;
-     line-height: 1.5;
- }
+// mixin paragraph
+@mixin paragraph($type) {
+    $config: map-get($paragraphs, $type);
 
-@mixin paragraph-xxlarge{
-     font-family: "Noto Sans TC", sans-serif;
-     font-weight: 400;
-     font-size: 24px;
-     line-height: 1.5;
-     letter-spacing: 0.1em;
- }
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 400;
+    font-size: nth($config, 1);
+    line-height: 1.5;
+    letter-spacing: nth($config, 2);
+}
 
- .paragraph-xlarge{
-     font-family: "Noto Sans TC", sans-serif;
-     font-weight: 400;
-     font-size: 20px;
-     line-height: 1.5;
- }
+// paragraph
+.paragraph-xxlarge { @include paragraph(xxlarge); }
+.paragraph-xlarge  { @include paragraph(xlarge); }
+.paragraph-large   { @include paragraph(large); }
+.paragraph-medium  { @include paragraph(medium); }
+.paragraph-small   { @include paragraph(small); }
+.paragraph-xsmall  { @include paragraph(xsmall); }
 
-@mixin paragraph-large{
-     font-family: "Noto Sans TC", sans-serif;
-     font-weight: 400;
-     font-size: 18px;
-     line-height: 1.5;
-     letter-spacing: 2px;
- }
+.ChenYuluoyan{
+    font-family: "ChenYuluoyan", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.5;
+}
 
-@mixin paragraph-medium{
-     font-family: "Noto Sans TC", sans-serif;
-     font-weight: 400;
-     font-size: 16px;
-     line-height: 1.5;
-     letter-spacing: 2px;
- }
-
-@mixin paragraph-small{
-     font-family: "Noto Sans TC", sans-serif;
-     font-weight: 400;
-     font-size: 14px;
-     line-height: 1.5;
- }
-
-@mixin paragraph-xsamll{
-     font-family: "Noto Sans TC", sans-serif;
-     font-weight: 400;
-     font-size: 12px;
-     line-height: 1.5;
- }
-
-@mixin ChenYuluoyan{
-     font-family: "ChenYuluoyan", sans-serif;
-     font-weight: 400;
-     font-size: 12px;
-     line-height: 1.5;
- }
-
-@mixin ls-2{
+.ls-2{
     letter-spacing: 2px;
- }
+}

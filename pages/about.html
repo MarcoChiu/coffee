@@ -8,9 +8,8 @@
     <%- include('./layout/style'); -%>
   </head>
 
-  <body>
+  <body id="top">
     <%- include('./layout/header'); -%>
-
     <main class="">
       <!-- 關於羊蹄 -->
       <div class="about-1 ">
@@ -56,27 +55,33 @@
       </div>
 
 
-      <!-- service -->
+      <!-- service  RWD圖文順序--> 
       <div class="service">
         <div class="container">
-          <div class="text-center mt-md-120 mb-md-80 mt-40 mb-40">
-            <h4 class="  pb-12">Service</h4>
+          <div class="text-center service-title">
+            <h4 class="pb-12">Service</h4>
             <h2 class="">服務項目</h2>
           </div>
 
           <!-- Booking a test -->
-          <div class="row mb-md-80 text-primary-950">
-            <div class="booking-left pe-40 col-md-6">
-              <h3 class="pb-12">
-                預約試喝
-              </h3>
+          <div class="row mb-40 mb-mt-80 text-primary-950 align-items-stretch">
+            <div class="booking-left col-md-6">
+              <div class="mb-md-40 mb-20">
+                <h3 class="pb-12">
+                  預約試喝
+                </h3>
+  
+                <div class="d-flex">
+                  <h5 class="">Book a tasting</h5>
+                  <p class="service-horizontal"></p>
+                </div>
 
-              <div class="d-flex mb-md-40 mb-20">
-                <h5 class="">Book a tasting</h5>
-                <p class="service-horizontal"></p>
+                <!-- RWD和圖片x2 交換位置 使用js效果-->                 
+                <div class="x1 mb-md-0 mt-20 mb-20"></div> 
+
               </div>
 
-              <div class="paragraph-large mb-40">
+              <div>
                 <p>由於工作室內空間有限，目前暫無開放內用服務。</p>
                 <p>
                   若您有咖啡試飲需求，歡迎填寫預約表單，我們將為您保留專屬時段。
@@ -95,29 +100,38 @@
               </div>
           </div>
 
-          <div class="booking-right col-md-6">
-            <img src="/images/index/about-2.png" alt="" />
+          <div class="booking-right col-md-6 x2">
+            <img src="/images/index/about-2.png" alt="" class="img-fluid w-100 object-fit-cover" />
           </div>
 
         </div>
 
 
-
-      <div class="container">
           <!-- Business Cooperation -->
-          <div class="row book">
-            <div class="booking-left pe-40 col-md-6">
-              <h3 class="heading-xlarge booking-spacing pb-12">
-                商業合作
-              </h3>
-              <div class="d-flex mb-md-40 mb-20">
-                <h5 class="label-large">Business Cooperation</h5>
-                <p class="service-horizontal"></p>
-              </div>
+          <div class="row align-items-stretch mb-md-120 mb-40">
+            <!-- 左邊 -->
+            <div class="booking-left pe-40  col-md-6">
+              <!-- 標題 -->
+              <div class="mb-md-40 mb-20">
+                <h3 class="booking-spacing pb-12">
+                  商業合作
+                </h3>
+                
+                <div class="d-flex">
+                  <h5 class="label-large">Business Cooperation</h5>
+                  <p class="service-horizontal"></p>
+                </div>
 
-              <div class="paragraph-large text-primary-950 mb-40">
+                  <!-- RWD和圖片x2 交換位置 使用js效果-->                 
+                <div class="x1 mb-md-0 mt-20 mb-20"></div> 
+                
+              </div>
+              
+              
+              <!-- 文字內容 -->
+              <div class="text-primary-950 mb-40">
                 <p>工作室提供以下服務：</p><br>
-                <ul>
+                <ul class="pdl-1">
                   <li>代客烘焙、客製化禮盒</li>
                   <li>公司行號&營業用咖啡豆批發</li>
                   <li>不定期舉辦課程、講座、活動</li>
@@ -127,7 +141,8 @@
                   <br>我們會與您聯繫。
                 </p>
               </div>
-
+              
+              <!-- 按鈕 -->
               <div class="btn-ground">
                 <button
                   type="button"
@@ -135,23 +150,24 @@
                   立即預約
                 </button>
               </div>
+              
+            </div>
+            
+            <!--右邊 圖片 -->
+            <div class="booking-right col-md-6 x2">
+              <img src="/images/index/about-1.png" alt="" class="img-fluid w-100 object-fit-cover"/>
+            </div>
           </div>
 
-          <div class="booking-right col-md-6">
-            <img src="/images/index/about-1.png" alt="" />
-          </div>
 
-          </div>
-
-        </div>
       </div>
 
 
     <!-- FAQ -->
-      <div class="faq">
-        <div class="text-center service-title">
-          <h3 class="heading-small text-accent-300 pb-12">FAQ</h3>
-          <h2 class="heading-xxlarge text-primary-950">常見ＱＡ</h2>
+      <div class="faq ">
+        <div class="text-center faq-title">
+          <h3 class="pb-12">FAQ</h3>
+          <h2 class="">常見 ＱＡ</h2>
 
           
         </div>
@@ -231,7 +247,9 @@
     </main>
 
     <%- include('./layout/footer'); -%>
-    <script type="module" src="../main.js"></script>
     <%- include('./layout/js'); -%>
+    <%- include('./layout/jquery'); -%>
+    <%- include('./layout/btup'); -%>
+    <script type="module" src="../main.js"></script>
   </body>
 </html>

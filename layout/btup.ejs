@@ -1,0 +1,23 @@
+
+
+<div class="container">
+  <a href="#top" class="up d-none d-md-block">
+    <img src="/images/icon/ic_fluent_chevron_up_24_regular.png" alt="">
+  </a>
+</div>
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const btn = document.querySelector('.up');
+    const scroller =
+      document.querySelector('.scroll') || // 你的自訂容器
+      document.scrollingElement || document.documentElement;
+
+    btn?.addEventListener('click', (e) => {
+      e.preventDefault();
+      const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      scroller.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' });
+    });
+  });
+</script>

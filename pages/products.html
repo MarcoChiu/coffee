@@ -6,19 +6,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title></title>
+
   <%- include('./layout/style'); -%>
 </head>
 
-<body class="products-bg">
+<body class="products-bg" id="top">
   <%- include('./layout/header'); -%>
 
-  <!-- <div class="nav-test">
+    <!-- <div class="nav-test">
     <nav class="test-navbar">
       <input type="checkbox" id="menu-toggle" class="menu-toggle"/>
       
       <div class="nav-top container-xl"> -->
-      <!-- 左：漢堡或導覽列 -->
-        <!-- <div class="nav-left">
+    <!-- 左：漢堡或導覽列 -->
+    <!-- <div class="nav-left">
           <label for="menu-toggle" class="hamburger">
             <i class="fas fa-bars"><svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M2.75 18h12.5a.75.75 0 0 1 .102 1.493l-.102.007H2.75a.75.75 0 0 1-.102-1.494L2.75 18h12.5-12.5Zm0-6.5h18.5a.75.75 0 0 1 .102 1.493L21.25 13H2.75a.75.75 0 0 1-.102-1.493l.102-.007h18.5-18.5Zm0-6.497h15.5a.75.75 0 0 1 .102 1.493l-.102.007H2.75a.75.75 0 0 1-.102-1.493l.102-.007h15.5-15.5Z" fill="#fff"/></svg></i>
           </label>
@@ -30,71 +31,72 @@
           </ul>
         </div> -->
 
-        <!-- 中：LOGO -->
-        <!-- <div class="nav-logo">
+    <!-- 中：LOGO -->
+    <!-- <div class="nav-logo">
           <a href="#">LOGO</a>
         </div> -->
 
-        <!-- 右：icons -->
-        <!-- <div class="nav-icons">
+    <!-- 右：icons -->
+    <!-- <div class="nav-icons">
           <a href="#"><img src="/images/header/ic_Shopping_Cart.svg" class="fas fa-shopping-cart"></img></a>
           <a href="#"><img src="/images//header/ic_User.svg" class="fas fa-user"></img></a>
         </div>
       </div> -->
 
-      <!-- 手機展開的選單 -->
-      <!-- <ul class="mobile-menu">
+    <!-- 手機展開的選單 -->
+    <!-- <ul class="mobile-menu">
         <li><a href="#">關於羊蹄 ></a></li>
         <li><a href="#">線上商店 ></a></li>
         <li><a href="#">探索風味 ></a></li>
       </ul>
     </nav>
   </div> -->
-  
-      <!-- 輪播 -->
-      <div class="products">
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-              aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-              aria-label="Slide 2"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item header1 active">
-              <div class="container my-md-120 mt-28 mb-16">
-                <div class="carousel-title d-flex align-items-center mb-md-24 mb-8">
-                  <span class="carousel-title heading-small text-primary-50 mb-0">限時折扣</span>
-                  <div class="horizontal-line me-16"></div>
-                  <span class="carousel-title heading-small text-primary-50 mb-0">全店滿千折百</span>
-                </div>
-                <p class="paragraph-xxlarge mb-4 text-primary-50">現在下單滿 NT$1,000 現折 NT$100</p>
-                <p class="paragraph-xxlarge text-primary-50">把喜歡的風味一次帶回家！</p>
+
+    <!-- 輪播 -->
+    <div class="products">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item header1 active">
+            <div class="container my-md-120 mt-28 mb-16">
+              <div class="carousel-title d-flex align-items-center mb-md-24 mb-8">
+                <span class="carousel-title heading-small text-primary-50 mb-0">限時折扣</span>
+                <div class="horizontal-line me-16"></div>
+                <span class="carousel-title heading-small text-primary-50 mb-0">全店滿千折百</span>
               </div>
+              <p class="paragraph-xxlarge mb-4 text-primary-50">現在下單滿 NT$1,000 現折 NT$100</p>
+              <p class="paragraph-xxlarge text-primary-50">把喜歡的風味一次帶回家！</p>
             </div>
-            <div class="carousel-item header2">
-              <div class="container my-md-120 mt-28 mb-16">
-                <div class="carousel-title d-flex align-items-center mb-md-24 mb-8">
-                  <span class="carousel-title heading-small text-primary-50 mb-0">中秋節</span>
-                  <div class="horizontal-line me-16"></div>
-                  <span class="carousel-title heading-small text-primary-50 mb-0">限定濾掛禮盒</span>
-                </div>
-                <p class="paragraph-xxlarge mb-4 text-primary-50">這個中秋不只賞月，也要賞味</p>
-                <p class="paragraph-xxlarge text-primary-50">送出一份不一樣的團圓滋味！</p>
+          </div>
+          <div class="carousel-item header2">
+            <div class="container my-md-120 mt-28 mb-16">
+              <div class="carousel-title d-flex align-items-center mb-md-24 mb-8">
+                <span class="carousel-title heading-small text-primary-50 mb-0">中秋節</span>
+                <div class="horizontal-line me-16"></div>
+                <span class="carousel-title heading-small text-primary-50 mb-0">限定濾掛禮盒</span>
               </div>
+              <p class="paragraph-xxlarge mb-4 text-primary-50">這個中秋不只賞月，也要賞味</p>
+              <p class="paragraph-xxlarge text-primary-50">送出一份不一樣的團圓滋味！</p>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-    <main class="container-xl">
+    <main class="container">
       <!-- 商品NAV -->
       <div class="row flex-md-row flex-column products-nav mb-md-40">
 
         <div class="col-md-9">
           <ul class="nav nav-underline d-flex flex-row flex-nowrap overflow-x-auto">
             <li class="nav-item">
-              <a class="products-nav-link nav-link paragraph-medium text-center py-20 px-md-16" aria-current="page" href="#">
+              <a class="products-nav-link nav-link paragraph-medium text-center py-20 px-md-16" aria-current="page"
+                href="#">
                 <!-- <a class="active disabled"></a> -->
                 全部商品
               </a>
@@ -110,7 +112,7 @@
             </li>
             <li class="nav-item">
               <a class="products-nav-link nav-link paragraph-medium text-center py-20 px-md-16" href="#">限定禮盒</a>
-            </li>                        
+            </li>
           </ul>
         </div>
 
@@ -128,342 +130,434 @@
       </div>
 
       <!-- 卡片 Bootsrap Grid cards -->
-      <div class="mb-20 mb-md-40"> 
+      <div class="mb-20 mb-md-40">
         <div class="row row-cols-2 row-cols-md-3 gx-md-64 gy-md-40 gx-16 gy-20">
 
           <!-- whiteCoffeeCup -->
           <div class="col">
-            <a href="#" class="text-decoration-none products-link">
+            <a href="/coffee/pages/productdetail.html" class="text-decoration-none products-link">
               <div class="card">
-  
+
                 <!-- 商品照與底色 -->
                 <div class="w-100 ratio ratio-1x1 bg-primary-50 position-relative">
                   <div class="heartArea">
                     <label for="whiteCoffeeCup" class="products-label">
-                                        
+
                       <input type="checkbox" id="whiteCoffeeCup" class="productsHeart">
-              
+
                       <!-- 實心愛心 -->
-                      <svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="products-heartFilled">
-                        <path d="m12.82 5.58-.82.822-.824-.824a5.375 5.375 0 1 0-7.601 7.602l7.895 7.895a.75.75 0 0 0 1.06 0l7.902-7.897a5.376 5.376 0 0 0-.001-7.599 5.38 5.38 0 0 0-7.611 0Z" fill="#5B4530"/>
+                      <svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                        class="products-heartFilled">
+                        <path
+                          d="m12.82 5.58-.82.822-.824-.824a5.375 5.375 0 1 0-7.601 7.602l7.895 7.895a.75.75 0 0 0 1.06 0l7.902-7.897a5.376 5.376 0 0 0-.001-7.599 5.38 5.38 0 0 0-7.611 0Z"
+                          fill="#5B4530" />
                       </svg>
-      
+
                       <!-- 空心愛心 -->
-                      <svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="products-heartOutlined">
-                        <path d="m12.82 5.58-.82.822-.824-.824a5.375 5.375 0 1 0-7.601 7.602l7.895 7.895a.75.75 0 0 0 1.06 0l7.902-7.897a5.376 5.376 0 0 0-.001-7.599 5.38 5.38 0 0 0-7.611 0Zm6.548 6.54L12 19.485 4.635 12.12a3.875 3.875 0 1 1 5.48-5.48l1.358 1.357a.75.75 0 0 0 1.073-.012L13.88 6.64a3.88 3.88 0 0 1 5.487 5.48Z" fill="#ADADAD"/>
-                      </svg> 
-                        
+                      <svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                        class="products-heartOutlined">
+                        <path
+                          d="m12.82 5.58-.82.822-.824-.824a5.375 5.375 0 1 0-7.601 7.602l7.895 7.895a.75.75 0 0 0 1.06 0l7.902-7.897a5.376 5.376 0 0 0-.001-7.599 5.38 5.38 0 0 0-7.611 0Zm6.548 6.54L12 19.485 4.635 12.12a3.875 3.875 0 1 1 5.48-5.48l1.358 1.357a.75.75 0 0 0 1.073-.012L13.88 6.64a3.88 3.88 0 0 1 5.487 5.48Z"
+                          fill="#ADADAD" />
+                      </svg>
+
                     </label>
                   </div>
-  
-                  <img src="/images/productsImg/whiteCoffeeCup.png" class="w-100 object-fit-cover position-absolute top-50 start-50 translate-middle pe-none" alt="...">
+
+                  <img src="/images/productsImg/whiteCoffeeCup.png"
+                    class="w-100 object-fit-cover position-absolute top-50 start-50 translate-middle pe-none" alt="...">
                 </div>
-  
+
                 <div class="card-body products-bg text-center py-20 px-0">
                   <h5 class="card-title label-xsmall products-label-md-small text-primary-700 mb-8">經典咖啡豆 | 輕度烘焙</h5>
-                  <p class="card-text paragraph-medium products-paragraph-md-xlarge text-primary-950 mb-8">肯亞 涅里區聯合處理廠</p>
+                  <p class="card-text paragraph-medium products-paragraph-md-xlarge text-primary-950 mb-8">肯亞 涅里區聯合處理廠
+                  </p>
                   <p class="card-text label-medium products-label-md-large text-primary-950">$350~$600</p>
                 </div>
               </div>
             </a>
-          </div> 
+          </div>
 
           <!-- greenCoffeeCup -->
           <div class="col">
             <a href="#" class="text-decoration-none products-link">
               <div class="card">
-  
+
                 <!-- 商品照與底色 -->
                 <div class="w-100 ratio ratio-1x1 bg-primary-50 position-relative">
                   <div class="heartArea">
                     <label for="greenCoffeeCup" class="products-label">
-                                        
+
                       <input type="checkbox" id="greenCoffeeCup" class="productsHeart">
-              
+
                       <!-- 實心愛心 -->
-                      <svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="products-heartFilled">
-                        <path d="m12.82 5.58-.82.822-.824-.824a5.375 5.375 0 1 0-7.601 7.602l7.895 7.895a.75.75 0 0 0 1.06 0l7.902-7.897a5.376 5.376 0 0 0-.001-7.599 5.38 5.38 0 0 0-7.611 0Z" fill="#5B4530"/>
+                      <svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                        class="products-heartFilled">
+                        <path
+                          d="m12.82 5.58-.82.822-.824-.824a5.375 5.375 0 1 0-7.601 7.602l7.895 7.895a.75.75 0 0 0 1.06 0l7.902-7.897a5.376 5.376 0 0 0-.001-7.599 5.38 5.38 0 0 0-7.611 0Z"
+                          fill="#5B4530" />
                       </svg>
-      
+
                       <!-- 空心愛心 -->
-                      <svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="products-heartOutlined">
-                        <path d="m12.82 5.58-.82.822-.824-.824a5.375 5.375 0 1 0-7.601 7.602l7.895 7.895a.75.75 0 0 0 1.06 0l7.902-7.897a5.376 5.376 0 0 0-.001-7.599 5.38 5.38 0 0 0-7.611 0Zm6.548 6.54L12 19.485 4.635 12.12a3.875 3.875 0 1 1 5.48-5.48l1.358 1.357a.75.75 0 0 0 1.073-.012L13.88 6.64a3.88 3.88 0 0 1 5.487 5.48Z" fill="#ADADAD"/>
-                      </svg> 
-                        
+                      <svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                        class="products-heartOutlined">
+                        <path
+                          d="m12.82 5.58-.82.822-.824-.824a5.375 5.375 0 1 0-7.601 7.602l7.895 7.895a.75.75 0 0 0 1.06 0l7.902-7.897a5.376 5.376 0 0 0-.001-7.599 5.38 5.38 0 0 0-7.611 0Zm6.548 6.54L12 19.485 4.635 12.12a3.875 3.875 0 1 1 5.48-5.48l1.358 1.357a.75.75 0 0 0 1.073-.012L13.88 6.64a3.88 3.88 0 0 1 5.487 5.48Z"
+                          fill="#ADADAD" />
+                      </svg>
+
                     </label>
                   </div>
-  
-                  <img src="/images/productsImg/greenCoffeeCup.png" class="w-100 object-fit-cover position-absolute top-50 start-50 translate-middle pe-none" alt="...">
+
+                  <img src="/images/productsImg/greenCoffeeCup.png"
+                    class="w-100 object-fit-cover position-absolute top-50 start-50 translate-middle pe-none" alt="...">
                 </div>
-  
+
                 <div class="card-body products-bg text-center py-20 px-0">
                   <h5 class="card-title label-xsmall products-label-md-small text-primary-700 mb-8">經典咖啡豆 | 輕度烘焙</h5>
-                  <p class="card-text paragraph-medium products-paragraph-md-xlarge text-primary-950 mb-8">肯亞 涅里區聯合處理廠</p>
+                  <p class="card-text paragraph-medium products-paragraph-md-xlarge text-primary-950 mb-8">肯亞 涅里區聯合處理廠
+                  </p>
                   <p class="card-text label-medium products-label-md-large text-primary-950">$350~$600</p>
                 </div>
               </div>
             </a>
-          </div> 
-          
+          </div>
+
           <!-- yellowCoffeeCup -->
           <div class="col">
             <a href="#" class="text-decoration-none products-link">
               <div class="card">
-  
+
                 <!-- 商品照與底色 -->
                 <div class="w-100 ratio ratio-1x1 bg-primary-50 position-relative">
                   <div class="heartArea">
                     <label for="yellowCoffeeCup" class="products-label">
-                                        
+
                       <input type="checkbox" id="yellowCoffeeCup" class="productsHeart">
-              
+
                       <!-- 實心愛心 -->
-                      <svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="products-heartFilled">
-                        <path d="m12.82 5.58-.82.822-.824-.824a5.375 5.375 0 1 0-7.601 7.602l7.895 7.895a.75.75 0 0 0 1.06 0l7.902-7.897a5.376 5.376 0 0 0-.001-7.599 5.38 5.38 0 0 0-7.611 0Z" fill="#5B4530"/>
+                      <svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                        class="products-heartFilled">
+                        <path
+                          d="m12.82 5.58-.82.822-.824-.824a5.375 5.375 0 1 0-7.601 7.602l7.895 7.895a.75.75 0 0 0 1.06 0l7.902-7.897a5.376 5.376 0 0 0-.001-7.599 5.38 5.38 0 0 0-7.611 0Z"
+                          fill="#5B4530" />
                       </svg>
-      
+
                       <!-- 空心愛心 -->
-                      <svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="products-heartOutlined">
-                        <path d="m12.82 5.58-.82.822-.824-.824a5.375 5.375 0 1 0-7.601 7.602l7.895 7.895a.75.75 0 0 0 1.06 0l7.902-7.897a5.376 5.376 0 0 0-.001-7.599 5.38 5.38 0 0 0-7.611 0Zm6.548 6.54L12 19.485 4.635 12.12a3.875 3.875 0 1 1 5.48-5.48l1.358 1.357a.75.75 0 0 0 1.073-.012L13.88 6.64a3.88 3.88 0 0 1 5.487 5.48Z" fill="#ADADAD"/>
-                      </svg> 
-                        
+                      <svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                        class="products-heartOutlined">
+                        <path
+                          d="m12.82 5.58-.82.822-.824-.824a5.375 5.375 0 1 0-7.601 7.602l7.895 7.895a.75.75 0 0 0 1.06 0l7.902-7.897a5.376 5.376 0 0 0-.001-7.599 5.38 5.38 0 0 0-7.611 0Zm6.548 6.54L12 19.485 4.635 12.12a3.875 3.875 0 1 1 5.48-5.48l1.358 1.357a.75.75 0 0 0 1.073-.012L13.88 6.64a3.88 3.88 0 0 1 5.487 5.48Z"
+                          fill="#ADADAD" />
+                      </svg>
+
                     </label>
                   </div>
-  
-                  <img src="/images/productsImg/yellowCoffeeCup.png" class="w-100 object-fit-cover position-absolute top-50 start-50 translate-middle pe-none" alt="...">
+
+                  <img src="/images/productsImg/yellowCoffeeCup.png"
+                    class="w-100 object-fit-cover position-absolute top-50 start-50 translate-middle pe-none" alt="...">
                 </div>
-  
+
                 <div class="card-body products-bg text-center py-20 px-0">
                   <h5 class="card-title label-xsmall products-label-md-small text-primary-700 mb-8">經典咖啡豆 | 輕度烘焙</h5>
-                  <p class="card-text paragraph-medium products-paragraph-md-xlarge text-primary-950 mb-8">肯亞 涅里區聯合處理廠</p>
+                  <p class="card-text paragraph-medium products-paragraph-md-xlarge text-primary-950 mb-8">肯亞 涅里區聯合處理廠
+                  </p>
                   <p class="card-text label-medium products-label-md-large text-primary-950">$350~$600</p>
                 </div>
               </div>
             </a>
-          </div>  
-          
+          </div>
+
           <!-- greenCoffeeBag -->
           <div class="col">
             <a href="#" class="text-decoration-none products-link">
               <div class="card">
-  
+
                 <!-- 商品照與底色 -->
                 <div class="w-100 ratio ratio-1x1 bg-primary-50 position-relative">
                   <div class="heartArea">
                     <label for="greenCoffeeBag" class="products-label">
-                                        
+
                       <input type="checkbox" id="greenCoffeeBag" class="productsHeart">
-              
+
                       <!-- 實心愛心 -->
-                      <svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="products-heartFilled">
-                        <path d="m12.82 5.58-.82.822-.824-.824a5.375 5.375 0 1 0-7.601 7.602l7.895 7.895a.75.75 0 0 0 1.06 0l7.902-7.897a5.376 5.376 0 0 0-.001-7.599 5.38 5.38 0 0 0-7.611 0Z" fill="#5B4530"/>
+                      <svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                        class="products-heartFilled">
+                        <path
+                          d="m12.82 5.58-.82.822-.824-.824a5.375 5.375 0 1 0-7.601 7.602l7.895 7.895a.75.75 0 0 0 1.06 0l7.902-7.897a5.376 5.376 0 0 0-.001-7.599 5.38 5.38 0 0 0-7.611 0Z"
+                          fill="#5B4530" />
                       </svg>
-      
+
                       <!-- 空心愛心 -->
-                      <svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="products-heartOutlined">
-                        <path d="m12.82 5.58-.82.822-.824-.824a5.375 5.375 0 1 0-7.601 7.602l7.895 7.895a.75.75 0 0 0 1.06 0l7.902-7.897a5.376 5.376 0 0 0-.001-7.599 5.38 5.38 0 0 0-7.611 0Zm6.548 6.54L12 19.485 4.635 12.12a3.875 3.875 0 1 1 5.48-5.48l1.358 1.357a.75.75 0 0 0 1.073-.012L13.88 6.64a3.88 3.88 0 0 1 5.487 5.48Z" fill="#ADADAD"/>
-                      </svg> 
-                        
+                      <svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                        class="products-heartOutlined">
+                        <path
+                          d="m12.82 5.58-.82.822-.824-.824a5.375 5.375 0 1 0-7.601 7.602l7.895 7.895a.75.75 0 0 0 1.06 0l7.902-7.897a5.376 5.376 0 0 0-.001-7.599 5.38 5.38 0 0 0-7.611 0Zm6.548 6.54L12 19.485 4.635 12.12a3.875 3.875 0 1 1 5.48-5.48l1.358 1.357a.75.75 0 0 0 1.073-.012L13.88 6.64a3.88 3.88 0 0 1 5.487 5.48Z"
+                          fill="#ADADAD" />
+                      </svg>
+
                     </label>
                   </div>
-  
-                  <img src="/images/productsImg/greenCoffeeBag.png" class="w-100 object-fit-cover position-absolute top-50 start-50 translate-middle pe-none" alt="...">
+
+                  <img src="/images/productsImg/greenCoffeeBag.png"
+                    class="w-100 object-fit-cover position-absolute top-50 start-50 translate-middle pe-none" alt="...">
                 </div>
-  
+
                 <div class="card-body products-bg text-center py-20 px-0">
                   <h5 class="card-title label-xsmall products-label-md-small text-primary-700 mb-8">經典咖啡豆 | 輕度烘焙</h5>
-                  <p class="card-text paragraph-medium products-paragraph-md-xlarge text-primary-950 mb-8">肯亞 涅里區聯合處理廠</p>
+                  <p class="card-text paragraph-medium products-paragraph-md-xlarge text-primary-950 mb-8">肯亞 涅里區聯合處理廠
+                  </p>
                   <p class="card-text label-medium products-label-md-large text-primary-950">$350~$600</p>
                 </div>
               </div>
             </a>
-          </div>           
+          </div>
 
           <!-- purpleCoffeeBag -->
           <div class="col">
             <a href="#" class="text-decoration-none products-link">
               <div class="card">
-  
+
                 <!-- 商品照與底色 -->
                 <div class="w-100 ratio ratio-1x1 bg-primary-50 position-relative">
                   <div class="heartArea">
                     <label for="purpleCoffeeBag" class="products-label">
-                                        
+
                       <input type="checkbox" id="purpleCoffeeBag" class="productsHeart">
-              
+
                       <!-- 實心愛心 -->
-                      <svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="products-heartFilled">
-                        <path d="m12.82 5.58-.82.822-.824-.824a5.375 5.375 0 1 0-7.601 7.602l7.895 7.895a.75.75 0 0 0 1.06 0l7.902-7.897a5.376 5.376 0 0 0-.001-7.599 5.38 5.38 0 0 0-7.611 0Z" fill="#5B4530"/>
+                      <svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                        class="products-heartFilled">
+                        <path
+                          d="m12.82 5.58-.82.822-.824-.824a5.375 5.375 0 1 0-7.601 7.602l7.895 7.895a.75.75 0 0 0 1.06 0l7.902-7.897a5.376 5.376 0 0 0-.001-7.599 5.38 5.38 0 0 0-7.611 0Z"
+                          fill="#5B4530" />
                       </svg>
-      
+
                       <!-- 空心愛心 -->
-                      <svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="products-heartOutlined">
-                        <path d="m12.82 5.58-.82.822-.824-.824a5.375 5.375 0 1 0-7.601 7.602l7.895 7.895a.75.75 0 0 0 1.06 0l7.902-7.897a5.376 5.376 0 0 0-.001-7.599 5.38 5.38 0 0 0-7.611 0Zm6.548 6.54L12 19.485 4.635 12.12a3.875 3.875 0 1 1 5.48-5.48l1.358 1.357a.75.75 0 0 0 1.073-.012L13.88 6.64a3.88 3.88 0 0 1 5.487 5.48Z" fill="#ADADAD"/>
-                      </svg> 
-                        
+                      <svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                        class="products-heartOutlined">
+                        <path
+                          d="m12.82 5.58-.82.822-.824-.824a5.375 5.375 0 1 0-7.601 7.602l7.895 7.895a.75.75 0 0 0 1.06 0l7.902-7.897a5.376 5.376 0 0 0-.001-7.599 5.38 5.38 0 0 0-7.611 0Zm6.548 6.54L12 19.485 4.635 12.12a3.875 3.875 0 1 1 5.48-5.48l1.358 1.357a.75.75 0 0 0 1.073-.012L13.88 6.64a3.88 3.88 0 0 1 5.487 5.48Z"
+                          fill="#ADADAD" />
+                      </svg>
+
                     </label>
                   </div>
-  
-                  <img src="/images/productsImg/purpleCoffeeBag.png" class="w-100 object-fit-cover position-absolute top-50 start-50 translate-middle pe-none" alt="...">
+
+                  <img src="/images/productsImg/purpleCoffeeBag.png"
+                    class="w-100 object-fit-cover position-absolute top-50 start-50 translate-middle pe-none" alt="...">
                 </div>
-  
+
                 <div class="card-body products-bg text-center py-20 px-0">
                   <h5 class="card-title label-xsmall products-label-md-small text-primary-700 mb-8">經典咖啡豆 | 輕度烘焙</h5>
-                  <p class="card-text paragraph-medium products-paragraph-md-xlarge text-primary-950 mb-8">肯亞 涅里區聯合處理廠</p>
+                  <p class="card-text paragraph-medium products-paragraph-md-xlarge text-primary-950 mb-8">肯亞 涅里區聯合處理廠
+                  </p>
                   <p class="card-text label-medium products-label-md-large text-primary-950">$350~$600</p>
                 </div>
               </div>
             </a>
           </div>
-          
+
           <!-- khakiCoffeeBag -->
           <div class="col">
             <a href="#" class="text-decoration-none products-link">
               <div class="card">
-  
+
                 <!-- 商品照與底色 -->
                 <div class="w-100 ratio ratio-1x1 bg-primary-50 position-relative">
                   <div class="heartArea">
                     <label for="khakiCoffeeBag" class="products-label">
-                                        
+
                       <input type="checkbox" id="khakiCoffeeBag" class="productsHeart">
-              
+
                       <!-- 實心愛心 -->
-                      <svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="products-heartFilled">
-                        <path d="m12.82 5.58-.82.822-.824-.824a5.375 5.375 0 1 0-7.601 7.602l7.895 7.895a.75.75 0 0 0 1.06 0l7.902-7.897a5.376 5.376 0 0 0-.001-7.599 5.38 5.38 0 0 0-7.611 0Z" fill="#5B4530"/>
+                      <svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                        class="products-heartFilled">
+                        <path
+                          d="m12.82 5.58-.82.822-.824-.824a5.375 5.375 0 1 0-7.601 7.602l7.895 7.895a.75.75 0 0 0 1.06 0l7.902-7.897a5.376 5.376 0 0 0-.001-7.599 5.38 5.38 0 0 0-7.611 0Z"
+                          fill="#5B4530" />
                       </svg>
-      
+
                       <!-- 空心愛心 -->
-                      <svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="products-heartOutlined">
-                        <path d="m12.82 5.58-.82.822-.824-.824a5.375 5.375 0 1 0-7.601 7.602l7.895 7.895a.75.75 0 0 0 1.06 0l7.902-7.897a5.376 5.376 0 0 0-.001-7.599 5.38 5.38 0 0 0-7.611 0Zm6.548 6.54L12 19.485 4.635 12.12a3.875 3.875 0 1 1 5.48-5.48l1.358 1.357a.75.75 0 0 0 1.073-.012L13.88 6.64a3.88 3.88 0 0 1 5.487 5.48Z" fill="#ADADAD"/>
-                      </svg> 
-                        
+                      <svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                        class="products-heartOutlined">
+                        <path
+                          d="m12.82 5.58-.82.822-.824-.824a5.375 5.375 0 1 0-7.601 7.602l7.895 7.895a.75.75 0 0 0 1.06 0l7.902-7.897a5.376 5.376 0 0 0-.001-7.599 5.38 5.38 0 0 0-7.611 0Zm6.548 6.54L12 19.485 4.635 12.12a3.875 3.875 0 1 1 5.48-5.48l1.358 1.357a.75.75 0 0 0 1.073-.012L13.88 6.64a3.88 3.88 0 0 1 5.487 5.48Z"
+                          fill="#ADADAD" />
+                      </svg>
+
                     </label>
                   </div>
-  
-                  <img src="/images/productsImg/khakiCoffeeBag.png" class="w-100 object-fit-cover position-absolute top-50 start-50 translate-middle pe-none" alt="...">
+
+                  <img src="/images/productsImg/khakiCoffeeBag.png"
+                    class="w-100 object-fit-cover position-absolute top-50 start-50 translate-middle pe-none" alt="...">
                 </div>
-  
+
                 <div class="card-body products-bg text-center py-20 px-0">
                   <h5 class="card-title label-xsmall products-label-md-small text-primary-700 mb-8">經典咖啡豆 | 輕度烘焙</h5>
-                  <p class="card-text paragraph-medium products-paragraph-md-xlarge text-primary-950 mb-8">肯亞 涅里區聯合處理廠</p>
-                  <p class="card-text label-medium products-label-md-large text-primary-950">$350~$600</p>
-                </div>
-              </div>
-            </a>
-          </div> 
-          
-          <!-- brownCoffeeBean -->
-          <div class="col">
-            <a href="#" class="text-decoration-none products-link">
-              <div class="card">
-  
-                <!-- 商品照與底色 -->
-                <div class="w-100 ratio ratio-1x1 bg-primary-50 position-relative">
-                  <div class="heartArea">
-                    <label for="brownCoffeeBean" class="products-label">
-                                        
-                      <input type="checkbox" id="brownCoffeeBean" class="productsHeart">
-              
-                      <!-- 實心愛心 -->
-                      <svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="products-heartFilled">
-                        <path d="m12.82 5.58-.82.822-.824-.824a5.375 5.375 0 1 0-7.601 7.602l7.895 7.895a.75.75 0 0 0 1.06 0l7.902-7.897a5.376 5.376 0 0 0-.001-7.599 5.38 5.38 0 0 0-7.611 0Z" fill="#5B4530"/>
-                      </svg>
-      
-                      <!-- 空心愛心 -->
-                      <svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="products-heartOutlined">
-                        <path d="m12.82 5.58-.82.822-.824-.824a5.375 5.375 0 1 0-7.601 7.602l7.895 7.895a.75.75 0 0 0 1.06 0l7.902-7.897a5.376 5.376 0 0 0-.001-7.599 5.38 5.38 0 0 0-7.611 0Zm6.548 6.54L12 19.485 4.635 12.12a3.875 3.875 0 1 1 5.48-5.48l1.358 1.357a.75.75 0 0 0 1.073-.012L13.88 6.64a3.88 3.88 0 0 1 5.487 5.48Z" fill="#ADADAD"/>
-                      </svg> 
-                        
-                    </label>
-                  </div>
-  
-                  <img src="/images/productsImg/brownCoffeeBean.png" class="w-100 object-fit-cover position-absolute top-50 start-50 translate-middle pe-none" alt="...">
-                </div>
-  
-                <div class="card-body products-bg text-center py-20 px-0">
-                  <h5 class="card-title label-xsmall products-label-md-small text-primary-700 mb-8">經典咖啡豆 | 輕度烘焙</h5>
-                  <p class="card-text paragraph-medium products-paragraph-md-xlarge text-primary-950 mb-8">肯亞 涅里區聯合處理廠</p>
-                  <p class="card-text label-medium products-label-md-large text-primary-950">$350~$600</p>
-                </div>
-              </div>
-            </a>
-          </div> 
-          
-          <!-- redCoffeeBean -->
-          <div class="col">
-            <a href="#" class="text-decoration-none products-link">
-              <div class="card">
-  
-                <!-- 商品照與底色 -->
-                <div class="w-100 ratio ratio-1x1 bg-primary-50 position-relative">
-                  <div class="heartArea">
-                    <label for="redCoffeeBean" class="products-label">
-                                        
-                      <input type="checkbox" id="redCoffeeBean" class="productsHeart">
-              
-                      <!-- 實心愛心 -->
-                      <svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="products-heartFilled">
-                        <path d="m12.82 5.58-.82.822-.824-.824a5.375 5.375 0 1 0-7.601 7.602l7.895 7.895a.75.75 0 0 0 1.06 0l7.902-7.897a5.376 5.376 0 0 0-.001-7.599 5.38 5.38 0 0 0-7.611 0Z" fill="#5B4530"/>
-                      </svg>
-      
-                      <!-- 空心愛心 -->
-                      <svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="products-heartOutlined">
-                        <path d="m12.82 5.58-.82.822-.824-.824a5.375 5.375 0 1 0-7.601 7.602l7.895 7.895a.75.75 0 0 0 1.06 0l7.902-7.897a5.376 5.376 0 0 0-.001-7.599 5.38 5.38 0 0 0-7.611 0Zm6.548 6.54L12 19.485 4.635 12.12a3.875 3.875 0 1 1 5.48-5.48l1.358 1.357a.75.75 0 0 0 1.073-.012L13.88 6.64a3.88 3.88 0 0 1 5.487 5.48Z" fill="#ADADAD"/>
-                      </svg> 
-                        
-                    </label>
-                  </div>
-  
-                  <img src="/images/productsImg/redCoffeeBean.png" class="w-100 object-fit-cover position-absolute top-50 start-50 translate-middle pe-none" alt="...">
-                </div>
-  
-                <div class="card-body products-bg text-center py-20 px-0">
-                  <h5 class="card-title label-xsmall products-label-md-small text-primary-700 mb-8">經典咖啡豆 | 輕度烘焙</h5>
-                  <p class="card-text paragraph-medium products-paragraph-md-xlarge text-primary-950 mb-8">肯亞 涅里區聯合處理廠</p>
+                  <p class="card-text paragraph-medium products-paragraph-md-xlarge text-primary-950 mb-8">肯亞 涅里區聯合處理廠
+                  </p>
                   <p class="card-text label-medium products-label-md-large text-primary-950">$350~$600</p>
                 </div>
               </div>
             </a>
           </div>
-          
-          <!-- blackCoffeeBean -->
+
+          <!-- brownCoffeeBean -->
           <div class="col">
             <a href="#" class="text-decoration-none products-link">
               <div class="card">
-  
+
                 <!-- 商品照與底色 -->
                 <div class="w-100 ratio ratio-1x1 bg-primary-50 position-relative">
                   <div class="heartArea">
-                    <label for="blackCoffeeBean" class="products-label">
-                                        
-                      <input type="checkbox" id="blackCoffeeBean" class="productsHeart">
-              
+                    <label for="brownCoffeeBean" class="products-label">
+
+                      <input type="checkbox" id="brownCoffeeBean" class="productsHeart">
+
                       <!-- 實心愛心 -->
-                      <svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="products-heartFilled">
-                        <path d="m12.82 5.58-.82.822-.824-.824a5.375 5.375 0 1 0-7.601 7.602l7.895 7.895a.75.75 0 0 0 1.06 0l7.902-7.897a5.376 5.376 0 0 0-.001-7.599 5.38 5.38 0 0 0-7.611 0Z" fill="#5B4530"/>
+                      <svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                        class="products-heartFilled">
+                        <path
+                          d="m12.82 5.58-.82.822-.824-.824a5.375 5.375 0 1 0-7.601 7.602l7.895 7.895a.75.75 0 0 0 1.06 0l7.902-7.897a5.376 5.376 0 0 0-.001-7.599 5.38 5.38 0 0 0-7.611 0Z"
+                          fill="#5B4530" />
                       </svg>
-      
+
                       <!-- 空心愛心 -->
-                      <svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="products-heartOutlined">
-                        <path d="m12.82 5.58-.82.822-.824-.824a5.375 5.375 0 1 0-7.601 7.602l7.895 7.895a.75.75 0 0 0 1.06 0l7.902-7.897a5.376 5.376 0 0 0-.001-7.599 5.38 5.38 0 0 0-7.611 0Zm6.548 6.54L12 19.485 4.635 12.12a3.875 3.875 0 1 1 5.48-5.48l1.358 1.357a.75.75 0 0 0 1.073-.012L13.88 6.64a3.88 3.88 0 0 1 5.487 5.48Z" fill="#ADADAD"/>
-                      </svg> 
-                        
+                      <svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                        class="products-heartOutlined">
+                        <path
+                          d="m12.82 5.58-.82.822-.824-.824a5.375 5.375 0 1 0-7.601 7.602l7.895 7.895a.75.75 0 0 0 1.06 0l7.902-7.897a5.376 5.376 0 0 0-.001-7.599 5.38 5.38 0 0 0-7.611 0Zm6.548 6.54L12 19.485 4.635 12.12a3.875 3.875 0 1 1 5.48-5.48l1.358 1.357a.75.75 0 0 0 1.073-.012L13.88 6.64a3.88 3.88 0 0 1 5.487 5.48Z"
+                          fill="#ADADAD" />
+                      </svg>
+
                     </label>
                   </div>
-  
-                  <img src="/images/productsImg/blackCoffeeBean.png" class="w-100 object-fit-cover position-absolute top-50 start-50 translate-middle pe-none" alt="...">
+
+                  <img src="/images/productsImg/brownCoffeeBean.png"
+                    class="w-100 object-fit-cover position-absolute top-50 start-50 translate-middle pe-none" alt="...">
                 </div>
-  
+
                 <div class="card-body products-bg text-center py-20 px-0">
                   <h5 class="card-title label-xsmall products-label-md-small text-primary-700 mb-8">經典咖啡豆 | 輕度烘焙</h5>
-                  <p class="card-text paragraph-medium products-paragraph-md-xlarge text-primary-950 mb-8">肯亞 涅里區聯合處理廠</p>
+                  <p class="card-text paragraph-medium products-paragraph-md-xlarge text-primary-950 mb-8">肯亞 涅里區聯合處理廠
+                  </p>
                   <p class="card-text label-medium products-label-md-large text-primary-950">$350~$600</p>
                 </div>
               </div>
             </a>
-          </div>          
-        </div> 
+          </div>
+
+          <!-- redCoffeeBean -->
+          <div class="col">
+            <a href="#" class="text-decoration-none products-link">
+              <div class="card">
+
+                <!-- 商品照與底色 -->
+                <div class="w-100 ratio ratio-1x1 bg-primary-50 position-relative">
+                  <div class="heartArea">
+                    <label for="redCoffeeBean" class="products-label">
+
+                      <input type="checkbox" id="redCoffeeBean" class="productsHeart">
+
+                      <!-- 實心愛心 -->
+                      <svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                        class="products-heartFilled">
+                        <path
+                          d="m12.82 5.58-.82.822-.824-.824a5.375 5.375 0 1 0-7.601 7.602l7.895 7.895a.75.75 0 0 0 1.06 0l7.902-7.897a5.376 5.376 0 0 0-.001-7.599 5.38 5.38 0 0 0-7.611 0Z"
+                          fill="#5B4530" />
+                      </svg>
+
+                      <!-- 空心愛心 -->
+                      <svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                        class="products-heartOutlined">
+                        <path
+                          d="m12.82 5.58-.82.822-.824-.824a5.375 5.375 0 1 0-7.601 7.602l7.895 7.895a.75.75 0 0 0 1.06 0l7.902-7.897a5.376 5.376 0 0 0-.001-7.599 5.38 5.38 0 0 0-7.611 0Zm6.548 6.54L12 19.485 4.635 12.12a3.875 3.875 0 1 1 5.48-5.48l1.358 1.357a.75.75 0 0 0 1.073-.012L13.88 6.64a3.88 3.88 0 0 1 5.487 5.48Z"
+                          fill="#ADADAD" />
+                      </svg>
+
+                    </label>
+                  </div>
+
+                  <img src="/images/productsImg/redCoffeeBean.png"
+                    class="w-100 object-fit-cover position-absolute top-50 start-50 translate-middle pe-none" alt="...">
+                </div>
+
+                <div class="card-body products-bg text-center py-20 px-0">
+                  <h5 class="card-title label-xsmall products-label-md-small text-primary-700 mb-8">經典咖啡豆 | 輕度烘焙</h5>
+                  <p class="card-text paragraph-medium products-paragraph-md-xlarge text-primary-950 mb-8">肯亞 涅里區聯合處理廠
+                  </p>
+                  <p class="card-text label-medium products-label-md-large text-primary-950">$350~$600</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- blackCoffeeBean -->
+          <div class="col">
+            <a href="#" class="text-decoration-none products-link">
+              <div class="card">
+
+                <!-- 商品照與底色 -->
+                <div class="w-100 ratio ratio-1x1 bg-primary-50 position-relative">
+                  <div class="heartArea">
+                    <label for="blackCoffeeBean" class="products-label">
+
+                      <input type="checkbox" id="blackCoffeeBean" class="productsHeart">
+
+                      <!-- 實心愛心 -->
+                      <svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                        class="products-heartFilled">
+                        <path
+                          d="m12.82 5.58-.82.822-.824-.824a5.375 5.375 0 1 0-7.601 7.602l7.895 7.895a.75.75 0 0 0 1.06 0l7.902-7.897a5.376 5.376 0 0 0-.001-7.599 5.38 5.38 0 0 0-7.611 0Z"
+                          fill="#5B4530" />
+                      </svg>
+
+                      <!-- 空心愛心 -->
+                      <svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                        class="products-heartOutlined">
+                        <path
+                          d="m12.82 5.58-.82.822-.824-.824a5.375 5.375 0 1 0-7.601 7.602l7.895 7.895a.75.75 0 0 0 1.06 0l7.902-7.897a5.376 5.376 0 0 0-.001-7.599 5.38 5.38 0 0 0-7.611 0Zm6.548 6.54L12 19.485 4.635 12.12a3.875 3.875 0 1 1 5.48-5.48l1.358 1.357a.75.75 0 0 0 1.073-.012L13.88 6.64a3.88 3.88 0 0 1 5.487 5.48Z"
+                          fill="#ADADAD" />
+                      </svg>
+
+                    </label>
+                  </div>
+
+                  <img src="/images/productsImg/blackCoffeeBean.png"
+                    class="w-100 object-fit-cover position-absolute top-50 start-50 translate-middle pe-none" alt="...">
+                </div>
+
+                <div class="card-body products-bg text-center py-20 px-0">
+                  <h5 class="card-title label-xsmall products-label-md-small text-primary-700 mb-8">經典咖啡豆 | 輕度烘焙</h5>
+                  <p class="card-text paragraph-medium products-paragraph-md-xlarge text-primary-950 mb-8">肯亞 涅里區聯合處理廠
+                  </p>
+                  <p class="card-text label-medium products-label-md-large text-primary-950">$350~$600</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Marco test -->
+          <!-- <div class="col">
+            <div class="rounded pb-20 coffeecard">
+              <div class="bg-primary-50 mb-20">
+                <div class="hearticon psm">
+                  <i class="bi bi-heart psm cicon"></i>
+                  <i class="bi bi-heart-fill psm cicon d-none"></i>
+                </div>
+                <img class="coffee-img rounded" src="/images/productsImg/blackCoffeeBean.png" alt="祕魯 薇拉瑞卡 安迪亞斯莊園" />
+              </div>
+              <a href="productdetail.html">
+                <div class="coffee-type psm mb-8">經典咖啡豆 | 中度烘焙</div>
+                <div class="coffee-name psm mb-8">祕魯 薇拉瑞卡 安迪亞斯莊園</div>
+                <div class="coffee-price psm">$280~$600</div>
+              </a>
+            </div>
+          </div> -->
+          <!-- Marco test end -->
+
+        </div>
       </div>
 
       <!-- 導覽頁碼 -->
@@ -471,8 +565,13 @@
         <nav aria-label="Page navigation example">
           <ul class="pagination mb-0">
             <li class="page-item mx-6">
-              <a class="page-link products-pagination products-pagination-bothSide paragraph-large py-4 px-8" href="#" aria-label="Previous">
-                <svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M15.53 4.22a.75.75 0 0 1 0 1.06L8.81 12l6.72 6.72a.75.75 0 1 1-1.06 1.06l-7.25-7.25a.75.75 0 0 1 0-1.06l7.25-7.25a.75.75 0 0 1 1.06 0Z" fill="#2F2119"/></svg>
+              <a class="page-link products-pagination products-pagination-bothSide paragraph-large py-4 px-8" href="#"
+                aria-label="Previous">
+                <svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M15.53 4.22a.75.75 0 0 1 0 1.06L8.81 12l6.72 6.72a.75.75 0 1 1-1.06 1.06l-7.25-7.25a.75.75 0 0 1 0-1.06l7.25-7.25a.75.75 0 0 1 1.06 0Z"
+                    fill="#2F2119" />
+                </svg>
               </a>
             </li>
 
@@ -495,23 +594,33 @@
               <a class="page-link products-pagination paragraph-large py-4 px-8" href="#">15
               </a>
             </li>
-            
+
             <li class="page-item mx-6">
-              <a class="page-link products-pagination products-pagination-bothSide paragraph-large py-4 px-8" href="#" aria-label="Previous">
-                <svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8.47 4.22a.75.75 0 0 0 0 1.06L15.19 12l-6.72 6.72a.75.75 0 1 0 1.06 1.06l7.25-7.25a.75.75 0 0 0 0-1.06L9.53 4.22a.75.75 0 0 0-1.06 0Z" fill="#2F2119"/></svg>
+              <a class="page-link products-pagination products-pagination-bothSide paragraph-large py-4 px-8" href="#"
+                aria-label="Previous">
+                <svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.47 4.22a.75.75 0 0 0 0 1.06L15.19 12l-6.72 6.72a.75.75 0 1 0 1.06 1.06l7.25-7.25a.75.75 0 0 0 0-1.06L9.53 4.22a.75.75 0 0 0-1.06 0Z"
+                    fill="#2F2119" />
+                </svg>
               </a>
-            </li>            
+            </li>
 
           </ul>
         </nav>
       </div>
 
 
-      
+
     </main>
     <%- include('./layout/footer'); -%>
       <script type="module" src="../main.js"></script>
       <%- include('./layout/js'); -%>
+<<<<<<< HEAD
+        
+=======
+      <%- include('./layout/btup'); -%>
+>>>>>>> hsun
 </body>
 
 </html>

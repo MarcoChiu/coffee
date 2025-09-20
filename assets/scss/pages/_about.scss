@@ -1,20 +1,20 @@
-.about-1{
+.about-1 {
   height: 400px;
   background-size: cover;
   background-image: url(/images/index/banner1.png);
   background-repeat: no-repeat;
   background-position: center center;
   position: relative;
-}
 
-.about-bg-color{
-  background-color: rgba(#3120003B, 50%);  
-  height: 400px;
-}
+  .about-bg-color{
+    background-color: rgba(#3120003B, 50%);  
+    height: 400px;
+  }
 
-.about-1 {
   .about-sheepo {
     margin-top: 140px;
+
+    
     @media (max-width:767px) {
       .about-sheepo{
         margin-top: 56px;   //margin rwd設置吃不到
@@ -25,21 +25,21 @@
     }
 
     h1 {
-      @include heading-header-title; // 套用共用樣式 (含 font-size)
+      @include heading(header-title); // 套用共用樣式 (含 font-size)
 
       // 桌機板覆寫 
       @media (max-width: 767px) {
-        @include heading-small;
-        text-align: center;
+        @include heading(small);
+        text-align: center; //使用原子化填寫在scss
       }
       @media (max-width: 1199px) {
-        @include heading-xxlarge;
+        @include heading(xxlarge);
         // text-align: center;
       }
     }
 
     h5 {
-      @include heading-small; // 假設這裡也有定義共用樣式
+      @include heading(small); // 假設這裡也有定義共用樣式
 
       // 桌機板覆寫
       @media (max-width: 767px) {
@@ -51,7 +51,7 @@
         text-align: center;      
       }
       @media (max-width: 1199px) {
-        @include heading-xsmall;
+        @include heading(xsmall);
         // text-align: center;
       }      
     }
@@ -73,11 +73,11 @@
 
   h2{
     white-space: nowrap;
-    @include heading-xlarge;    
+    @include heading(xlarge);    
   }
 
   p{
-    @include  paragraph-medium;
+    @include  paragraph(medium);
   }
 
   .about-horizontal{
@@ -102,49 +102,83 @@
     }
 
     h2{
-      @include  heading-medium;
+      @include  heading(medium);
     }
 
     p{
-      @include label-small;
+      @include label(small);
     }
   }
 }
 
-.mt-md-120{
+
+
+.service-title{
   margin-top: 120px;
+  margin-bottom: 80px;
+
+  @media (max-width:767px) {
+    
+      margin-top: 40px;
+      margin-bottom: 40px;
+    
+  }
 }
 
-.mb-md-80{
-  margin-bottom: 80px;
-}
 
 .service{
   h2{
-    @include heading-xxlarge;
+    @include heading(xxlarge);
   }
 
   h3{
-    @include heading-xlarge;
+    @include heading(xlarge);
     letter-spacing: $spacer24;
   }
 
   h4{
-    @include heading-small;
+    @include heading(small);
     color:$accent-300;
   }
 
   h5{
-    @include label-large;
+    @include label(large);
   }
 
   p{
-    @include paragraph-large;
+    @include paragraph(large);
+  }
+
+  ul{
+    @include paragraph(large);
+  }
+
+  @media (max-width:767px) {
+    h2{
+      @include heading(medium);
+    }
+
+    h3{
+      @include heading(small);
+    }
+
+    h4{
+      @include heading(xsmall);
+    }
+
+    h5{
+      @include label(xsmall);
+    }
+
+    p{
+      @include paragraph(small);
+    }
+
+    ul{
+      @include paragraph(small);
+    }
   }
 }
-
-
-
 
 .service-horizontal{
   width: 80px;
@@ -155,11 +189,14 @@
   margin-left: 20px;
 }
 
-.service-title{
-  padding-top: 120px ;
-  padding-bottom: 32px;
-  margin-bottom: 0;
+/* 讓圖片滿版並跟文字區塊等高 */
+.booking-right img {
+  object-fit: cover;  /* 填滿區域，不變形 */
+  width:100%;
+  height: 100%;
+  display: block;
 }
+
 
 .btn-pd{
   padding: 16px 40px;
@@ -169,21 +206,53 @@
   max-width: 100%;
 }
 
+.pdl-1{
+  padding-left: 1.2rem;
+}
+
+
 // FAQ
 
 .faq{
   background-color: $primary-50;
   max-width: 100%;
+
+  .faq-title{
+    padding-top: 120px;
+    padding-bottom: 32px;
+  
+    h2{
+      @include heading(xxlarge); 
+      color:$primary-950;
+      letter-spacing: 11px;
+    }
+  
+    h3{
+      @include heading(small); 
+      color: $accent-300; 
+    }
+  }
+  
+  @media (max-width:767px) {
+    .faq-title{
+      padding-top: 40px;
+    }
+  
+    h2{
+      @include heading(medium);
+    }
+    h3{
+      @include heading(xsmall);
+    }
+  }
 }
 
-.accordion {
-  --bs-accordion-bg: transparent;
-}
 
 .faq-qa{
   padding-left: 312px;
   padding-right: 312px;
   padding-bottom: 120px;
+
 }
 
 @media (max-width: 767px) {
@@ -193,6 +262,7 @@
   padding-top: 32px;
   padding-bottom: 40px;
   }
+
 }
 
 .accordion {
@@ -237,4 +307,24 @@
 /* 展開狀態（沒有 collapsed 類別） */
 .accordion-button:not(.collapsed)::after {
   background-image: url(/images/icon/ic_minus.svg); /* 展開時的圖片 */
+}
+
+/* Accordion 按鈕文字大小 */
+.accordion-button {
+  @include paragraph(xlarge);      /* 調整按鈕文字大小 */
+}
+
+/* Accordion 展開的內容文字大小 */
+.accordion-body {
+  @include paragraph(xlarge);     /* 調整展開內容文字大小 */
+}
+
+/* RWD 手機版微調 */ 
+@media (max-width: 767px) {
+  .accordion-button {
+    @include paragraph(small);   /* 手機版按鈕文字稍微小一點 */
+  }
+  .accordion-body {
+    @include paragraph(small);   /* 手機版展開文字稍微小一點 */
+  }
 }

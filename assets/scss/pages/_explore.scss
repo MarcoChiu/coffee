@@ -68,7 +68,7 @@
       padding-bottom: 552px;
 
       // 透明度 半透明遮罩
-      background-color: rgba(49, 32, 0, 0.4);
+      background-color: rgba(#312000, 0.4);
 
       @media (max-width: 768px) {
         padding-top: 297px;
@@ -87,7 +87,7 @@
       padding-bottom: 220px;
 
       // 透明度 半透明遮罩
-      background-color: rgba(49, 32, 0, 0.55);
+      background-color: rgba(#312000, 0.55);
 
       @media (max-width: 768px) {
         padding-top: 40px;
@@ -106,7 +106,7 @@
       padding-bottom: 220px;
 
       // 透明度 半透明遮罩
-      background-color: rgba(49, 32, 0, 0.3);
+      background-color: rgba(#312000, 0.3);
 
       @media (max-width: 768px) {
         padding-top: 40px;
@@ -125,7 +125,7 @@
       padding-bottom: 220px;
 
       // 透明度 半透明遮罩
-      background-color: rgba(49, 32, 0, 0.75);
+      background-color: rgba(#312000, 0.75);
 
       @media (max-width: 768px) {
         padding-top: 40px;
@@ -144,53 +144,16 @@
       padding-bottom: 165px;
 
       // 透明度 半透明遮罩
-      background-color: rgba(49, 32, 0, 0.75);
+      background-color: rgba(#312000, 0.75);
 
       @media (max-width: 768px) {
         padding-top: 40px;
         padding-left: 12px;
         padding-right: 12px;
         padding-bottom: 109px;
-      }
+      }  
 
-      .coffee-type {
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.5;
-        letter-spacing: 2px;
-        text-align: center;
-        color: $primary-700 ;
-      }
-
-      .coffee-name {
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 1.5;
-        letter-spacing: 2px;
-        text-align: center;
-        color: $primary-950 ;
-      }
-
-      .coffee-price {
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 1.5;
-        letter-spacing: 2px;
-        text-align: center;
-        color: $primary-950 ;
-      }
-
-      .productcard {
-        background-color: $grey-0;
-
-        &:hover {
-          background-color: $primary-50 ;
-        }
-      }
-
-      a{
-        text-decoration: none;
-      }
+     
     }
 
     // 大小
@@ -220,19 +183,3 @@
   }
 }
 
-.hearticon {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  cursor: pointer; //滑鼠指標
-
-  .bi-heart {
-    font-size: 36px;
-    color: $grey-300;
-  }
-
-  .bi-heart-fill {
-    font-size: 36px;
-    color: $primary-950;
-  }
-}

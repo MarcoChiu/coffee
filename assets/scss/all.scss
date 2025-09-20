@@ -1,6 +1,8 @@
-// google 字體
-@import url('<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">');
-
+// google 字體 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+//bootstrap icon
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+ 
 @font-face {
   font-family: cy2;
   src: url('../fonts/ChenYuluoyan-2.0-Thin.woff2') format('woff2') 
@@ -11,7 +13,7 @@
 
 //customer variables
 @import "./customize/variables";
-@import "./customize/utils";
+// @import "./customize/utils";
 
 //bootstrap
 @import "../../node_modules/bootstrap";
@@ -26,12 +28,14 @@
 @import './base/base';
 @import './base/utils';
 @import './base/button';
+@import './base/card';
 
 //components
 
 //layout
 @import './layout/header';
 @import './layout/footer';
+@import './layout/btup';
 // @import './layout/title';
 
 //pages

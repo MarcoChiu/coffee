@@ -8,12 +8,11 @@
   <title></title>
   <link rel="preload" href="/fonts/ChenYuluoyan-2.0-Thin.woff2" as="font" type="font/woff2" crossorigin="anonymous"
     fetchpriority="high" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css"
-    rel="stylesheet">
+
   <%- include('./layout/style'); -%>
 </head>
 
-<body>
+<body id="top">
   <%- include('./layout/header'); -%>
 
     <main class="explore">
@@ -244,13 +243,17 @@
             </div>
             <!-- 右邊 -->
             <div class="col-12 col-md-5 x2">
-              <div class="rounded pb-20 position-relative productcard">
-                <div class="hearticon">
-                  <i class="bi bi-heart cicon"></i>
-                  <i class="bi bi-heart-fill cicon d-none"></i>
+
+              <div class="rounded pb-20 coffeecard">
+                <div>
+                  <div class="hearticon">
+                    <i class="bi bi-heart cicon"></i>
+                    <i class="bi bi-heart-fill cicon d-none"></i>
+                  </div> <a href="productdetail.html">
+                    <img class="coffee-img rounded" src="/images/productsImg/blackCoffeeBean.png"
+                      alt="祕魯 薇拉瑞卡 安迪亞斯莊園" /></a>
                 </div>
-                <a href="productdetail.html"> 
-                  <img class="coffee-img rounded" src="/images/explore/explore-coffee-1.png" alt="祕魯 薇拉瑞卡 安迪亞斯莊園" />
+                <a href="productdetail.html">
                   <div class="coffee-type mb-8">經典咖啡豆 | 中度烘焙</div>
                   <div class="coffee-name mb-8">祕魯 薇拉瑞卡 安迪亞斯莊園</div>
                   <div class="coffee-price">$280~$600</div>
@@ -268,6 +271,7 @@
       <%- include('./layout/js'); -%>
 
         <%- include('./layout/jquery'); -%>
+        <%- include('./layout/btup'); -%>
 </body>
 
 </html>

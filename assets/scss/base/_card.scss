@@ -1,0 +1,94 @@
+.coffeecard {
+  background-color: $grey-0;
+
+  a {
+    text-decoration: none;
+  }
+
+  &:hover {
+    background-color: $primary-50 ;
+  }
+
+  // 愛心
+  position: relative;
+
+  .hearticon {
+    position: absolute;
+    cursor: pointer; //滑鼠指標  
+    top: 20px;
+    right: 20px;
+
+    @media (max-width: 768px) {
+      &.psm {
+        top: 10px;
+        right: 10px;
+      }
+    }
+
+    .bi-heart {
+      font-size: 36px;
+      color: $grey-300;
+
+      @media (max-width: 768px) {
+        &.psm {
+          font-size: 18px;
+        }
+      }
+    }
+
+    .bi-heart-fill {
+      font-size: 36px;
+      color: $primary-950;
+
+      @media (max-width: 768px) {
+        &.psm {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+
+  // 咖啡內文
+  .coffee-type {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    text-align: center;
+    color: $primary-700 ;
+  }
+
+  .coffee-name {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    text-align: center;
+    color: $primary-950 ;
+  }
+
+  .coffee-price {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    text-align: center;
+    color: $primary-950 ;
+  }
+
+  // 產品列表字要變小
+  @media (max-width: 768px) {
+    .coffee-type.psm {
+      font-size: 12px;
+    }
+
+    .coffee-name.psm {
+      font-size: 16px;
+    }
+
+    .coffee-price.psm {
+      font-size: 16px;
+    }
+  }
+}
