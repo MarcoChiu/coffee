@@ -1,58 +1,31 @@
-html,
-body {
-  height: 100%;
-  margin: 0;
-}
-
-.scroll {
-  scrollbar-width: none;
-  height: 100%;
-  overflow-y: scroll;
-  /* 必須可滾動 */
-  scroll-snap-type: y mandatory;
-  /* 垂直方向強制對齊 */
-}
-
-.index {
-  /* 每個 section 填滿螢幕 */
-  scroll-snap-align: start;
-  /* 對齊容器的開頭 */
-}
-
-.index {
-  background-color: #FCFAF8;
-
-  .moon-title {
-    font-family: "Noto Sans TC", sans-serif;
-    font-weight: 400;
-    font-size: 50px;
-    line-height: 1.2;
-    letter-spacing: 0.3em;
-  }
-
-  .end{
-    justify-content: end;
-  }
-
-  .header1 {
+.index{
+  .header1{
     height: calc(100vh - 88px);
     background-size: cover;
-    background-image: url(/imagesjpg/index/banner1.jpg);
+    background-image: url(/images/index/banner1.png);
     background-repeat: no-repeat;
     background-position: center center;
     position: relative;
   }
-
-  .header2 {
+  .header2{
     height: calc(100vh - 88px);
     background-size: cover;
-    background-image: url(/imagesjpg/index/banner2.jpg);
+    background-image: url(/images/index/banner2.png);
     background-repeat: no-repeat;
     background-position: center center;
     position: relative;
   }
-
-  .header1-text {
+  .explore-ad{
+    height: 454px;
+    background-size: cover;
+    background-image: url(/images/index/explore-ad.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 60%;
+    position: relative;
+    background-color: rgba(#5F300F, 0.35);
+    background-blend-mode: multiply;
+  }
+  .header1-text{
     position: absolute;
     background-color: rgba(#312000, 0.33);
     top: 0;
@@ -64,8 +37,7 @@ body {
     justify-content: center;
     align-items: center;
   }
-
-  .header2-text {
+  .header2-text{
     position: absolute;
     background-color: rgba(#312000, 0.4);
     top: 0;
@@ -77,296 +49,85 @@ body {
     justify-content: center;
     align-items: center;
   }
-
-  .horizontal-line {
+  .horizontal-line{
     width: 80px;
     height: 1.5px;
     background-color: #2F2119;
   }
-
-  .horizontal-line2 {
+  .horizontal-line2{
     flex-grow: 1;
     height: 1.5px;
     background-color: #715737;
   }
-
+  .horizontal-line3{
+    width: 50px;
+    height: 3px;
+    background-color: #FFFFFF;
+  }
   .vertical-line1 {
     width: 1px;
     height: 28vh;
     background-color: #f7f6ef;
   }
-
   .vertical-line2 {
     width: 1px;
     height: 20vh;
     background-color: #f7f6ef;
   }
-
   .vertical-line3 {
     width: 1px;
     height: 19vh;
     background-color: #f7f6ef;
   }
-
+  
   .vertical-line1 {
     width: 1px;
     height: 0;
     background-color: #f7f6ef;
     animation: lineGrow1 2s ease-out forwards;
   }
-
   .vertical-line2 {
     width: 1px;
     height: 0;
     background-color: #f7f6ef;
     animation: lineGrow2 2s ease-out forwards;
   }
-
   .vertical-line3 {
     width: 1px;
     height: 0;
     background-color: #f7f6ef;
     animation: lineGrow3 2s ease-out forwards;
   }
-
+  
   @keyframes lineGrow1 {
     to {
       height: 28vh;
     }
   }
-
   @keyframes lineGrow2 {
     to {
       height: 20vh;
     }
   }
-
   @keyframes lineGrow3 {
     to {
       height: 19vh;
     }
   }
 
-  .moon {
+  .moon{
     height: 100vh;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
 
-    .vh-80 {
-      height: 80vh;
-    }
-  }
-}
-
-.index2 {
-  background-color: #FCFAF8;
-
-  .explore-ad {
-    height: 454px;
-    background-size: cover;
-    background-image: url(/images/index/explore-ad.jpg);
-    background-repeat: no-repeat;
-    background-position: 50% 60%;
-    position: relative;
-    background-color: rgba(#5F300F, 0.5);
-    background-blend-mode: multiply;
-  }
-
-  .horizontal-line3 {
-    width: 50px;
-    height: 3px;
-    background-color: #FFFFFF;
-  }
-
-  .horizontal-line2 {
-    flex-grow: 1;
-    height: 1.5px;
-    background-color: #715737;
-  }
-
-  .feedback {
-    width: 400px;
-    background-color: #FFFFFF;
-    border-radius: 8px;
-    margin-left: 28px;
-    transition: transform 0.3s ease;
-  }
-
-  .feedback:hover {
-    transform: scale(1.02);
-  }
-
-  .box {
-    width: 100%;
-    height: 250px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-  }
-
-  .list {
-    left: 0px;
-    position: absolute;
-    display: flex;
-    animation: scroll 30s linear infinite;
-  }
-
-  .box:hover .list {
-    animation-play-state: paused;
-  }
-
-  @keyframes scroll {
-    from {
-      transform: translateX(0);
-    }
-
-    to {
-      transform: translateX(-50%);
-      /* 滾動到一半長度 */
-    }
-  }
-}
-
-@media (max-width: 993px) {
-  .index {
-    .heading-header-title {
-      font-size: 36px;
-    }
-
-    .paragraph-xxlarge {
-      font-size: 20px;
-    }
-
-    .moon {
-      .heading-xxxlarge {
-        font-size: 36px;
-      }
-    }
-
-    .label-large {
-      font-size: 16px;
-    }
-
-    .paragraph-medium {
-      font-size: 14px;
-    }
-
-    .horizontal-line {
-      width: 60px;
+    .vh-90{
+      height: 90vh;
     }
   }
 }
 
 @media (max-width: 768px) {
-  .index {
-    .header1 {
-      height: calc(100vh - 72px);
-    }
-
-    .header2 {
-      height: calc(100vh - 72px);
-    }
-
-    .heading-header-title {
-      font-size: 24px;
-    }
-
-    .paragraph-xxlarge {
-      font-size: 15px;
-    }
-
-    .mb-16 {
-      margin-bottom: 16px;
-    }
-
-    .paragraph-medium {
-      font-size: 14px;
-    }
-
-    .moon {
-      .heading-xxxlarge {
-        font-size: 24px;
-      }
-    }
-
-    .moon-title {
-      font-size: 24px;
-    }
-
-    .label-large {
-      font-size: 12px;
-    }
-
-    .horizontal-line {
-      width: 40px;
-    }
-
-    .moon {
-      height: 100vh;
-      padding-top: 5vh;
-      padding-bottom: 5vh;
-
-      .vh-80 {
-        height: 90vh;
-      }
-    }
-  }
-
-  .index2 {
-    .heading-small {
-      font-size: 20px;
-    }
-
-    .heading-xxlarge {
-      font-size: 28px;
-    }
-
-    .w-256 {
-      width: 256px;
-    }
-
-    .label-small {
-      font-size: 12px;
-    }
-
-    .paragraph-medium {
-      font-size: 14px;
-    }
-
-    .label-medium {
-      font-size: 14px;
-    }
-
-    .heading-xxxlarge {
-      font-size: 24px;
-    }
-
-    .moon {
-      .heading-xxxlarge {
-        font-size: 24px;
-      }
-    }
-
-    .paragraph-xlarge {
-      font-size: 18px;
-    }
-
-    .explore-ad {
-      height: 360px;
-    }
-
-    .paragraph-medium {
-      font-size: 14px;
-    }
-
-    .feedback {
-      width: 360px;
-    }
-
-    .box {
-      height: 200px;
-    }
+  .header1 {
+    height: calc(100vh - 72px);
   }
 }
