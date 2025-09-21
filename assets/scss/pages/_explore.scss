@@ -8,7 +8,6 @@
     line-height: 1.2;
     letter-spacing: 0.08rem;
     text-align: center;
-    color: $primary-50;
   }
 
   .h2 {
@@ -18,26 +17,6 @@
     line-height: 1.2;
     letter-spacing: 0.08rem;
     text-align: center;
-    color: $primary-50;
-  }
-
-  .h3 {
-    font-family: 'cy2', sans-serif;
-    font-weight: 400;
-    font-size: 86px;
-    line-height: 1.2;
-    letter-spacing: 0.08rem;
-    text-align: center;
-    color: $primary-50;
-  }
-
-  p {
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 1.5;
-    letter-spacing: 0.1rem;
-    text-align: center;
-    color: $primary-50;
   }
 
   @media (max-width: 768px) {
@@ -48,112 +27,66 @@
     .h2 {
       font-size: 32px;
     }
-
-    .h3 {
-      font-size: 48px;
-    }
-
-    p {
-      font-size: 16px;
-    }
   }
-
   .content {
     &.bg1 {
-      background-image: url(/images/explore/explore-bg1.png);
+      background-image: url(/assets/images/explore/explore-bg1.png);
       // 推
       padding-top: 315px;
       padding-left: 312px;
       padding-right: 312px;
       padding-bottom: 552px;
 
-      // 透明度 半透明遮罩
-      background-color: rgba(#312000, 0.4);
+      p {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.5;
+        letter-spacing: 0.1rem;
+        text-align: center;
+      }
 
       @media (max-width: 768px) {
-        padding-top: 297px;
+        padding-top: 231px;
         padding-left: 12px;
         padding-right: 12px;
-        padding-bottom: 297px;
+        padding-bottom: 300px;
+
+        p {
+          font-size: 16px;
+        }
       }
     }
 
     &.bg2 {
-      background-image: url(/images/explore/explore-bg2.png);
+      background-image: url(/assets/images/explore/explore-bg2.png);
       // 推
       padding-top: 220px;
       padding-left: 312px;
       padding-right: 312px;
       padding-bottom: 220px;
 
-      // 透明度 半透明遮罩
-      background-color: rgba(#312000, 0.55);
-
       @media (max-width: 768px) {
         padding-top: 40px;
-        padding-left: 12px;
-        padding-right: 12px;
-        padding-bottom: 109px;
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-bottom: 16px;
       }
     }
 
     &.bg3 {
-      background-image: url(/images/explore/explore-bg3.png);
+      background-image: url(/assets/images/explore/explore-bg3.png);
       // 推
       padding-top: 220px;
       padding-left: 312px;
       padding-right: 312px;
       padding-bottom: 220px;
 
-      // 透明度 半透明遮罩
-      background-color: rgba(#312000, 0.3);
-
       @media (max-width: 768px) {
         padding-top: 40px;
-        padding-left: 12px;
-        padding-right: 12px;
-        padding-bottom: 109px;
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-bottom: 16px;
       }
-    }
-
-    &.bg4 {
-      background-image: url(/images/explore/explore-bg4.png);
-      // 推
-      padding-top: 220px;
-      padding-left: 312px;
-      padding-right: 312px;
-      padding-bottom: 220px;
-
-      // 透明度 半透明遮罩
-      background-color: rgba(#312000, 0.75);
-
-      @media (max-width: 768px) {
-        padding-top: 40px;
-        padding-left: 12px;
-        padding-right: 12px;
-        padding-bottom: 109px;
-      }
-    }
-
-    &.bg5 {
-      background-image: url(/images/explore/explore-bg5.png);
-      // 推
-      padding-top: 165px;
-      padding-left: 312px;
-      padding-right: 312px;
-      padding-bottom: 165px;
-
-      // 透明度 半透明遮罩
-      background-color: rgba(#312000, 0.75);
-
-      @media (max-width: 768px) {
-        padding-top: 40px;
-        padding-left: 12px;
-        padding-right: 12px;
-        padding-bottom: 109px;
-      }  
-
-     
     }
 
     // 大小
@@ -162,24 +95,18 @@
     background-size: cover;
     background-position: center;
 
+    // 透明度 半透明遮罩
+    background-color: rgba(49, 32, 0, 0.4);
     // 設置背景混和模式為相乘模式
     background-blend-mode: multiply;
 
-    // 卡片
-    .choosecard {
-      cursor: pointer; //滑鼠指標
-
+    .ecard {
       background-color: $grey-0 ;
       text-align: center;
 
       &:hover {
         background-color: $primary-200 ;
       }
-
-      p {
-        color: $primary-950 ;
-      }
     }
   }
 }
-
