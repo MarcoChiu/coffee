@@ -6,7 +6,7 @@
 :root{
   --header-h: 64px; /* 手機 header 高度 */
 }
-@media (min-width: 768px){
+@media (max-width: 768px){
   :root{ --header-h: 80px; } /* 桌機可略高 */
 }
 
@@ -19,7 +19,7 @@
 
 /* 只調 header 的容器，不影響全站 */
 .site-header .container {
-  @media (min-width: 1200px) { max-width: 1280px; } /* 你可改 1240/1320 */
+  @media (max-width: 1200px) { max-width: 1280px; } /* 你可改 1240/1320 */
 }
 
 /* 你原本的字級（修正 400px → 400） */
@@ -150,6 +150,6 @@
 }
 
 /* 桌機：不顯示此面板（因為桌機用水平導覽） */
-@media (min-width: 768px){
+@media (max-width: 768px){
   .mobile-menu-panel{ display:none !important; }
 }
