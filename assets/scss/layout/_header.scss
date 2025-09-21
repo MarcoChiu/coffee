@@ -29,6 +29,7 @@
   @media (max-width:1380px){
     @include heading(xxsmall);
   }
+
 }
 
 
@@ -40,7 +41,7 @@
   padding-left: 12px; padding-right: 12px;
   float: none;
 }
-@media (max-width: 767.98px){
+@media (max-width: 768px){
   .breadcrumb-item + .breadcrumb-item::before{ display:none; }
 }
 
@@ -57,7 +58,7 @@
             saturate(300%) hue-rotate(350deg) brightness(102%) contrast(97%);
   }
 
-  @media (max-width: 767.98px){
+  @media (max-width: 768px){
     width:40px; height:40px;
     background-image: url("/images/header/small-logo.svg");
   }

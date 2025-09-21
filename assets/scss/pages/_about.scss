@@ -28,20 +28,29 @@
       @include heading(header-title); // 套用共用樣式 (含 font-size)
 
       // 桌機板覆寫 
+      @media (max-width: 1199px) {
+        @include heading(xxlarge);
+      } 
+      @media (max-width: 990px) {
+        @include heading(medium);
+      }            
       @media (max-width: 767px) {
         @include heading(small);
         text-align: center; //使用原子化填寫在scss
       }
-      @media (max-width: 1199px) {
-        @include heading(xxlarge);
-        // text-align: center;
-      }
+
     }
 
     h5 {
       @include heading(small); // 假設這裡也有定義共用樣式
 
       // 桌機板覆寫
+      @media (max-width: 1199px) {
+        @include heading(xsmall);
+      } 
+      @media (max-width: 990px) {
+        @include heading(xxsmall);
+      } 
       @media (max-width: 767px) {
         font-family: "Noto Sans TC", sans-serif;
         font-weight: 400;
@@ -50,10 +59,7 @@
         letter-spacing: 0.3;
         text-align: center;      
       }
-      @media (max-width: 1199px) {
-        @include heading(xsmall);
-        // text-align: center;
-      }      
+     
     }
   }
 }
