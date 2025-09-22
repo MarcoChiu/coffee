@@ -34,33 +34,54 @@
 
           <div class="col-5">
             <div class="mb-40">
-              <h1 class="h2 mb-16">祕魯 薇拉瑞卡 安迪亞斯莊園</h1>
-              <p class="h5 text-primary-400 mb-16 me-8">NT$280</p>
+              <h1 class="h2 text-primary-950 mb-16">祕魯 薇拉瑞卡 安迪亞斯莊園</h1>
+              <p class="h2 text-primary-950 mb-16 me-8">NT$280</p>
+            </div>
+
+            <div class="mb-40 paragraph-medium">
+              <dl class="coffee-info">
+                <div class="mb-8">
+                  <dt class="me-20">烘焙度</dt>
+                  <dd>淺</dd>
+                </div>
+                <div class="mb-8">
+                  <dt class="me-20">處理法</dt>
+                  <dd>日曬</dd>
+                </div>
+
+                <div class="mb-8">
+                  <dt class="me-20">品種</dt>
+                  <dd>橘波旁</dd>
+                </div>
+
+                <div class="mb-8">
+                  <dt class="me-20">高度</dt>
+                  <dd>1,600 ~ 1,700m</dd>
+                </div>
+
+                <div class="mb-8">
+                  <dt class="me-20">風味</dt>
+                  <dd>香草、李子、核桃、梅酒、太妃糖</dd>
+                </div>
+              </dl>
+
             </div>
 
             <div class="mb-40">
-              <p class="mb-8">烘焙度 淺</p>
-              <p class="mb-8">處理法日曬</p>
-              <p class="mb-8">品種 橘波旁</p>
-              <p class="mb-8">高度 1,600 ~ 1,700m</p>
-              <p class="mb-8">風味 香草、李子、核桃、梅酒、太妃糖</p>
-            </div>
-
-            <div class="mb-40">
-              <h3 class="mb-8">規格</h3>
+              <p class="mb-8 label-large text-primary-700">規格</p>
               <div class="d-flex flex-wrap gap-8 mb-8">
-                <button type="button" class="btn btn-outline-secondary">原豆0.25磅</button>
-                <button type="button" class="btn btn-outline-secondary">原豆0.5磅</button>
-                <button type="button" class="btn btn-outline-secondary">濾掛十包</button>
+                <button type="button" class="btn4">原豆0.25磅</button>
+                <button type="button" class="btn4">原豆0.5磅</button>
+                <button type="button" class="btn4">濾掛十包</button>
               </div>
             </div>
 
             <div class="mb-40">
-              <h3 class="mb-8">數量</h3>
-              <div class="input-group input-group-sm pd-qty mb-4">
-                <button class="btn btn-outline-brown" type="button" id="qtyMinus" aria-label="減少">–</button>
-                <input type="number" class="form-control text-center" id="qty" value="1" min="1">
-                <button class="btn btn-outline-brown" type="button" id="qtyPlus" aria-label="增加">+</button>
+              <p class="mb-8 label-large text-primary-700">數量</p>
+              <div class="qty-pill" data-min="1" data-step="1">
+                <button type="button" class="qty-btn minus" aria-label="減少" title="減少">−</button>
+                <output class="qty-value" id="qty">1</output>
+                <button type="button" class="qty-btn plus" aria-label="增加" title="增加">＋</button>
               </div>
             </div>
 
@@ -68,31 +89,17 @@
               <div class="col-10 ">
                 <button class="btn1 btn btn-brown btn-lg rounded-pill w-100 text-nowrap">加入購物車</button>
               </div>
-              
+
               <div class="col-2 d-flex justify-content-center">
-                <label for="item" class="products-label">
-                  <input type="checkbox" id="item" class="productsHeart">
-                  <!-- 實心愛心 -->
-                  <svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
-                    class="products-heartFilled">
-                    <path
-                      d="m12.82 5.58-.82.822-.824-.824a5.375 5.375 0 1 0-7.601 7.602l7.895 7.895a.75.75 0 0 0 1.06 0l7.902-7.897a5.376 5.376 0 0 0-.001-7.599 5.38 5.38 0 0 0-7.611 0Z"
-                      fill="#5B4530" />
-                  </svg>
-                  <!-- 空心愛心 -->
-                  <svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
-                    class="products-heartOutlined">
-                    <path
-                      d="m12.82 5.58-.82.822-.824-.824a5.375 5.375 0 1 0-7.601 7.602l7.895 7.895a.75.75 0 0 0 1.06 0l7.902-7.897a5.376 5.376 0 0 0-.001-7.599 5.38 5.38 0 0 0-7.611 0Zm6.548 6.54L12 19.485 4.635 12.12a3.875 3.875 0 1 1 5.48-5.48l1.358 1.357a.75.75 0 0 0 1.073-.012L13.88 6.64a3.88 3.88 0 0 1 5.487 5.48Z"
-                      fill="#ADADAD" />
-                  </svg>
+                <button class="heart-btn" aria-label="加入收藏"></button>
+
                 </label>
               </div>
 
 
 
+            </div>
           </div>
-        </div>
 
 
       </section>
@@ -287,10 +294,10 @@
       </section>
     </main>
     <%- include('./layout/footer'); -%>
-    <%- include('./layout/btup'); -%>
-      <script type="module" src="../main.js"></script>
-      <%- include('./layout/js'); -%>
-     
+      <%- include('./layout/btup'); -%>
+        <script type="module" src="../main.js"></script>
+        <%- include('./layout/js'); -%>
+
 </body>
 
 </html>

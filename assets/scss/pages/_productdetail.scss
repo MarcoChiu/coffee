@@ -29,6 +29,68 @@
       font-size: 18px;
 }
 
+/* 咖啡資訊 */
+.coffee-info div {
+  display:flex;          /* dt + dd 同一行 */
+}
+
+.coffee-info dt {
+  font-weight:700;
+  color: $primary-700;
+}
+
+.coffee-info dd {
+  margin:0;
+  color: $primary-950;
+}
+
+
+.qty-pill{
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--h);
+  min-width: 200px;               /* 可依需求調整寬度 */
+  padding: 0 14px;
+  background: $primary-50;
+  border-radius: 100px;
+  gap: 12px;
+}
+
+/* 左右按鈕 */
+.qty-btn{
+  -webkit-tap-highlight-color: transparent;
+  appearance: none;
+  background: transparent;
+  border: 0;
+  color: var(--icon);
+  font-size: 22px;               /* －／＋大小 */
+  line-height: 1;
+  padding: 8px 10px;             /* 觸控友善 */
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+/* 愛心按鈕 */
+.heart-btn{
+  width:60px; height:60px;                /* 圖示大小 */
+  border:0; padding:0; background:transparent; cursor:pointer;
+  background: no-repeat center/contain url('/images/productdetail/heart_outline.png'); /* 預設空心 */
+}
+.heart-btn:hover,
+.heart-btn:focus-visible{
+  background-image: url('/images/productdetail/heart_fill.png'); /* hover 改成實心 */
+
+}
+
+
+
+
+  
+
+
+
+
 
 
 
