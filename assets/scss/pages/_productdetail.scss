@@ -18,6 +18,18 @@
   color:$primary-900; 
 }
 
+/* 手機 breadcrumb 連結顏色 */
+@media (max-width: 767px){
+  .breadcrumb .nav-link{
+    display: inline;       // 取消 block
+    padding: 0;            // 取消預設左右 padding
+  }
+  .breadcrumb-item + .breadcrumb-item::before{
+    content: var(--bs-breadcrumb-divider, '>'); // 保險起見，直接指定
+    color: $grey-300;
+    display: inline-block;
+  }
+}
 
 .horizontal-line2 {
     flex-grow: 1;
@@ -25,9 +37,6 @@
     background-color: #715737;
 }
 
-.paragraph-xlarge {
-      font-size: 18px;
-}
 
 /* 咖啡資訊 */
 .coffee-info div {
@@ -82,6 +91,7 @@
   background-image: url('/images/productdetail/heart_fill.png'); /* hover 改成實心 */
 
 }
+
 
 
 
