@@ -157,3 +157,63 @@
         resize();
     });
 </script>
+
+<script>
+(function () {
+  const BP = 768; // 手機 < 768
+  const scope = document.getElementById('about-service');
+  if (!scope) return; // 沒有 about 區塊就不動
+
+  // 記錄原位（父節點與下一個兄弟），方便桌機還原
+  const originalPos = new WeakMap();
+
+  function rememberPosition(node) {
+    if (!originalPos.has(node)) {
+      originalPos.set(node, { parent: node.parentNode, next: node.nextSibling });
+    }
+  }
+
+  function restorePosition(node) {
+    const pos = originalPos.get(node);
+    if (!pos) return;
+    const { parent, next } = pos;
+    if (next && next.parentNode === parent) {
+      parent.insertBefore(node, next);
+    } else {
+      parent.appendChild(node);
+    }
+  }
+
+  function moveForMobile(node) {
+    const selector = node.getAttribute('data-mobile-insert-before');
+    if (!selector) return;
+    const anchor = scope.querySelector(selector);
+    if (!anchor || !anchor.parentNode) return;
+    rememberPosition(node);
+    // 插到 anchor 的最前面（在文字之前）
+    anchor.parentNode.insertBefore(node, anchor);
+  }
+
+  function updateLayout() {
+    const isMobile = window.innerWidth < BP;
+    const movables = scope.querySelectorAll('[data-about-move]');
+    movables.forEach(node => {
+      if (isMobile) {
+        moveForMobile(node);
+      } else {
+        restorePosition(node);
+      }
+    });
+  }
+
+  // 簡單防抖
+  let timer;
+  function onResize() {
+    clearTimeout(timer);
+    timer = setTimeout(updateLayout, 120);
+  }
+
+  document.addEventListener('DOMContentLoaded', updateLayout);
+  window.addEventListener('resize', onResize);
+})();
+</script>

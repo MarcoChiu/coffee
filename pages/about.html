@@ -56,7 +56,7 @@
 
 
       <!-- service  RWD圖文順序--> 
-      <div class="service">
+      <div class="service" id="about-service">
         <div class="container">
           <div class="text-center service-title">
             <h4 class="pb-12">Service</h4>
@@ -65,7 +65,7 @@
 
           <!-- Booking a test -->
           <div class="row mb-40 mb-mt-80 text-primary-950 align-items-stretch">
-            <div class="booking-left col-md-6">
+            <div class="booking-left col-md-6" >
               <div class="mb-md-40 mb-20">
                 <h3 class="pb-12">
                   預約試喝
@@ -77,11 +77,11 @@
                 </div>
 
                 <!-- RWD和圖片x2 交換位置 使用js效果-->                 
-                <div class="x1 mb-md-0 mt-20 mb-20"></div> 
+                <!-- <div class="mb-md-0 mt-20 mb-20"></div>  -->
 
               </div>
 
-              <div>
+              <div class="mt-20" data-about-anchor="booking">
                 <p>由於工作室內空間有限，目前暫無開放內用服務。</p>
                 <p>
                   若您有咖啡試飲需求，歡迎填寫預約表單，我們將為您保留專屬時段。
@@ -100,9 +100,14 @@
               </div>
           </div>
 
-          <div class="booking-right col-md-6 x2">
-            <img src="/images/index/about-2.png" alt="" class="img-fluid w-100 object-fit-cover" />
-          </div>
+              <!-- 圖片欄：告訴 JS「這塊要搬」，並指定手機時要塞到哪個 anchor 前面 -->
+              <div class="booking-right col-md-6"
+                  data-about-move="booking"
+                  data-mobile-insert-before='[data-about-anchor="booking"]'>
+                <img src="/images/index/about-2.png"
+                    alt=""
+                    class="img-fluid w-100 object-fit-cover service-img">
+              </div>
 
         </div>
 
@@ -110,7 +115,7 @@
           <!-- Business Cooperation -->
           <div class="row align-items-stretch mb-md-120 mb-40">
             <!-- 左邊 -->
-            <div class="booking-left col-md-6">
+            <div class="booking-left col-md-6 ">
               <!-- 標題 -->
               <div class="mb-md-40 mb-20">
                 <h3 class="booking-spacing pb-12">
@@ -123,13 +128,13 @@
                 </div>
 
                   <!-- RWD和圖片x2 交換位置 使用js效果-->                 
-                <div class="x1 mb-md-0 mt-20 mb-20"></div> 
+                <!-- <div class="mb-md-0 mt-20 mb-20"></div>  -->
                 
               </div>
               
               
               <!-- 文字內容 -->
-              <div class="text-primary-950 mb-40">
+              <div class="text-primary-950 mt-20 mb-40" data-about-anchor="coop">
                 <p>工作室提供以下服務：</p><br>
                 <ul class="pdl-1">
                   <li>代客烘焙、客製化禮盒</li>
@@ -154,9 +159,13 @@
             </div>
             
             <!--右邊 圖片 -->
-            <div class="booking-right col-md-6 x2">
-              <img src="/images/index/about-1.png" alt="" class="img-fluid w-100 object-fit-cover"/>
-            </div>
+              <div class="booking-right col-md-6"
+                  data-about-move="booking"
+                  data-mobile-insert-before='[data-about-anchor="coop"]'>
+                <img src="/images/index/about-1.png"
+                    alt=""
+                    class="img-fluid w-100 object-fit-cover service-img">
+              </div>
           </div>
 
 
