@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>關於羊蹄</title>
-        <script type="module" crossorigin src="/coffee/assets/main-DA8rWlNj.js"></script>
-        <link rel="stylesheet" crossorigin href="/coffee/assets/main-CL16dd_P.css">
+        <script type="module" crossorigin src="/coffee/assets/main-D7JS-vyr.js"></script>
+        <link rel="stylesheet" crossorigin href="/coffee/assets/main-B6wyMfxA.css">
       </head>
 
   <body id="top">
@@ -16,12 +16,17 @@
     <div class="row align-items-center" style="min-height: var(--header-h)">
       <!-- 左：導覽（漢堡 + 桌機連結） -->
       <div class="col-2 col-md-4">
-        <nav class="navbar navbar-light nav-padding navbar-expand-md nav-font-size">
+        <nav
+          class="navbar navbar-light nav-padding navbar-expand-md nav-font-size">
           <!-- 漢堡（控制下面的 #mobileMenu 面板） -->
-          <button class="navbar-toggler border-0" type="button"
-                  data-bs-toggle="collapse" data-bs-target="#mobileMenu"
-                  aria-controls="mobileMenu" aria-expanded="false"
-                  aria-label="切換導覽選單">
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mobileMenu"
+            aria-controls="mobileMenu"
+            aria-expanded="false"
+            aria-label="切換導覽選單">
             <span class="navbar-toggler-icon"></span>
           </button>
 
@@ -31,10 +36,14 @@
               <a class="nav-link d-inline-block" href="about.html">關於羊蹄</a>
             </li>
             <li class="nav-item breadcrumb-item header-hover">
-              <a class="nav-link d-inline-block" href="products.html">線上商店</a>
+              <a class="nav-link d-inline-block" href="products.html"
+                >線上商店</a
+              >
             </li>
             <li class="nav-item breadcrumb-item header-hover">
-              <a class="nav-link d-inline-block" href="explore.html">探索風味</a>
+              <a class="nav-link d-inline-block" href="explore.html"
+                >探索風味</a
+              >
             </li>
           </ul>
         </nav>
@@ -51,10 +60,18 @@
       <div class="col-2 col-md-4">
         <nav class="d-flex justify-content-end gap-3">
           <a class="nav-link me-12 icon" href="#" aria-label="購物車">
-            <img src="/coffee/images/header/ic_Shopping_Cart.svg" alt="" width="26" height="26" />
+            <img
+              src="/coffee/images/header/ic_Shopping_Cart.svg"
+              alt=""
+              width="26"
+              height="26" />
           </a>
           <a class="nav-link icon" href="#" aria-label="會員">
-            <img src="/coffee/images/header/ic_User.svg" alt="" width="24" height="30" />
+            <img
+              src="/coffee/images/header/ic_User.svg"
+              alt=""
+              width="24"
+              height="30" />
           </a>
         </nav>
       </div>
@@ -66,15 +83,18 @@
 <div id="mobileMenu" class="collapse mobile-menu-panel" data-bs-parent="body">
   <nav class="container">
     <ul class="list-unstyled mb-0">
-      <li class="py-2 text-center"><a class="menu-link" href="about.html">關於羊蹄</a></li>
-      <li class="py-2 text-center"><a class="menu-link" href="products.html">線上商店</a></li>
-      <li class="py-2 text-center"><a class="menu-link" href="explore.html">探索風味</a></li>
+      <li class="py-2 text-center">
+        <a class="menu-link" href="about.html">關於羊蹄</a>
+      </li>
+      <li class="py-2 text-center">
+        <a class="menu-link" href="products.html">線上商店</a>
+      </li>
+      <li class="py-2 text-center">
+        <a class="menu-link" href="explore.html">探索風味</a>
+      </li>
     </ul>
   </nav>
 </div>
-
-
-
     <main class="">
       <!-- 關於羊蹄 -->
       <div class="about-1 ">
@@ -121,7 +141,7 @@
 
 
       <!-- service  RWD圖文順序--> 
-      <div class="service">
+      <div class="service" id="about-service">
         <div class="container">
           <div class="text-center service-title">
             <h4 class="pb-12">Service</h4>
@@ -130,7 +150,7 @@
 
           <!-- Booking a test -->
           <div class="row mb-40 mb-mt-80 text-primary-950 align-items-stretch">
-            <div class="booking-left col-md-6">
+            <div class="booking-left col-md-6" >
               <div class="mb-md-40 mb-20">
                 <h3 class="pb-12">
                   預約試喝
@@ -142,11 +162,11 @@
                 </div>
 
                 <!-- RWD和圖片x2 交換位置 使用js效果-->                 
-                <div class="x1 mb-md-0 mt-20 mb-20"></div> 
+                <!-- <div class="mb-md-0 mt-20 mb-20"></div>  -->
 
               </div>
 
-              <div>
+              <div class="mt-20" data-about-anchor="booking">
                 <p>由於工作室內空間有限，目前暫無開放內用服務。</p>
                 <p>
                   若您有咖啡試飲需求，歡迎填寫預約表單，我們將為您保留專屬時段。
@@ -165,9 +185,14 @@
               </div>
           </div>
 
-          <div class="booking-right col-md-6 x2">
-            <img src="/coffee/images/index/about-2.png" alt="" class="img-fluid w-100 object-fit-cover" />
-          </div>
+              <!-- 圖片欄：告訴 JS「這塊要搬」，並指定手機時要塞到哪個 anchor 前面 -->
+              <div class="booking-right col-md-6"
+                  data-about-move="booking"
+                  data-mobile-insert-before='[data-about-anchor="booking"]'>
+                <img src="/coffee/images/index/about-2.png"
+                    alt=""
+                    class="img-fluid w-100 object-fit-cover service-img">
+              </div>
 
         </div>
 
@@ -175,7 +200,7 @@
           <!-- Business Cooperation -->
           <div class="row align-items-stretch mb-md-120 mb-40">
             <!-- 左邊 -->
-            <div class="booking-left pe-40  col-md-6">
+            <div class="booking-left col-md-6 ">
               <!-- 標題 -->
               <div class="mb-md-40 mb-20">
                 <h3 class="booking-spacing pb-12">
@@ -188,13 +213,13 @@
                 </div>
 
                   <!-- RWD和圖片x2 交換位置 使用js效果-->                 
-                <div class="x1 mb-md-0 mt-20 mb-20"></div> 
+                <!-- <div class="mb-md-0 mt-20 mb-20"></div>  -->
                 
               </div>
               
               
               <!-- 文字內容 -->
-              <div class="text-primary-950 mb-40">
+              <div class="text-primary-950 mt-20 mb-40" data-about-anchor="coop">
                 <p>工作室提供以下服務：</p><br>
                 <ul class="pdl-1">
                   <li>代客烘焙、客製化禮盒</li>
@@ -219,9 +244,13 @@
             </div>
             
             <!--右邊 圖片 -->
-            <div class="booking-right col-md-6 x2">
-              <img src="/coffee/images/index/about-1.png" alt="" class="img-fluid w-100 object-fit-cover"/>
-            </div>
+              <div class="booking-right col-md-6"
+                  data-about-move="booking"
+                  data-mobile-insert-before='[data-about-anchor="coop"]'>
+                <img src="/coffee/images/index/about-1.png"
+                    alt=""
+                    class="img-fluid w-100 object-fit-cover service-img">
+              </div>
           </div>
 
 
@@ -554,6 +583,66 @@
 
         resize();
     });
-</script>
+</script>
+
+<script>
+(function () {
+  const BP = 768; // 手機 < 768
+  const scope = document.getElementById('about-service');
+  if (!scope) return; // 沒有 about 區塊就不動
+
+  // 記錄原位（父節點與下一個兄弟），方便桌機還原
+  const originalPos = new WeakMap();
+
+  function rememberPosition(node) {
+    if (!originalPos.has(node)) {
+      originalPos.set(node, { parent: node.parentNode, next: node.nextSibling });
+    }
+  }
+
+  function restorePosition(node) {
+    const pos = originalPos.get(node);
+    if (!pos) return;
+    const { parent, next } = pos;
+    if (next && next.parentNode === parent) {
+      parent.insertBefore(node, next);
+    } else {
+      parent.appendChild(node);
+    }
+  }
+
+  function moveForMobile(node) {
+    const selector = node.getAttribute('data-mobile-insert-before');
+    if (!selector) return;
+    const anchor = scope.querySelector(selector);
+    if (!anchor || !anchor.parentNode) return;
+    rememberPosition(node);
+    // 插到 anchor 的最前面（在文字之前）
+    anchor.parentNode.insertBefore(node, anchor);
+  }
+
+  function updateLayout() {
+    const isMobile = window.innerWidth < BP;
+    const movables = scope.querySelectorAll('[data-about-move]');
+    movables.forEach(node => {
+      if (isMobile) {
+        moveForMobile(node);
+      } else {
+        restorePosition(node);
+      }
+    });
+  }
+
+  // 簡單防抖
+  let timer;
+  function onResize() {
+    clearTimeout(timer);
+    timer = setTimeout(updateLayout, 120);
+  }
+
+  document.addEventListener('DOMContentLoaded', updateLayout);
+  window.addEventListener('resize', onResize);
+})();
+</script>
   </body>
 </html>
