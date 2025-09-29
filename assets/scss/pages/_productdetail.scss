@@ -1,35 +1,56 @@
+.breadcrumb { --bs-breadcrumb-divider: ">"; }
+
+/* 改用 inline 方案：不要 float，也不要 li 左內距 */
+.breadcrumb-item + .breadcrumb-item { padding-left: 0; }
 .breadcrumb-item + .breadcrumb-item::before{
+  content: var(--bs-breadcrumb-divider, ">");
+  float: none;              /* 關鍵：停用預設浮動 */
+  display: inline-block;    /* 直接在同一行顯示 */
+  margin: 0 .5rem;          /* 分隔的左右間距 */
   color: $grey-300;
-  padding-left: 12px;
-  padding-right: 12px;
 }
 
-/* 桌機 breadcrumb 連結顏色 */
-.breadcrumb .nav-link {
-  color: $grey-300;
-  text-decoration: none;
+/* 你的連結樣式 */
+.breadcrumb .nav-link { color:$grey-300; text-decoration:none; }
+.breadcrumb .nav-link:hover { color:#FBAF44; }
+.breadcrumb-item.active { color:$primary-900; }
 
-  &:hover {
-    color: #FBAF44;
-  }
-}
-
-.breadcrumb-item.active { 
-  color:$primary-900; 
-}
-
-/* 手機 breadcrumb 連結顏色 */
+/* 手機如果要把連結變 inline、去 padding */
 @media (max-width: 767px){
-  .breadcrumb .nav-link{
-    display: inline;       // 取消 block
-    padding: 0;            // 取消預設左右 padding
+  .breadcrumb .nav-link { display:inline; padding:0; width:auto; }
+  @media (max-width: 767px){
+  /* 1) 外層容器可以橫向卷軸 */
+  nav[aria-label="breadcrumb"]{
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* 2) 麵包屑不換行，內容寬度依內容延展 */
+  .breadcrumb{
+    flex-wrap: nowrap;          /* 取消預設 wrap */
+    min-width: max-content;     /* 讓寬度跟內容走，才會出現捲軸 */
+  }
+
+  /* 3) 每個項目都維持自身寬度、不被壓縮；分隔符走 inline 方案 */
+  .breadcrumb-item{
+    white-space: nowrap;
+    flex: 0 0 auto;             /* 不要把項目擠窄 */
   }
   .breadcrumb-item + .breadcrumb-item::before{
-    content: var(--bs-breadcrumb-divider, '>'); // 保險起見，直接指定
-    color: $grey-300;
+    content: var(--bs-breadcrumb-divider, ">");
+    float: none;                 /* 不用 float，避免被 overflow 吃掉 */
     display: inline-block;
+    margin: 0 .5rem;
+    color: $grey-300;
   }
+
+  /* 你的連結樣式（可留） */
+  .breadcrumb .nav-link{ display:inline; padding:0; width:auto; }
 }
+}
+
+
+
 
 .horizontal-line2 {
     flex-grow: 1;
