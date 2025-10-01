@@ -10,6 +10,15 @@
   :root{ --header-h: 80px; } /* 桌機可略高 */
 }
 
+
+.px-96{
+  padding-left: 96px;
+  padding-right: 96px;
+}
+
+.pd-18{
+  padding: 18.5px 0;
+}
 /* 頂部 Header 固定 */
 .site-header{
   position: sticky; /* 若要永遠固定可改 fixed */
@@ -40,7 +49,7 @@
   padding-left: 12px; padding-right: 12px;
   float: none;
 }
-@media (max-width: 767.98px){
+@media (max-width: 768px){
   .breadcrumb-item + .breadcrumb-item::before{ display:none; }
 }
 
@@ -63,16 +72,20 @@
   }
 }
 
-.icon img {
-  max-width: none;   /* 取消 max-width:100% 限制 */
-  height: auto;      /* 維持比例縮放 */
-}
-
-/* icon hover */
-.icon:hover{
+.icon {
+  img{
+    max-width: none;   /* 取消 max-width:100% 限制 */
+    height: auto;      /* 維持比例縮放 */
+  }
+  
+  /* icon hover */
+  &:hover{
   filter: brightness(0) saturate(100%) invert(76%) sepia(52%)
           saturate(300%) hue-rotate(350deg) brightness(102%) contrast(97%);
+  }
 }
+
+
 
 /* 漢堡按鈕（可換自訂圖示） */
 .navbar-toggler{
