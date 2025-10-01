@@ -1,53 +1,94 @@
-.breadcrumb { --bs-breadcrumb-divider: ">"; }
-
-/* 改用 inline 方案：不要 float，也不要 li 左內距 */
-.breadcrumb-item + .breadcrumb-item { padding-left: 0; }
-.breadcrumb-item + .breadcrumb-item::before{
-  content: var(--bs-breadcrumb-divider, ">");
-  float: none;              /* 關鍵：停用預設浮動 */
-  display: inline-block;    /* 直接在同一行顯示 */
-  margin: 0 .5rem;          /* 分隔的左右間距 */
-  color: $grey-300;
+.productdetail{
+  background-color: #FCFAF8;
 }
+
+.productdetail-title{
+   font-family: "Noto Sans TC", sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1.2;
+    letter-spacing: 2px;
+}
+/* 改用 inline 方案：不要 float，也不要 li 左內距 */
+
+// .breadcrumb-item + .breadcrumb-item { padding-left: 0; }
+// .breadcrumb-item + .breadcrumb-item::before{
+//   content: var(--bs-breadcrumb-divider, ">");
+//   float: none;            
+//   display: inline-block;    
+//   margin: 0 .5rem;         
+//   color: $grey-300;
+// }
+
+
+
 
 /* 你的連結樣式 */
 .breadcrumb .nav-link { color:$grey-300; text-decoration:none; }
 .breadcrumb .nav-link:hover { color:#FBAF44; }
 .breadcrumb-item.active { color:$primary-900; }
 
-/* 手機如果要把連結變 inline、去 padding */
-@media (max-width: 767px){
-  .breadcrumb .nav-link { display:inline; padding:0; width:auto; }
-  @media (max-width: 767px){
-  /* 1) 外層容器可以橫向卷軸 */
-  nav[aria-label="breadcrumb"]{
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-  }
+// /* 手機如果要把連結變 inline、去 padding */
+// @media (max-width: 767px){
+//   .breadcrumb .nav-link { display:inline; padding:0; width:auto; }
+//   @media (max-width: 767px){
+//   /* 1) 外層容器可以橫向卷軸 */
+//   nav[aria-label="breadcrumb"]{
+//     overflow-x: auto;
+//     -webkit-overflow-scrolling: touch;
+//   }
 
-  /* 2) 麵包屑不換行，內容寬度依內容延展 */
-  .breadcrumb{
-    flex-wrap: nowrap;          /* 取消預設 wrap */
-    min-width: max-content;     /* 讓寬度跟內容走，才會出現捲軸 */
-  }
+//   /* 2) 麵包屑不換行，內容寬度依內容延展 */
+//   .breadcrumb{
+//     flex-wrap: nowrap;          /* 取消預設 wrap */
+//     min-width: max-content;     /* 讓寬度跟內容走，才會出現捲軸 */
+//   }
 
-  /* 3) 每個項目都維持自身寬度、不被壓縮；分隔符走 inline 方案 */
-  .breadcrumb-item{
-    white-space: nowrap;
-    flex: 0 0 auto;             /* 不要把項目擠窄 */
-  }
-  .breadcrumb-item + .breadcrumb-item::before{
-    content: var(--bs-breadcrumb-divider, ">");
-    float: none;                 /* 不用 float，避免被 overflow 吃掉 */
-    display: inline-block;
-    margin: 0 .5rem;
-    color: $grey-300;
-  }
+//   /* 3) 每個項目都維持自身寬度、不被壓縮；分隔符走 inline 方案 */
+//   .breadcrumb-item{
+//     white-space: nowrap;
+//     flex: 0 0 auto;             /* 不要把項目擠窄 */
+//   }
+//   .breadcrumb-item + .breadcrumb-item::before{
+//     content: var(--bs-breadcrumb-divider, ">");
+//     float: none;                 /* 不用 float，避免被 overflow 吃掉 */
+//     display: inline-block;
+//     margin: 0 .5rem;
+//     color: $grey-300;
+//   }
 
-  /* 你的連結樣式（可留） */
-  .breadcrumb .nav-link{ display:inline; padding:0; width:auto; }
+//   /* 你的連結樣式（可留） */
+//   .breadcrumb .nav-link{ display:inline; padding:0; width:auto; }
+// }
+// }
+
+
+.pc-page{
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
+.pc-page .breadcrumb{
+  flex-wrap: nowrap;
+  min-width: max-content;
 }
+.pc-page .breadcrumb-item{
+  white-space: nowrap;
+  flex: 0 0 auto;
+}
+
+/* 關鍵覆蓋：把 header 的 "/"（含 !important 與手機的 display:none）壓掉 */
+.pc-page .breadcrumb-item + .breadcrumb-item::before{
+  content: ">" !important;
+  display: inline-block !important;  /* 蓋過 header 手機版的 display:none */
+  float: none !important;            /* 換成 inline 方案 */
+  margin: 0 .5rem;
+  color: $grey-300;
+}
+
+/* 內頁連結色（可留可不留） */
+.pc-page .breadcrumb .nav-link{ color:$grey-300; text-decoration:none; }
+.pc-page .breadcrumb .nav-link:hover{ color:#FBAF44; }
+.pc-page .breadcrumb-item.active{ color:$primary-900; }
 
 
 
@@ -67,11 +108,13 @@
 .coffee-info dt {
   font-weight:700;
   color: $primary-700;
+  font-size: 16px;
 }
 
 .coffee-info dd {
   margin:0;
   color: $primary-950;
+  font-size: 16px;
 }
 
 
@@ -114,10 +157,172 @@
 }
 
 
+@media (max-width: 768px) {
+
+    .heading-small {
+      font-size: 20px;
+    }
+
+    .heading-xxlarge {
+      font-size: 28px;
+    }
+
+    .w-256 {
+      width: 256px;
+    }
+
+    .label-small {
+      font-size: 12px;
+    }
+
+    .paragraph-medium {
+      font-size: 14px;
+    }
+
+    .label-medium {
+      font-size: 14px;
+    }
+
+    .heading-xxxlarge {
+      font-size: 24px;
+    }
+    .productdetail-title{
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.2;
+    letter-spacing: 2px;  
+}
+
+/* 咖啡資訊 */
+.coffee-info div {
+  display:flex;          /* dt + dd 同一行 */
+}
+
+.coffee-info dt {
+  font-weight:700;
+  color: $primary-700;
+  font-size: 14px;
+}
+
+.coffee-info dd {
+  margin:0;
+  color: $primary-950;
+  font-size: 14px;
+}
+
+.amount{
+  font-weight:700;
+  color: $primary-700;
+  font-size: 14px;
+}
+
+}
 
 
+.heart-check{
+  position: absolute; 
+  opacity: 0; 
+  width: 1px; height: 1px; 
+  overflow: hidden;
+}
 
+/* 視覺按鈕（沿用你原本大小與圖片） */
+.heart-btn{
+  width: 36px; height: 36px;
+  display: inline-block;
+  cursor: pointer;
+  background: no-repeat center/contain url('/images/productdetail/heart_outline.png'); /* 空心 */
+}
+
+/* 勾選後 → 改成實心圖 */
+.heart-check:checked + .heart-btn{
+  background-image: url('/images/productdetail/heart_fill.png');
+}
+
+/* 鍵盤可及性：聚焦時給外框 */
+.heart-check:focus-visible + .heart-btn{
+  outline: 2px solid #FBAF44;
+  outline-offset: 4px;
+}
+
+/* 禁用狀態（若需要） */
+.heart-check:disabled + .heart-btn{
+  opacity: .5; 
+  pointer-events: none;
+}
+
+/* 沖煮資訊 */
+.brew-title{
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 2px;  
+}
+
+.brew-info{
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 2px;  
+}
+
+  .brew-py{
+    padding-bottom: 64px;
+    padding-top: 64px;
+  }
+/* 沖煮資訊手機版 */
+@media (max-width: 768px) {
+.brew-facts > .col{
+    display: grid;
+    /* 左欄固定寬，建議 120~140px 自行微調；右欄 112px */
+    grid-template-columns: 128px 112px;
+    grid-template-areas: "title icon" "info icon";
+    justify-content: center;      /* 整組置中 */
+    column-gap: 10px;
+    row-gap: 2px;
+  }
+  .brew-py{
+    padding-bottom: 32px;
+    padding-top: 32px;
+  }
+  .brew-facts .brew-title{ 
+    font-size: 18px;
+    grid-area:title; 
+    margin:0 0 8px; 
+    justify-self: center;
+    align-self: end; 
+    line-height:1.2; }
+
+  .brew-facts .brew-info { 
+    font-size: 16px;
+    grid-area:info; 
+    justify-self: center;
+     align-self: start;  
+    margin:0; }
+
+  .brew-facts img{
+    grid-area:icon;
+    justify-self:center;
+    margin:0;
+    width:112px; height:112px;
+    padding:20px; border-radius:50%; background:#F8F7F0;
+    object-fit:contain;
+  }
+
+   .brew-facts > .col{
+    /* 這裡決定兩行文字之間的距離：改成 4px/6px 都行 */
+    row-gap: 4px;
+  }
+
+
+  .col{
+    margin-bottom: 12px;
+  }
   
+    }
 
 
 
