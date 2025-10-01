@@ -45,6 +45,7 @@
 /* breadcrumb 分隔 */
 .breadcrumb{ flex-wrap: nowrap; }
 .breadcrumb-item + .breadcrumb-item::before{
+  content: var(--bs-breadcrumb-divider, "/");
   color: $primary-50;
   padding-left: 12px; padding-right: 12px;
   float: none;
