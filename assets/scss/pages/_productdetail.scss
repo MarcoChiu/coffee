@@ -2,6 +2,7 @@
   background-color: #FCFAF8;
 }
 
+
 .productdetail-title{
    font-family: "Noto Sans TC", sans-serif;
     font-weight: 400;
@@ -9,17 +10,6 @@
     line-height: 1.2;
     letter-spacing: 2px;
 }
-/* 改用 inline 方案：不要 float，也不要 li 左內距 */
-
-// .breadcrumb-item + .breadcrumb-item { padding-left: 0; }
-// .breadcrumb-item + .breadcrumb-item::before{
-//   content: var(--bs-breadcrumb-divider, ">");
-//   float: none;            
-//   display: inline-block;    
-//   margin: 0 .5rem;         
-//   color: $grey-300;
-// }
-
 
 
 
@@ -27,40 +17,6 @@
 .breadcrumb .nav-link { color:$grey-300; text-decoration:none; }
 .breadcrumb .nav-link:hover { color:#FBAF44; }
 .breadcrumb-item.active { color:$primary-900; }
-
-// /* 手機如果要把連結變 inline、去 padding */
-// @media (max-width: 767px){
-//   .breadcrumb .nav-link { display:inline; padding:0; width:auto; }
-//   @media (max-width: 767px){
-//   /* 1) 外層容器可以橫向卷軸 */
-//   nav[aria-label="breadcrumb"]{
-//     overflow-x: auto;
-//     -webkit-overflow-scrolling: touch;
-//   }
-
-//   /* 2) 麵包屑不換行，內容寬度依內容延展 */
-//   .breadcrumb{
-//     flex-wrap: nowrap;          /* 取消預設 wrap */
-//     min-width: max-content;     /* 讓寬度跟內容走，才會出現捲軸 */
-//   }
-
-//   /* 3) 每個項目都維持自身寬度、不被壓縮；分隔符走 inline 方案 */
-//   .breadcrumb-item{
-//     white-space: nowrap;
-//     flex: 0 0 auto;             /* 不要把項目擠窄 */
-//   }
-//   .breadcrumb-item + .breadcrumb-item::before{
-//     content: var(--bs-breadcrumb-divider, ">");
-//     float: none;                 /* 不用 float，避免被 overflow 吃掉 */
-//     display: inline-block;
-//     margin: 0 .5rem;
-//     color: $grey-300;
-//   }
-
-//   /* 你的連結樣式（可留） */
-//   .breadcrumb .nav-link{ display:inline; padding:0; width:auto; }
-// }
-// }
 
 
 .pc-page{
@@ -101,20 +57,27 @@
 
 
 /* 咖啡資訊 */
+
 .coffee-info div {
-  display:flex;          /* dt + dd 同一行 */
+  display:flex;
+  align-items: baseline;
+  gap: 12px;          
 }
 
 .coffee-info dt {
   font-weight:700;
   color: $primary-700;
   font-size: 16px;
+  flex: 0 0 auto;            /* 不要被壓縮 */
+  white-space: nowrap;       /* 內容不換行（風味不會斷成兩行） */
+  min-width: max-content
 }
 
 .coffee-info dd {
   margin:0;
   color: $primary-950;
   font-size: 16px;
+  flex: 1 1 auto; 
 }
 
 
@@ -123,7 +86,7 @@
   align-items: center;
   justify-content: space-between;
   height: var(--h);
-  min-width: 200px;               /* 可依需求調整寬度 */
+  min-width: 200px;               
   padding: 0 14px;
   background: $primary-50;
   border-radius: 100px;
@@ -273,8 +236,10 @@
     padding-bottom: 64px;
     padding-top: 64px;
   }
+
+  
 /* 沖煮資訊手機版 */
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
 .brew-facts > .col{
     display: grid;
     /* 左欄固定寬，建議 120~140px 自行微調；右欄 112px */
@@ -323,6 +288,15 @@
   }
   
     }
+
+    @media (min-width:768px) and (max-width:991.98px){
+  .specs-row{
+    flex-wrap: nowrap !important; white-space: nowrap;
+  }
+  .specs-row .btn4{ flex:0 0 auto; }                 /* 勿被壓縮 */
+  /* 若仍略擠：可稍微縮小左右內距 */
+  /* .specs-row .btn4{ padding-inline:12px; } */
+}
 
 
 
