@@ -1,18 +1,24 @@
 .coffeecard {
+  z-index: 10;
   background-color: $grey-0;
 
   a {
     text-decoration: none;
   }
 
-  &:hover {
-    background-color: $primary-50 ;
+  //手機的click = hover 
+  //https://blog.csdn.net/qq_39981639/article/details/123048090
+  @media (any-hover: hover) {
+    &:hover {  
+      background-color: $primary-50 ;
+    }
   }
 
   // 愛心
   position: relative;
 
   .hearticon {
+    z-index: 20;
     position: absolute;
     cursor: pointer; //滑鼠指標  
     top: 20px;

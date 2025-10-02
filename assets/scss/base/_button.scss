@@ -40,8 +40,8 @@
 }
 
 .btn4 {
-    padding: 12px 24px;
-    border-radius: 10px;
+    padding: 8px 12px;
+    border-radius: 4px;
     background-color: transparent;
     color: $primary-700;
     border: 1px solid $primary-700;
@@ -50,5 +50,18 @@
     &:hover {
       color: $grey-0;
        background-color: $primary-700
+    }
+}
+
+.btn5 {
+    padding: 16px 27px;
+    border-radius: 100px;
+    background-color: $primary-800;
+    color: $primary-50;
+    border: none;
+    text-decoration: none;
+
+    &:hover {
+        background-color: $primary-600;
     }
 }
