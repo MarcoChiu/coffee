@@ -1,5 +1,10 @@
  # A-8 羊蹄咖啡專題
 
+## notion
+ ```
+https://www.notion.so/A-8-22a6e9dba913800db708c0c2a9dfc3d7
+ ```
+
 ## Miro
 ```
 https://miro.com/app/board/uXjVJdnIC-4=/?utm_source=notification&utm_medium=email&utm_campaign=daily-updates&utm_content=view-board-cta&lid=ilk838wmgwc3
@@ -13,6 +18,21 @@ https://www.figma.com/design/PrGtcgM9NgwmM1fsdcZSAd/%E5%9C%98%E9%9A%8A%E5%B0%88%
 ## 設計稿
 ```
 https://www.figma.com/design/JR0sze2fVEr2cuvrhDuXd1/%E5%9C%98%E9%9A%8A%E5%B0%88%E9%A1%8C--A-8-%E7%BE%8A%E8%B9%84%E5%92%96%E5%95%A1?m=auto&t=WblgXowAmwolyREO-6
+```
+
+## 簡報
+```
+https://www.canva.com/design/DAGzuForHKw/d9p0CqjIlYqaKULaZppEBA/edit
+```
+
+## 展示頁
+```
+https://marcochiu.github.io/coffee/
+```
+
+## 字體
+```
+https://github.com/Chenyu-otf/chenyuluoyan_thin/releases
 ```
 
 ## 目前進度
